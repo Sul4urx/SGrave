@@ -1,0 +1,14 @@
+name: Suggestion or Problem
+description: Want to suggest something? Perhaps maybe a fix? Suggest it here!
+labels: [suggestion]
+title: "[SUGGESTION] "
+assginees: [Sul4urx]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "A description of what you want to suggest."
+    validations:
+      required: false
+

@@ -1,0 +1,67 @@
+name: Bug Report
+description: Found a bug for SGrave 2? Report it here!
+labels: [bug]
+title: "[BUG] "
+assginees: [Sul4urx]
+body:
+  - type: dropdown
+    id: sgrave_version
+    attributes:
+      label: "SGrave version(s):"
+      descripton: "Please select the version(s) of SGrave you've been able to reproduce this issue on."
+      multiple: true
+      options:
+        - v2a0-beta-1
+        - Other
+  - type: dropdown
+    id: mc_version
+    attributes:
+      label: "Minecraft version(s):"
+      description: "Please select the version(s) of Minecraft you've been able to reproduce this issue on."
+      multiple: true
+      options:
+        - '1.21.6 - 1.21.8'
+        - '1.21.5'
+        - Other
+  - type: dropdown
+    id: modloader
+    attributes:
+      label: "Mod loader(s):"
+      description: "Please select the mod loader(s) you've been able to reproduce the issue on."
+      multiple: true
+      options:
+        - Neoforge
+        - Forge
+        - Fabric
+        - Quilt
+        - Other
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "A description of what the bug is. Include screenshots if you can."
+    validations:
+      required: false
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: "Steps to reproduce"
+      description: "Steps to reproduce the behavior"
+      placeholder: '1. Go to ...\n2. Click on ...\n3. Scroll down to ...\n4. See error'
+    validations:
+      required: false
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: "Expected behavior"
+      description: "What did you expect to happen?"
+    validations:
+      required: false
+  - type: textarea
+    id: extra
+    attributes:
+      label: "Additional context"
+      description: "Is there anything else you want to say?"
+    validations:
+      required: false
+
