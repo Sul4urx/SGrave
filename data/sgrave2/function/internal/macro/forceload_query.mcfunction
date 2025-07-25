@@ -1,0 +1,1 @@
+$execute store result score .macro_result.forceload_query sgrave2.temp_var run forceload query $(x) $(z)
