@@ -2,13 +2,13 @@ name: Bug Report
 description: Found a bug for SGrave 2? Report it here!
 labels: [bug]
 title: "[BUG] "
-assginees: [Sul4urx]
+assignees: [Sul4urx]
 body:
   - type: dropdown
     id: sgrave_version
     attributes:
       label: "SGrave version(s):"
-      descripton: "Please select the version(s) of SGrave you've been able to reproduce this issue on."
+      description: "Please select the version(s) of SGrave you've been able to reproduce this issue on."
       multiple: true
       options:
         - v2a0-beta-1
