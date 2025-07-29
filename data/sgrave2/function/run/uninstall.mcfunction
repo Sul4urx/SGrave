@@ -1,3 +1,7 @@
+## Cancel all function schedules
+schedule clear sgrave2:internal/loop/1t
+schedule clear sgrave2:internal/loop/1s
+
 ## Remove all stored data
 data remove storage sgrave2:common graves
 data remove storage sgrave2:common unobstructed_graves

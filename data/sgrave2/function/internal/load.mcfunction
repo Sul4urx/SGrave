@@ -38,6 +38,12 @@ scoreboard objectives add sgrave2.rotation_cooldown dummy
 
 ##> Show grave info
 scoreboard objectives add sgrave2.show_grave_info trigger
+
+##>> View next and view previous
+scoreboard objectives add sgrave2.show_grave_info.view_next trigger
+scoreboard objectives add sgrave2.show_grave_info.view_previous trigger
+
+##> Remote open graves
 scoreboard objectives add sgrave2.remote_open_grave trigger
 
 ##> Info and Help

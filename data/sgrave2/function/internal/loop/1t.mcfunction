@@ -43,18 +43,29 @@ execute as @a at @s unless score @s sgrave2.info matches 0 run function sgrave2:
 scoreboard players set @a sgrave2.info 0
 scoreboard players enable @a sgrave2.info
 
-## Show SGrave info
-execute as @a at @s unless score @s sgrave2.help matches 0 run function sgrave2:run/help
+## Show SGrave help menu
+execute as @a at @s if score @s sgrave2.help matches 1.. run function sgrave2:run/help
 scoreboard players set @a sgrave2.help 0
 scoreboard players enable @a sgrave2.help
 
+## Respond to score triggers
 
-## Show grave info
+##> Show grave info
 execute as @a at @s unless score @s sgrave2.show_grave_info matches 0 run function sgrave2:internal/grave/show_info/check_conditions
 scoreboard players set @a sgrave2.show_grave_info 0
 scoreboard players enable @a sgrave2.show_grave_info
 
-## Remotely open grave
+##>> View next
+execute as @a[scores={sgrave2.show_grave_info.view_next=1000..}] at @s run function sgrave2:internal/grave/show_info/show_non-admin/view_next
+scoreboard players set @a sgrave2.show_grave_info.view_next 0
+scoreboard players enable @a sgrave2.show_grave_info.view_next
+
+##>> View previous
+execute as @a[scores={sgrave2.show_grave_info.view_previous=1000..}] at @s run function sgrave2:internal/grave/show_info/show_non-admin/view_previous
+scoreboard players set @a sgrave2.show_grave_info.view_previous 0
+scoreboard players enable @a sgrave2.show_grave_info.view_previous
+
+##> Remotely open grave
 execute as @a[scores={sgrave2.remote_open_grave=1000..}] at @s run function sgrave2:internal/event/player/player_tried_to_ropen_grave
 scoreboard players set @a sgrave2.remote_open_grave 0
 scoreboard players enable @a sgrave2.remote_open_grave

@@ -4,7 +4,7 @@
 #<< grave/show_info/show_non-admin/bn
 
 ## Save ID in `temp.id` data in storage and in `.id` temp score
-$data modify storage sgrave2:common temp.id set value $(id)
+execute store result storage sgrave2:common temp.id int 1 run scoreboard players get @s sgrave2.show_grave_info.view_previous
 
 execute store result score .id sgrave2.temp_var run data get storage sgrave2:common temp.id
 

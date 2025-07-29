@@ -74,7 +74,7 @@ $execute unless data storage sgrave2:common graves[-1].data.status{obstructed:1b
       },\
       "click_event": {\
         "action": "run_command",\
-        "command": "/function sgrave2:internal/grave/show_info/show_non-admin/view_previous {id: $(id)}"\
+        "command": "/trigger sgrave2.show_grave_info.view_previous set $(id)"\
       }\
     },\
     {\
@@ -89,7 +89,7 @@ $execute unless data storage sgrave2:common graves[-1].data.status{obstructed:1b
       },\
       "click_event": {\
         "action": "suggest_command",\
-        "command": "/function sgrave2:run/remote_open_grave {id: $(id)}"\
+        "command": "/trigger sgrave2.remote_open_grave set $(id)"\
       }\
     },\
     {\
@@ -104,7 +104,7 @@ $execute unless data storage sgrave2:common graves[-1].data.status{obstructed:1b
       },\
       "click_event": {\
         "action": "run_command",\
-        "command": "/function sgrave2:internal/grave/show_info/show_non-admin/view_next {id: $(id)}"\
+        "command": "/trigger sgrave2.show_grave_info.view_next set $(id)"\
       }\
     }\
   ]\
@@ -125,7 +125,7 @@ $execute if data storage sgrave2:common graves[-1].data.status{obstructed:1b} ru
       },\
       "click_event": {\
         "action": "run_command",\
-        "command": "/function sgrave2:internal/grave/show_info/show_non-admin/view_previous {id: $(id)}"\
+        "command": "/trigger sgrave2.show_grave_info.view_previous set $(id)"\
       }\
     },\
     {\
@@ -140,7 +140,7 @@ $execute if data storage sgrave2:common graves[-1].data.status{obstructed:1b} ru
       },\
       "click_event": {\
         "action": "run_command",\
-        "command": "/function sgrave2:internal/grave/show_info/show_non-admin/view_next {id: $(id)}"\
+        "command": "/trigger sgrave2.show_grave_info.view_next set $(id)"\
       }\
     }\
   ]\
