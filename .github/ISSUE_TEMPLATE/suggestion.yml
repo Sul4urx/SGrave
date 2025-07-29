@@ -4,6 +4,9 @@ labels: [suggestion]
 title: "[SUGGESTION] "
 assginees: [Sul4urx]
 body:
+  - type: markdown
+    attributes:
+      value: "Thanks for taking the time to fill out this bug report!"
   - type: textarea
     id: description
     attributes:

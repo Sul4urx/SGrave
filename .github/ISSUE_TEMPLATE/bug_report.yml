@@ -4,6 +4,9 @@ labels: [bug]
 title: "[BUG] "
 assginees: [Sul4urx]
 body:
+  - type: markdown
+    attributes:
+      value: "Thanks for taking the time to fill out this bug report!"
   - type: dropdown
     id: sgrave_version
     attributes:
@@ -39,7 +42,11 @@ body:
     attributes:
       label: "Steps to reproduce"
       description: "Steps to reproduce the behavior"
-      placeholder: '1. Go to ...\n2. Click on ...\n3. Scroll down to ...\n4. See error'
+      placeholder: |
+        1. Go to ...
+        2. Click on ...
+        3. Scroll down to ...
+        4. See error.
     validations:
       required: false
   - type: textarea
