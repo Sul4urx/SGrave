@@ -13,6 +13,8 @@ body:
       options:
         - v2a0-beta-1
         - Other
+    validations:
+      required: true
   - type: dropdown
     id: mc_version
     attributes:
@@ -23,18 +25,8 @@ body:
         - '1.21.6 - 1.21.8'
         - '1.21.5'
         - Other
-  - type: dropdown
-    id: modloader
-    attributes:
-      label: "Mod loader(s):"
-      description: "Please select the mod loader(s) you've been able to reproduce the issue on."
-      multiple: true
-      options:
-        - Neoforge
-        - Forge
-        - Fabric
-        - Quilt
-        - Other
+    validations:
+      required: true
   - type: textarea
     id: description
     attributes:
