@@ -1,7 +1,11 @@
-The source code for SGrave 2. This repository has **nothing to do** with SGrave 1. 
+The source code for SGrave 2. This repository has **nothing to do** with SGrave 1.
+
+
 
 > [!WARNING]
 > SGrave 2 is heavily in beta. Expect bugs!
+> 
+> **SGrave 2 only works on Minecraft 1.21.5 - 1.21.8.**
 
 If you want to download SGrave 2 and try it out, go to https://github.com/Sul4urx/SGrave/releases and go to **SGrave v2a0-beta-1** > **Assets** and download **SGrave.v2a0-beta-1.zip**.
 

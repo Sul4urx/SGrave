@@ -2,7 +2,7 @@ name: Suggestion or Problem
 description: Want to suggest something? Perhaps maybe a fix? Suggest it here!
 labels: [suggestion]
 title: "[SUGGESTION] "
-assginees: [Sul4urx]
+assignees: [Sul4urx]
 body:
   - type: markdown
     attributes:
