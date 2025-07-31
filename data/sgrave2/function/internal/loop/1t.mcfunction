@@ -31,6 +31,10 @@ function sgrave2:internal/config/register
 ## Add a player to player map, if they don't exist there
 execute as @a at @s unless score @s sgrave2.pid matches 1.. run function sgrave2:internal/map/players/insert
 
+## Change game rules so that SGrave can work properly
+execute if score <change_gamerules> sgrave2.config matches 1 if score <mod_compability_mode> sgrave2.config matches 0 run gamerule keepInventory true
+execute if score <change_gamerules> sgrave2.config matches 1 run gamerule doImmediateRespawn false
+
 ## Player died
 execute as @a[scores={sgrave2.death_count=1..}] at @s run function sgrave2:internal/event/player/player_died
 scoreboard players set @a sgrave2.death_count 0
@@ -72,6 +76,9 @@ scoreboard players enable @a sgrave2.remote_open_grave
 
 ## Grave management
 execute as @e[tag=sgrave2.grave.base] at @s run function sgrave2:internal/grave/main
+
+## Player map management
+execute as @a at @s run function sgrave2:internal/map/players/main
 
 ## Remove temp tags
 tag @e[tag=sgrave2.temp.grave.base] remove sgrave2.temp.grave.base

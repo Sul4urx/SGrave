@@ -1,3 +1,4 @@
+#<< grave/generate/give_back_blacklisted_items
 #<< grave/generate/give_back_blacklisted_items/check_for_blacklist
 
 ## Remove temp data

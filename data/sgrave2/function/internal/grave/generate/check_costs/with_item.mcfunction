@@ -18,8 +18,10 @@ execute unless score .loop_count sgrave2.temp_var matches 1.. run scoreboard pla
 
 execute if score .loop_count sgrave2.temp_var matches 1.. run function sgrave2:internal/grave/generate/check_costs/with_item/items with storage sgrave2:common temp.args
 
+execute if score <mod_compability_mode> sgrave2.config matches 1 run scoreboard players set .check_costs.items sgrave2.temp_var 1
+
 ## XP
 scoreboard players set .check_costs.xp sgrave2.temp_var 0
 
-execute store result score .player_xp sgrave2.temp_var run xp query @s levels
+execute store result score .player_xp sgrave2.temp_var run data get entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.xp.before_death.levels
 execute if score .player_xp sgrave2.temp_var >= <grave_generation_costs.with_item.xp.levels> sgrave2.config run scoreboard players set .check_costs.xp sgrave2.temp_var 1

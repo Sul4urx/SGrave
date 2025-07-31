@@ -48,7 +48,7 @@ tellraw @s [\
       },\
       {\
         "translate": "sgrave2.config.main_menu.players",\
-        "fallback": " §bPlayers",\
+        "fallback": " §bPlayers ",\
         "hover_event": {\
           "action": "show_text",\
           "value": {\
@@ -68,11 +68,11 @@ tellraw @s [\
 tellraw @s [\
   "\n",\
   {\
-    "translate": "§7[%s§7]",\
+    "translate": "§7[%s§7|%s§7]",\
     "with": [\
       {\
         "translate": "sgrave2.config.main_menu.dropped_contents",\
-        "fallback": "   §bDropped Contents   ",\
+        "fallback": " §bDropped Contents ",\
         "hover_event": {\
           "action": "show_text",\
           "value": {\
@@ -83,6 +83,21 @@ tellraw @s [\
         "click_event": {\
           "action": "run_command",\
           "command": "/function sgrave2:internal/config/open_page/dropped_contents"\
+        }\
+      },\
+      {\
+        "translate": "sgrave2.config.main_menu.general",\
+        "fallback": " §bGeneral ",\
+        "hover_event": {\
+          "action": "show_text",\
+          "value": {\
+            "translate": "sgrave2.config_page_open_description.dropped_contents",\
+            "fallback": "All unrelated configs"\
+            }\
+          },\
+        "click_event": {\
+          "action": "run_command",\
+          "command": "/function sgrave2:internal/config/open_page/general"\
         }\
       }\
     ]\

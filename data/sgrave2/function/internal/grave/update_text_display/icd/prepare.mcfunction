@@ -60,5 +60,7 @@ execute if data storage sgrave2:common temp.item{Slot:102b} run data modify stor
 execute if data storage sgrave2:common temp.item{Slot:101b} run data modify storage sgrave2:common temp.item.slot_name set value '{"translate": "sgrave2.icd.slot.armor_legs", "fallback": "§aArmor - Legs"}'
 execute if data storage sgrave2:common temp.item{Slot:100b} run data modify storage sgrave2:common temp.item.slot_name set value '{"translate": "sgrave2.icd.slot.armor_feet", "fallback": "§aArmor - Boots"}'
 
+execute unless data storage sgrave2:common temp.item.Slot run data modify storage sgrave2:common temp.item.slot_name set value ''
+
 ## Update current text display
 function sgrave2:internal/grave/update_text_display/icd/update with storage sgrave2:common temp.item

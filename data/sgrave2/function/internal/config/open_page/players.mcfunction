@@ -140,8 +140,8 @@ tellraw @s [\
         "hover_event": {\
           "action": "show_text",\
           "value": {\
-            "translate": "sgrave2.config_refresh_sub_page_description",\
-            "fallback": "Click to refresh this sub-page."\
+            "translate": "sgrave2.config_refresh_page_description",\
+            "fallback": "Click to refresh this page."\
           }\
         },\
         "click_event": {\

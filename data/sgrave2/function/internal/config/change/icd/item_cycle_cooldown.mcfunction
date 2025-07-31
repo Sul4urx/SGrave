@@ -1,4 +1,4 @@
-#<< config/change/icd/item_cycle_cooldown
+#<< config/open_page/graves/icd_properties
 $data modify storage sgrave2:common temp.config.value set value $(value)
 
 ## Error if value is not valid
