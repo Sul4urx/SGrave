@@ -19,6 +19,8 @@ scoreboard objectives remove sgrave2.despawn_time
 scoreboard objectives remove sgrave2.icd.cooldown
 scoreboard objectives remove sgrave2.rotation_cooldown
 scoreboard objectives remove sgrave2.show_grave_info
+scoreboard objectives remove sgrave2.show_grave_info.view_next
+scoreboard objectives remove sgrave2.show_grave_info.view_previous
 scoreboard objectives remove sgrave2.remote_open_grave
 scoreboard objectives remove sgrave2.info
 scoreboard objectives remove sgrave2.help
