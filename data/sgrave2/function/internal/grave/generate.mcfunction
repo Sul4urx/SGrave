@@ -38,6 +38,9 @@ execute if score <mod_compability_mode> sgrave2.config matches 0 run function sg
 execute if score <mod_compability_mode> sgrave2.config matches 1 run data modify storage sgrave2:common temp.args.distance set from storage sgrave2:common configs.mod_compability_mode.item_collection_distance.value
 execute if score <mod_compability_mode> sgrave2.config matches 1 as @e[type=item,distance=..16] at @s run function sgrave2:internal/grave/generate/collect_items with storage sgrave2:common temp.args
 
+## Take XP from player
+function sgrave2:internal/grave/generate/take_xp/main
+
 ## Check costs
 execute unless data entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items[0] run function sgrave2:internal/grave/generate/check_costs/no_item
 execute if data entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items[0] run function sgrave2:internal/grave/generate/check_costs/with_item
@@ -45,9 +48,6 @@ execute if data entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft
 execute unless score .check_costs.gamemodes sgrave2.temp_var matches 1 run return run function sgrave2:internal/grave/generate/cancel
 execute unless score .check_costs.items sgrave2.temp_var matches 1 run return run function sgrave2:internal/grave/generate/cancel
 execute unless score .check_costs.xp sgrave2.temp_var matches 1 run return run function sgrave2:internal/grave/generate/cancel
-
-## Take XP from player
-function sgrave2:internal/grave/generate/take_xp/main
 
 ## If compability mode is set to true
 ## Get rid of player's dropped XP and items
@@ -57,6 +57,9 @@ kill @e[tag=sgrave2.temp.item_to_be_deleted]
 
 ## Clear player's inventory
 execute if score <mod_compability_mode> sgrave2.config matches 0 run function sgrave2:internal/grave/generate/clear_player_inv
+
+## Give back XP
+function sgrave2:internal/grave/generate/give_back_xp
 
 ## Store creation time data
 execute as @n[tag=sgrave2.temp.grave.base] at @s run function sgrave2:internal/grave/generate/get_creation_time

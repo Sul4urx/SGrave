@@ -15,6 +15,7 @@ scoreboard players set (405) sgrave2.var 405
 scoreboard players set (1000) sgrave2.var 1000
 scoreboard players set (1625) sgrave2.var 1625
 scoreboard players set (3600) sgrave2.var 3600
+scoreboard players set (2520) sgrave2.var 2520
 
 ##> Start grave IDs from 1000
 execute unless score .global sgrave2.gid matches 1000.. run scoreboard players set .global sgrave2.gid 1000

@@ -23,5 +23,7 @@ execute if score <mod_compability_mode> sgrave2.config matches 1 run scoreboard 
 ## XP
 scoreboard players set .check_costs.xp sgrave2.temp_var 0
 
+execute store result score .xp_cost_levels sgrave2.temp_var run data get storage sgrave2:common configs.grave_generation_costs.with_item.xp.levels
+
 execute store result score .player_xp sgrave2.temp_var run data get entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.xp.before_death.levels
-execute if score .player_xp sgrave2.temp_var >= <grave_generation_costs.with_item.xp.levels> sgrave2.config run scoreboard players set .check_costs.xp sgrave2.temp_var 1
+execute if score .player_xp sgrave2.temp_var >= .xp_cost_levels sgrave2.temp_var run scoreboard players set .check_costs.xp sgrave2.temp_var 1
