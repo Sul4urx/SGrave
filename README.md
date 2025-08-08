@@ -17,3 +17,17 @@ If you have a question about this data pack, use `/trigger sgrave2.help` in game
 > You don't need any resource packs to use SGrave 2, unlike SGrave 1.
 >
 > If you want to use SGrave v2a0-beta-1, remember to turn on _keepInventory_ gamerule and turn off _doImmediateRespawn_ gamerule.
+
+## Source
+If you don't know much about source code and etc, you can skip this section.
+
+### Branches
+| Name         | Description                          |
+| ------------ | ------------------------------------ |
+| `mc/1.21.8`  | Minecraft versions 1.21.6 to 1.21.8  |
+| `mc/1.21.5`  | Minecraft version 1.21.5             |
+| `mc/1.21.4`* | Minecraft version 1.21.4             |
+| `mc/1.21.3`* | Minecraft versions 1.21.2 and 1.21.3 |
+| `mc/1.21.1`* | Minecraft versions 1.21 and 1.21.1   |
+
+_* This branch is planned to be included in the future, but doesn't exist yet._
