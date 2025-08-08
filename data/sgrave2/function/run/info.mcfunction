@@ -8,7 +8,7 @@ tellraw @s {\
   "translate": "sgrave2.info",\
   "fallback": "§l§bS§l§6Grave§r §fversion %s §8| §fMade By §bSul4ur\n§6ℹ This data pack is heavily in beta. Expect bugs!\n§fA very sophisticated grave data pack with many features and a lot of customizability\n\n§7[%s§7| %s §7| %s §7| %s §7| %s§7]",\
   "with": [\
-    "§72a0-beta-1",\
+    "§72a0-beta-2",\
     {\
       "translate": "sgrave2.info.help",\
       "fallback": "§bHelp (In-Game) ",\

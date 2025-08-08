@@ -14,7 +14,7 @@ body:
       description: "Please select the version(s) of SGrave you've been able to reproduce this issue on."
       multiple: true
       options:
-        - v2a0-beta-1
+        - v2a0-beta-2
         - Other
     validations:
       required: true
