@@ -1,6 +1,6 @@
 name: Suggestion or Problem
 description: Want to suggest something? Perhaps maybe a fix? Suggest it here!
-labels: [suggestion]
+labels: [enhancement]
 title: "[SUGGESTION] "
 assignees: [Sul4urx]
 body:
