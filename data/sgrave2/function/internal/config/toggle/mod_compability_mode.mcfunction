@@ -4,8 +4,8 @@
 gamerule keepInventory false
 
 ## Toggle value
-scoreboard players add (config:general/mod_compatibility_mode) sgrave2.config 1
-execute if score (config:general/mod_compatibility_mode) sgrave2.config matches 2.. run scoreboard players set (config:general/mod_compatibility_mode) sgrave2.config 0
+scoreboard players add (general/mod_compatibility_mode) sgrave2.config 1
+execute if score (general/mod_compatibility_mode) sgrave2.config matches 2.. run scoreboard players set (general/mod_compatibility_mode) sgrave2.config 0
 
 ## Play sound
 playsound minecraft:ui.button.click

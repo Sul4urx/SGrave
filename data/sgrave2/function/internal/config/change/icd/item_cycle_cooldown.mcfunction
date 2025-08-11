@@ -29,7 +29,7 @@ title @s actionbar {\
 }
 
 ## If success, change value
-execute store result score (config:graves/icd/item_cycle_cooldown) sgrave2.config run data get storage sgrave2:common temp.config.value
+execute store result score (graves/icd/item_cycle_cooldown) sgrave2.config run data get storage sgrave2:common temp.config.value
 
 ## Update configs
 function sgrave2:internal/config/register

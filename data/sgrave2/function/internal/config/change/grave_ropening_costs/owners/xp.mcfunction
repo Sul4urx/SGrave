@@ -16,7 +16,7 @@ execute unless predicate {\
 }
 
 ## Otherwise change values
-execute store result score (config:costs/grave_ropening_costs/owners/xp) sgrave2.config run data get storage sgrave2:common temp.config.levels
+execute store result score (costs/grave_ropening_costs/owners/xp) sgrave2.config run data get storage sgrave2:common temp.config.levels
 
 ## Update configs
 function sgrave2:internal/config/register

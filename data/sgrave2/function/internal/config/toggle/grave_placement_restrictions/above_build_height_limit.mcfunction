@@ -1,8 +1,8 @@
 #<< config/open_page/graves/grave_placement_restrictions
 
 ## Toggle value
-scoreboard players add (config:graves/grave_placement_restrictions_restrictions/above_build_height_limit) sgrave2.config 1
-execute if score (config:graves/grave_placement_restrictions_restrictions/above_build_height_limit) sgrave2.config matches 2.. run scoreboard players set (config:graves/grave_placement_restrictions_restrictions/above_build_height_limit) sgrave2.config 0
+scoreboard players add (graves/grave_placement_restrictions_restrictions/above_build_height_limit) sgrave2.config 1
+execute if score (graves/grave_placement_restrictions_restrictions/above_build_height_limit) sgrave2.config matches 2.. run scoreboard players set (graves/grave_placement_restrictions_restrictions/above_build_height_limit) sgrave2.config 0
 
 ## Play sound
 playsound minecraft:ui.button.click

@@ -1,8 +1,8 @@
 #<< config/open_page/costs/grave_generation_costs
 
 ## Toggle value
-$scoreboard players add (config:costs/grave_generation_costs/with_item/gamemodes/$(gamemode)) sgrave2.config 1
-$execute if score (config:costs/grave_generation_costs/with_item/gamemodes/$(gamemode)) sgrave2.config matches 2.. run scoreboard players set (config:costs/grave_generation_costs/with_item/gamemodes/$(gamemode)) sgrave2.config 0
+$scoreboard players add (costs/grave_generation_costs/with_item/gamemodes/$(gamemode)) sgrave2.config 1
+$execute if score (costs/grave_generation_costs/with_item/gamemodes/$(gamemode)) sgrave2.config matches 2.. run scoreboard players set (costs/grave_generation_costs/with_item/gamemodes/$(gamemode)) sgrave2.config 0
 
 ## Play sound
 playsound minecraft:ui.button.click

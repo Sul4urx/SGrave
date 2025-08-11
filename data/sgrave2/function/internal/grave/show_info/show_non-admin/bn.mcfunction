@@ -6,52 +6,52 @@
 tellraw @s [{"translate": "sgrave2.grave_info.title", "fallback": "\nGrave §6#%s info", "with": [{"nbt": "graves[-1].data.id", "storage": "sgrave2:common", "color": "gold"}]}]
 
 ## Owner
-execute unless score (config:graves/show_grave_info/bn/owner) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.owner", "fallback": "  §bOwner: %s", "with": [{"nbt": "graves[-1].data.owner.name", "color": "green", "storage": "sgrave2:common"}]}
+execute unless score (graves/show_grave_info/bn/owner) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.owner", "fallback": "  §bOwner: %s", "with": [{"nbt": "graves[-1].data.owner.name", "color": "green", "storage": "sgrave2:common"}]}
 
 ## Location
-execute unless score (config:graves/show_grave_info/bn/location.xyz) sgrave2.config matches 0 unless score (config:graves/show_grave_info/bn/location.dim) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.location.all", "fallback": "  §bLocation: %s §7(%s§7)", "with": [{"nbt": "graves[-1].data.pos_integer[]", "color": "gold", "storage": "sgrave2:common", "separator": "§7, "}, {"nbt": "graves[-1].data.dimension.name", "color": "green", "storage": "sgrave2:common"}]}
+execute unless score (graves/show_grave_info/bn/location.xyz) sgrave2.config matches 0 unless score (graves/show_grave_info/bn/location.dim) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.location.all", "fallback": "  §bLocation: %s §7(%s§7)", "with": [{"nbt": "graves[-1].data.pos_integer[]", "color": "gold", "storage": "sgrave2:common", "separator": "§7, "}, {"nbt": "graves[-1].data.dimension.name", "color": "green", "storage": "sgrave2:common"}]}
 
-execute unless score (config:graves/show_grave_info/bn/location.xyz) sgrave2.config matches 0 if score (config:graves/show_grave_info/bn/location.dim) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.location.xyz", "fallback": "  §bLocation: %s", "with": [{"nbt": "graves[-1].data.pos_integer[]", "color": "gold", "storage": "sgrave2:common", "separator": "§7, "}]}
+execute unless score (graves/show_grave_info/bn/location.xyz) sgrave2.config matches 0 if score (graves/show_grave_info/bn/location.dim) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.location.xyz", "fallback": "  §bLocation: %s", "with": [{"nbt": "graves[-1].data.pos_integer[]", "color": "gold", "storage": "sgrave2:common", "separator": "§7, "}]}
 
-execute if score (config:graves/show_grave_info/bn/location.xyz) sgrave2.config matches 0 unless score (config:graves/show_grave_info/bn/location.dim) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.location.dim", "fallback": "  §bDimension: %s", "with": [{"nbt": "graves[-1].data.dimension.name", "color": "green", "storage": "sgrave2:common"}]}
+execute if score (graves/show_grave_info/bn/location.xyz) sgrave2.config matches 0 unless score (graves/show_grave_info/bn/location.dim) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.location.dim", "fallback": "  §bDimension: %s", "with": [{"nbt": "graves[-1].data.dimension.name", "color": "green", "storage": "sgrave2:common"}]}
 
 ## XP
-execute unless score (config:graves/show_grave_info/bn/xp/after_death) sgrave2.config matches 0 unless score (config:graves/show_grave_info/bn/xp/before_death) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.xp", "fallback": "  §bExperience:\n    §eBefore death: %s levels §7+ %s points\n    §eAfter death: %s levels §7+ %s points", "with": [{"nbt": "graves[-1].data.xp_before_death.levels", "color": "gold", "storage": "sgrave2:common"}, {"nbt": "graves[-1].data.xp_before_death.points", "color": "gold", "storage": "sgrave2:common"}, {"nbt": "graves[-1].contents.xp.levels", "color": "gold", "storage": "sgrave2:common"}, {"nbt": "graves[-1].contents.xp.points", "color": "gold", "storage": "sgrave2:common"}]}
+execute unless score (graves/show_grave_info/bn/xp/after_death) sgrave2.config matches 0 unless score (graves/show_grave_info/bn/xp/before_death) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.xp", "fallback": "  §bExperience:\n    §eBefore death: %s levels §7+ %s points\n    §eAfter death: %s levels §7+ %s points", "with": [{"nbt": "graves[-1].data.xp_before_death.levels", "color": "gold", "storage": "sgrave2:common"}, {"nbt": "graves[-1].data.xp_before_death.points", "color": "gold", "storage": "sgrave2:common"}, {"nbt": "graves[-1].contents.xp.levels", "color": "gold", "storage": "sgrave2:common"}, {"nbt": "graves[-1].contents.xp.points", "color": "gold", "storage": "sgrave2:common"}]}
 
 ##> XP before death
-execute if score (config:graves/show_grave_info/bn/xp/after_death) sgrave2.config matches 0 unless score (config:graves/show_grave_info/bn/xp/before_death) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.xp", "fallback": "  §bXP (Before death): %s levels §7+ %s points", "with": [{"nbt": "graves[-1].contents.xp_before_death.levels", "color": "gold", "storage": "sgrave2:common"}, {"nbt": "graves[-1].contents.xp_before_death.points", "color": "gold", "storage": "sgrave2:common"}]}
+execute if score (graves/show_grave_info/bn/xp/after_death) sgrave2.config matches 0 unless score (graves/show_grave_info/bn/xp/before_death) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.xp", "fallback": "  §bXP (Before death): %s levels §7+ %s points", "with": [{"nbt": "graves[-1].contents.xp_before_death.levels", "color": "gold", "storage": "sgrave2:common"}, {"nbt": "graves[-1].contents.xp_before_death.points", "color": "gold", "storage": "sgrave2:common"}]}
 
 ##> XP after death
-execute unless score (config:graves/show_grave_info/bn/xp/after_death) sgrave2.config matches 0 if score (config:graves/show_grave_info/bn/xp/before_death) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.xp", "fallback": "  §bXP (After death): %s levels §7+ %s points", "with": [{"nbt": "graves[-1].contents.xp.levels", "color": "gold", "storage": "sgrave2:common"}, {"nbt": "graves[-1].contents.xp.points", "color": "gold", "storage": "sgrave2:common"}]}
+execute unless score (graves/show_grave_info/bn/xp/after_death) sgrave2.config matches 0 if score (graves/show_grave_info/bn/xp/before_death) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.xp", "fallback": "  §bXP (After death): %s levels §7+ %s points", "with": [{"nbt": "graves[-1].contents.xp.levels", "color": "gold", "storage": "sgrave2:common"}, {"nbt": "graves[-1].contents.xp.points", "color": "gold", "storage": "sgrave2:common"}]}
 
 ## Creation time
-execute unless score (config:graves/show_grave_info/bn/creation_time) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.creation_time", "fallback": "  §bCreation time: §rDay %s§7, %s hours §7: %s minutes", "with": [{"nbt": "graves[-1].data.creation_time.day", "color": "gold", "storage": "sgrave2:common"}, {"nbt": "graves[-1].data.creation_time.hours", "color": "gold", "storage": "sgrave2:common"}, {"nbt": "graves[-1].data.creation_time.minutes", "color": "gold", "storage": "sgrave2:common"}]}
+execute unless score (graves/show_grave_info/bn/creation_time) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.creation_time", "fallback": "  §bCreation time: §rDay %s§7, %s hours §7: %s minutes", "with": [{"nbt": "graves[-1].data.creation_time.day", "color": "gold", "storage": "sgrave2:common"}, {"nbt": "graves[-1].data.creation_time.hours", "color": "gold", "storage": "sgrave2:common"}, {"nbt": "graves[-1].data.creation_time.minutes", "color": "gold", "storage": "sgrave2:common"}]}
 
 ## Items
-execute unless score (config:graves/show_grave_info/bn/items) sgrave2.config matches 0 run function sgrave2:internal/grave/show_info/show_items with storage sgrave2:common graves[-1].data
+execute unless score (graves/show_grave_info/bn/items) sgrave2.config matches 0 run function sgrave2:internal/grave/show_info/show_items with storage sgrave2:common graves[-1].data
 
 ##
 tellraw @s ""
 
 ## Status
-execute unless score (config:graves/show_grave_info/bn/obstruction_type) sgrave2.config matches 0 if data storage sgrave2:common graves[-1].data.status{obstruction_type:"opened"} unless score (config:graves/show_grave_info/bn/obstructor) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.status.opened_by", "fallback": "  §bStatus: §cOpened by %s", "with": [{"nbt": "graves[-1].data.status.obstructor.name", "color": "red", "storage": "sgrave2:common"}]}
+execute unless score (graves/show_grave_info/bn/obstruction_type) sgrave2.config matches 0 if data storage sgrave2:common graves[-1].data.status{obstruction_type:"opened"} unless score (graves/show_grave_info/bn/obstructor) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.status.opened_by", "fallback": "  §bStatus: §cOpened by %s", "with": [{"nbt": "graves[-1].data.status.obstructor.name", "color": "red", "storage": "sgrave2:common"}]}
 
-execute unless score (config:graves/show_grave_info/bn/obstruction_type) sgrave2.config matches 0 if data storage sgrave2:common graves[-1].data.status{obstruction_type:"opened"} if score (config:graves/show_grave_info/bn/obstructor) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.status.opened", "fallback": "  §bStatus: §cOpened"}
-
-
-execute unless score (config:graves/show_grave_info/bn/obstruction_type) sgrave2.config matches 0 if data storage sgrave2:common graves[-1].data.status{obstruction_type:"broken"} unless score (config:graves/show_grave_info/bn/obstructor) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.status.broken_by", "fallback": "  §bStatus: §cBroken by %s", "with": [{"nbt": "graves[-1].data.status.obstructor.name", "color": "red", "storage": "sgrave2:common"}]}
-
-execute unless score (config:graves/show_grave_info/bn/obstruction_type) sgrave2.config matches 0 if data storage sgrave2:common graves[-1].data.status{obstruction_type:"broken"} if score (config:graves/show_grave_info/bn/obstructor) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.status.broken", "fallback": "  §bStatus: §cBroken"}
+execute unless score (graves/show_grave_info/bn/obstruction_type) sgrave2.config matches 0 if data storage sgrave2:common graves[-1].data.status{obstruction_type:"opened"} if score (graves/show_grave_info/bn/obstructor) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.status.opened", "fallback": "  §bStatus: §cOpened"}
 
 
-execute unless score (config:graves/show_grave_info/bn/obstruction_type) sgrave2.config matches 0 if data storage sgrave2:common graves[-1].data.status{obstruction_type:"despawned"} run tellraw @s {"translate": "sgrave2.grave_info.status.despawned", "fallback": "  §bStatus: §cDespawned"}
+execute unless score (graves/show_grave_info/bn/obstruction_type) sgrave2.config matches 0 if data storage sgrave2:common graves[-1].data.status{obstruction_type:"broken"} unless score (graves/show_grave_info/bn/obstructor) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.status.broken_by", "fallback": "  §bStatus: §cBroken by %s", "with": [{"nbt": "graves[-1].data.status.obstructor.name", "color": "red", "storage": "sgrave2:common"}]}
+
+execute unless score (graves/show_grave_info/bn/obstruction_type) sgrave2.config matches 0 if data storage sgrave2:common graves[-1].data.status{obstruction_type:"broken"} if score (graves/show_grave_info/bn/obstructor) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.status.broken", "fallback": "  §bStatus: §cBroken"}
 
 
-execute if score (config:graves/show_grave_info/bn/obstruction_type) sgrave2.config matches 0 if data storage sgrave2:common graves[-1].data.status.obstructor unless score (config:graves/show_grave_info/bn/obstructor) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.status.broken", "fallback": "  §bStatus: §cObstructed by %s", "with": [{"nbt": "graves[-1].data.status.obstructor.name", "color": "red", "storage": "sgrave2:common"}]}
+execute unless score (graves/show_grave_info/bn/obstruction_type) sgrave2.config matches 0 if data storage sgrave2:common graves[-1].data.status{obstruction_type:"despawned"} run tellraw @s {"translate": "sgrave2.grave_info.status.despawned", "fallback": "  §bStatus: §cDespawned"}
 
-execute if score (config:graves/show_grave_info/bn/obstruction_type) sgrave2.config matches 0 unless score (config:graves/show_grave_info/bn/obstructor) sgrave2.config matches 0 unless data storage sgrave2:common graves[-1].data.status.obstructor run tellraw @s {"translate": "sgrave2.grave_info.status.broken", "fallback": "  §bStatus: §cObstructed"}
 
-execute if score (config:graves/show_grave_info/bn/obstruction_type) sgrave2.config matches 0 if score (config:graves/show_grave_info/bn/obstructor) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.status.broken", "fallback": "  §bStatus: §cObstructed"}
+execute if score (graves/show_grave_info/bn/obstruction_type) sgrave2.config matches 0 if data storage sgrave2:common graves[-1].data.status.obstructor unless score (graves/show_grave_info/bn/obstructor) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.status.broken", "fallback": "  §bStatus: §cObstructed by %s", "with": [{"nbt": "graves[-1].data.status.obstructor.name", "color": "red", "storage": "sgrave2:common"}]}
+
+execute if score (graves/show_grave_info/bn/obstruction_type) sgrave2.config matches 0 unless score (graves/show_grave_info/bn/obstructor) sgrave2.config matches 0 unless data storage sgrave2:common graves[-1].data.status.obstructor run tellraw @s {"translate": "sgrave2.grave_info.status.broken", "fallback": "  §bStatus: §cObstructed"}
+
+execute if score (graves/show_grave_info/bn/obstruction_type) sgrave2.config matches 0 if score (graves/show_grave_info/bn/obstructor) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.status.broken", "fallback": "  §bStatus: §cObstructed"}
 
 
 ##

@@ -29,7 +29,7 @@ title @s actionbar {\
 }
 
 ## If success, change value
-execute store result score (config:general/mod_compatibility_mode/item_collection_distance) sgrave2.config run data get storage sgrave2:common temp.config.value
+execute store result score (general/mod_compatibility_mode/item_collection_distance) sgrave2.config run data get storage sgrave2:common temp.config.value
 
 ## Update configs
 function sgrave2:internal/config/register

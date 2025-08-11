@@ -7,7 +7,7 @@ summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:clock",components:{"minecraft:c
 data modify entity @n[tag=sgrave2.temp.grave.item_to_give_back] Item set from entity @s item.components.minecraft:custom_data.sgrave2:common.items[0]
 
 ## Set despawn time
-scoreboard players operation @n[tag=sgrave2.temp.grave.item_to_give_back] sgrave2.despawn_time = (config:dropped_contents/item_despawn_time) sgrave2.config
+scoreboard players operation @n[tag=sgrave2.temp.grave.item_to_give_back] sgrave2.despawn_time = (dropped_contents/item_despawn_time) sgrave2.config
 
 ## Remove item from grave
 data remove entity @s item.components.minecraft:custom_data.sgrave2:common.items[0]

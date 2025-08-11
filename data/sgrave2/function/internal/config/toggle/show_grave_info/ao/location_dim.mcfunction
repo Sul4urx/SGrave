@@ -1,8 +1,8 @@
 #<< config/open_page/graves/show_grave_info
 
 ## Toggle value
-scoreboard players add (config:graves/show_grave_info/ao/location.dim) sgrave2.config 1
-execute if score (config:graves/show_grave_info/ao/location.dim) sgrave2.config matches 2.. run scoreboard players set (config:graves/show_grave_info/ao/location.dim) sgrave2.config 0
+scoreboard players add (graves/show_grave_info/ao/location.dim) sgrave2.config 1
+execute if score (graves/show_grave_info/ao/location.dim) sgrave2.config matches 2.. run scoreboard players set (graves/show_grave_info/ao/location.dim) sgrave2.config 0
 
 
 ## Play sound

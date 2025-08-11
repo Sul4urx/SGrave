@@ -3,7 +3,7 @@
 ## Tell grave mini-info
 
 ## Location and dimension
-execute if score (config:graves/show_grave_info/ao/location.xyz) sgrave2.config matches 1 if score (config:graves/show_grave_info/ao/location.dim) sgrave2.config matches 1 run tellraw @s {\
+execute if score (graves/show_grave_info/ao/location.xyz) sgrave2.config matches 1 if score (graves/show_grave_info/ao/location.dim) sgrave2.config matches 1 run tellraw @s {\
   "translate": "\n§c☠ %s §6#%s §7|§r %s §7|§r %s\n",\
   "with": [\
     {\
@@ -31,7 +31,7 @@ execute if score (config:graves/show_grave_info/ao/location.xyz) sgrave2.config 
 }
 
 ## Location only
-execute if score (config:graves/show_grave_info/ao/location.xyz) sgrave2.config matches 1 unless score (config:graves/show_grave_info/ao/location.dim) sgrave2.config matches 1 run tellraw @s {\
+execute if score (graves/show_grave_info/ao/location.xyz) sgrave2.config matches 1 unless score (graves/show_grave_info/ao/location.dim) sgrave2.config matches 1 run tellraw @s {\
   "translate": "\n§c☠ %s §6#%s §7—§r %s\n",\
   "with": [\
     {\
@@ -54,7 +54,7 @@ execute if score (config:graves/show_grave_info/ao/location.xyz) sgrave2.config 
 }
 
 ## Dimension only
-execute unless score (config:graves/show_grave_info/ao/location.xyz) sgrave2.config matches 1 if score (config:graves/show_grave_info/ao/location.dim) sgrave2.config matches 1 run tellraw @s {\
+execute unless score (graves/show_grave_info/ao/location.xyz) sgrave2.config matches 1 if score (graves/show_grave_info/ao/location.dim) sgrave2.config matches 1 run tellraw @s {\
   "translate": "\n§c☠ %s §6#%s §7—§r %s\n",\
   "with": [\
     {\
@@ -76,7 +76,7 @@ execute unless score (config:graves/show_grave_info/ao/location.xyz) sgrave2.con
 }
 
 ## No location or dimension
-execute unless score (config:graves/show_grave_info/ao/location.xyz) sgrave2.config matches 1 unless score (config:graves/show_grave_info/ao/location.dim) sgrave2.config matches 1 run tellraw @s {\
+execute unless score (graves/show_grave_info/ao/location.xyz) sgrave2.config matches 1 unless score (graves/show_grave_info/ao/location.dim) sgrave2.config matches 1 run tellraw @s {\
   "translate": "\n§c☠ %s §6#%s\n",\
   "with": [\
     {\

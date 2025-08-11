@@ -8,7 +8,7 @@ summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:clock",components:{"minecraft:c
 ## Apply item configs to the item
 
 ##> Despawn time
-scoreboard players operation @n[tag=sgrave2.temp.grave.item_to_give_back] sgrave2.despawn_time = (config:dropped_contents/item_despawn_time) sgrave2.config
+scoreboard players operation @n[tag=sgrave2.temp.grave.item_to_give_back] sgrave2.despawn_time = (dropped_contents/item_despawn_time) sgrave2.config
 
 ## Set item content
 data modify entity @n[tag=sgrave2.temp.grave.item_to_give_back] Item set from storage sgrave2:common temp.items_to_summon_as_entity[-1]

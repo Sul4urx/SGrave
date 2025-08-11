@@ -26,7 +26,7 @@ title @s actionbar {\
 }
 
 ## If success, change value
-execute store result score (config:dropped_contents/item_despawn_time) sgrave2.config run data get storage sgrave2:common temp.config.value
+execute store result score (dropped_contents/item_despawn_time) sgrave2.config run data get storage sgrave2:common temp.config.value
 
 ## Update configs
 function sgrave2:internal/config/register
