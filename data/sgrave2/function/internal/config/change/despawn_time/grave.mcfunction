@@ -20,7 +20,7 @@ title @s actionbar {\
   "translate": "sgrave2.change_config_message.despawn_time.grave.success",\
   "fallback": "Successfully changed the Grave Despawn Time config from %s seconds to %s seconds.",\
   "with": [\
-    {"storage": "sgrave2:common", "nbt": "configs.despawn_time.grave.value"},\
+    {"storage": "sgrave2:common", "nbt": "configs.graves.despawn_time.value"},\
     {"storage": "sgrave2:common", "nbt": "temp.config.value"}\
   ]\
 }

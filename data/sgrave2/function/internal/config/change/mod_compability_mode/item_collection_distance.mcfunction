@@ -23,7 +23,7 @@ title @s actionbar {\
   "translate": "sgrave2.change_config_message.mod_compatibility_mode.item_collection_distance.success",\
   "fallback": "Successfully changed the Item Collection Distance config from %s to %s.",\
   "with": [\
-    {"storage": "sgrave2:common", "nbt": "configs.mod_compatibility_mode.item_collection_distance.text_value"},\
+    {"storage": "sgrave2:common", "nbt": "configs.general.mod_compatibility_mode.item_collection_distance.text_value"},\
     {"storage": "sgrave2:common", "nbt": "temp.config.value"}\
   ]\
 }

@@ -81,7 +81,7 @@ tellraw @s [\
         "translate": "%s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.ao.all.text_value",\
+            "nbt": "configs.graves.show_grave_info.ao.all.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -101,7 +101,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.bo.all.text_value",\
+            "nbt": "configs.graves.show_grave_info.bo.all.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -121,7 +121,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.an.all.text_value",\
+            "nbt": "configs.graves.show_grave_info.an.all.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -141,7 +141,7 @@ tellraw @s [\
         "translate": " %s",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.bn.all.text_value",\
+            "nbt": "configs.graves.show_grave_info.bn.all.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -182,7 +182,7 @@ tellraw @s [\
         "translate": "%s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.ao.owner.text_value",\
+            "nbt": "configs.graves.show_grave_info.ao.owner.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -202,7 +202,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.bo.owner.text_value",\
+            "nbt": "configs.graves.show_grave_info.bo.owner.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -222,7 +222,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.an.owner.text_value",\
+            "nbt": "configs.graves.show_grave_info.an.owner.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -242,7 +242,7 @@ tellraw @s [\
         "translate": " %s",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.bn.owner.text_value",\
+            "nbt": "configs.graves.show_grave_info.bn.owner.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -283,7 +283,7 @@ tellraw @s [\
         "translate": "%s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.ao.location.xyz.text_value",\
+            "nbt": "configs.graves.show_grave_info.ao.location.xyz.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -303,7 +303,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.bo.location.xyz.text_value",\
+            "nbt": "configs.graves.show_grave_info.bo.location.xyz.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -323,7 +323,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.an.location.xyz.text_value",\
+            "nbt": "configs.graves.show_grave_info.an.location.xyz.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -343,7 +343,7 @@ tellraw @s [\
         "translate": " %s",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.bn.location.xyz.text_value",\
+            "nbt": "configs.graves.show_grave_info.bn.location.xyz.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -384,7 +384,7 @@ tellraw @s [\
         "translate": "%s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.ao.location.dim.text_value",\
+            "nbt": "configs.graves.show_grave_info.ao.location.dim.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -404,7 +404,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.bo.location.dim.text_value",\
+            "nbt": "configs.graves.show_grave_info.bo.location.dim.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -424,7 +424,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.an.location.dim.text_value",\
+            "nbt": "configs.graves.show_grave_info.an.location.dim.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -444,7 +444,7 @@ tellraw @s [\
         "translate": " %s",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.bn.location.dim.text_value",\
+            "nbt": "configs.graves.show_grave_info.bn.location.dim.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -485,7 +485,7 @@ tellraw @s [\
         "translate": "%s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.ao.despawn_time.text_value",\
+            "nbt": "configs.graves.show_grave_info.ao.despawn_time.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -505,7 +505,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.an.despawn_time.text_value",\
+            "nbt": "configs.graves.show_grave_info.an.despawn_time.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -546,7 +546,7 @@ tellraw @s [\
         "translate": "%s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.ao.creation_time.text_value",\
+            "nbt": "configs.graves.show_grave_info.ao.creation_time.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -566,7 +566,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.bo.creation_time.text_value",\
+            "nbt": "configs.graves.show_grave_info.bo.creation_time.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -586,7 +586,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.an.creation_time.text_value",\
+            "nbt": "configs.graves.show_grave_info.an.creation_time.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -606,7 +606,7 @@ tellraw @s [\
         "translate": " %s",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.bn.creation_time.text_value",\
+            "nbt": "configs.graves.show_grave_info.bn.creation_time.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -647,7 +647,7 @@ tellraw @s [\
         "translate": "%s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.ao.items.text_value",\
+            "nbt": "configs.graves.show_grave_info.ao.items.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -667,7 +667,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.bo.items.text_value",\
+            "nbt": "configs.graves.show_grave_info.bo.items.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -687,7 +687,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.an.items.text_value",\
+            "nbt": "configs.graves.show_grave_info.an.items.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -707,7 +707,7 @@ tellraw @s [\
         "translate": " %s",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.bn.items.text_value",\
+            "nbt": "configs.graves.show_grave_info.bn.items.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -748,7 +748,7 @@ tellraw @s [\
         "translate": "%s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.ao.xp.before_death.text_value",\
+            "nbt": "configs.graves.show_grave_info.ao.xp.before_death.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -768,7 +768,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.bo.xp.before_death.text_value",\
+            "nbt": "configs.graves.show_grave_info.bo.xp.before_death.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -788,7 +788,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.an.xp.before_death.text_value",\
+            "nbt": "configs.graves.show_grave_info.an.xp.before_death.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -808,7 +808,7 @@ tellraw @s [\
         "translate": " %s",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.bn.xp.before_death.text_value",\
+            "nbt": "configs.graves.show_grave_info.bn.xp.before_death.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -849,7 +849,7 @@ tellraw @s [\
         "translate": "%s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.ao.xp.after_death.text_value",\
+            "nbt": "configs.graves.show_grave_info.ao.xp.after_death.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -869,7 +869,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.bo.xp.after_death.text_value",\
+            "nbt": "configs.graves.show_grave_info.bo.xp.after_death.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -889,7 +889,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.an.xp.after_death.text_value",\
+            "nbt": "configs.graves.show_grave_info.an.xp.after_death.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -909,7 +909,7 @@ tellraw @s [\
         "translate": " %s",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.bn.xp.after_death.text_value",\
+            "nbt": "configs.graves.show_grave_info.bn.xp.after_death.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -950,7 +950,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.bo.obstruction_type.text_value",\
+            "nbt": "configs.graves.show_grave_info.bo.obstruction_type.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -970,7 +970,7 @@ tellraw @s [\
         "translate": " %s",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.bn.obstruction_type.text_value",\
+            "nbt": "configs.graves.show_grave_info.bn.obstruction_type.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -1011,7 +1011,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.bo.obstructor.text_value",\
+            "nbt": "configs.graves.show_grave_info.bo.obstructor.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -1031,7 +1031,7 @@ tellraw @s [\
         "translate": " %s",\
         "with": [\
           {\
-            "nbt": "configs.show_grave_info.bn.obstructor.text_value",\
+            "nbt": "configs.graves.show_grave_info.bn.obstructor.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\

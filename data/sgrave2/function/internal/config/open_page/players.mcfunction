@@ -28,7 +28,7 @@ tellraw @s [\
         "fallback": "Click to change the list.\n\n§8Current value: %s",\
         "with": [\
           {\
-            "nbt": "configs.blacklist_items",\
+            "nbt": "configs.players.blacklist_items",\
             "storage": "sgrave2:common",\
             "color": "dark_gray"\
           }\
@@ -64,7 +64,7 @@ tellraw @s [\
         "fallback": "Click to change the list.\n\n§8Current value: %s",\
         "with": [\
           {\
-            "nbt": "configs.blacklist_slots",\
+            "nbt": "configs.players.blacklist_slots",\
             "storage": "sgrave2:common",\
             "color": "dark_gray"\
           }\
@@ -95,7 +95,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.tell_grave_mini_info.text_value",\
+        "nbt": "configs.graves.tell_grave_mini_info.text_value",\
         "storage": "sgrave2:common" \
       }\
     ],\

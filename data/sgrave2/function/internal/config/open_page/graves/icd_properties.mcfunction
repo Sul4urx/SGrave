@@ -38,7 +38,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.icd.activate_for.text_value",\
+        "nbt": "configs.graves.icd.activate_for.text_value",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\
@@ -74,7 +74,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.icd.item_cycle_cooldown.text_value",\
+        "nbt": "configs.graves.icd.item_cycle_cooldown.text_value",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\
@@ -110,7 +110,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.icd.requires_sneaking.text_value",\
+        "nbt": "configs.graves.icd.requires_sneaking.text_value",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\
@@ -146,7 +146,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.icd.switch_text_display.text_value",\
+        "nbt": "configs.graves.icd.switch_text_display.text_value",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\

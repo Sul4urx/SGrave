@@ -1,6 +1,6 @@
 ## Initialize variables
-execute store result score .xp_weight.remove sgrave2.temp_var run data get storage sgrave2:common configs.grave_generation_costs.with_item.xp.weights.fail.remove
-execute store result score .xp_weight.keep sgrave2.temp_var run data get storage sgrave2:common configs.grave_generation_costs.with_item.xp.weights.fail.keep
+execute store result score .xp_weight.remove sgrave2.temp_var run data get storage sgrave2:common configs.costs.grave_generation_costs.with_item.xp.weights.fail.remove
+execute store result score .xp_weight.keep sgrave2.temp_var run data get storage sgrave2:common configs.costs.grave_generation_costs.with_item.xp.weights.fail.keep
 
 scoreboard players operation .xp_weight.total sgrave2.temp_var = .xp_weight.remove sgrave2.temp_var
 scoreboard players operation .xp_weight.total sgrave2.temp_var += .xp_weight.keep sgrave2.temp_var

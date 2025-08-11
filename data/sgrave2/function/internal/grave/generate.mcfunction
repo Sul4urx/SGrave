@@ -35,7 +35,7 @@ execute if score (graves/glowing_graves) sgrave2.config matches 0 run data modif
 
 ## Copy items from player to grave
 execute if score (general/mod_compatibility_mode) sgrave2.config matches 0 run function sgrave2:internal/grave/generate/copy_items
-execute if score (general/mod_compatibility_mode) sgrave2.config matches 1 run data modify storage sgrave2:common temp.args.distance set from storage sgrave2:common configs.mod_compatibility_mode.item_collection_distance.value
+execute if score (general/mod_compatibility_mode) sgrave2.config matches 1 run data modify storage sgrave2:common temp.args.distance set from storage sgrave2:common configs.general.mod_compatibility_mode.item_collection_distance.value
 execute if score (general/mod_compatibility_mode) sgrave2.config matches 1 as @e[type=item,distance=..16] at @s run function sgrave2:internal/grave/generate/collect_items with storage sgrave2:common temp.args
 
 ## Take XP from player

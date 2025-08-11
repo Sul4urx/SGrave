@@ -58,7 +58,7 @@ tellraw @s [\
         "fallback": "Click to change the list.\n\n§8Current value: %s",\
         "with": [\
           {\
-            "nbt": "configs.grave_ropening_costs.owners.items",\
+            "nbt": "configs.costs.grave_ropening_costs.owners.items",\
             "storage": "sgrave2:common",\
             "color": "dark_gray"\
           }\
@@ -89,7 +89,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.grave_ropening_costs.owners.xp.levels.text_value",\
+        "nbt": "configs.costs.grave_ropening_costs.owners.xp.levels.text_value",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\
@@ -128,7 +128,7 @@ tellraw @s [\
         "translate": "%s ",\
         "with": [\
           {\
-            "nbt": "configs.grave_ropening_costs.owners.gamemodes.survival.text_value",\
+            "nbt": "configs.costs.grave_ropening_costs.owners.gamemodes.survival.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -148,7 +148,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.grave_ropening_costs.owners.gamemodes.adventure.text_value",\
+            "nbt": "configs.costs.grave_ropening_costs.owners.gamemodes.adventure.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -168,7 +168,7 @@ tellraw @s [\
         "translate": " %s",\
         "with": [\
           {\
-            "nbt": "configs.grave_ropening_costs.owners.gamemodes.creative.text_value",\
+            "nbt": "configs.costs.grave_ropening_costs.owners.gamemodes.creative.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -225,7 +225,7 @@ tellraw @s [\
         "fallback": "Click to change the list.\n\n§8Current value: %s",\
         "with": [\
           {\
-            "nbt": "configs.grave_ropening_costs.non_owners.items",\
+            "nbt": "configs.costs.grave_ropening_costs.non_owners.items",\
             "storage": "sgrave2:common",\
             "color": "dark_gray"\
           }\
@@ -256,7 +256,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.grave_ropening_costs.non_owners.xp.levels.text_value",\
+        "nbt": "configs.costs.grave_ropening_costs.non_owners.xp.levels.text_value",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\
@@ -295,7 +295,7 @@ tellraw @s [\
         "translate": "%s ",\
         "with": [\
           {\
-            "nbt": "configs.grave_ropening_costs.non_owners.gamemodes.survival.text_value",\
+            "nbt": "configs.costs.grave_ropening_costs.non_owners.gamemodes.survival.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -315,7 +315,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.grave_ropening_costs.non_owners.gamemodes.adventure.text_value",\
+            "nbt": "configs.costs.grave_ropening_costs.non_owners.gamemodes.adventure.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -335,7 +335,7 @@ tellraw @s [\
         "translate": " %s",\
         "with": [\
           {\
-            "nbt": "configs.grave_ropening_costs.non_owners.gamemodes.creative.text_value",\
+            "nbt": "configs.costs.grave_ropening_costs.non_owners.gamemodes.creative.text_value",\
             "storage": "sgrave2:common"\
           }\
         ],\

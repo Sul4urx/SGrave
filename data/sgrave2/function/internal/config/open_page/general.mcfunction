@@ -23,7 +23,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.change_gamerules.text_value",\
+        "nbt": "configs.general.change_gamerules.text_value",\
         "storage": "sgrave2:common" \
       }\
     ],\
@@ -58,7 +58,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.mod_compatibility_mode.text_value",\
+        "nbt": "configs.general.mod_compatibility_mode.text_value",\
         "storage": "sgrave2:common" \
       }\
     ],\
@@ -93,7 +93,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.mod_compatibility_mode.item_collection_distance.text_value",\
+        "nbt": "configs.general.mod_compatibility_mode.item_collection_distance.text_value",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\

@@ -10,8 +10,8 @@ data remove storage sgrave2:common temp.item.Slot
 data modify entity @s Item set from storage sgrave2:common temp.item
 
 ## Perform actions on a copy of the blacklist items config value just in case
-execute store result score .loop_count_2 sgrave2.temp_var if data storage sgrave2:common configs.blacklist_items[]
-data modify storage sgrave2:common temp.config.blacklist_items_copy set from storage sgrave2:common configs.blacklist_items
+execute store result score .loop_count_2 sgrave2.temp_var if data storage sgrave2:common configs.players.blacklist_items[]
+data modify storage sgrave2:common temp.config.blacklist_items_copy set from storage sgrave2:common configs.players.blacklist_items
 data modify storage sgrave2:common temp.args.value set from storage sgrave2:common temp.config.blacklist_items_copy[-1]
 
 ## Check if item is blacklisted

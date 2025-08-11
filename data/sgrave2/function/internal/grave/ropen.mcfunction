@@ -25,7 +25,7 @@ execute unless score .check_costs.xp sgrave2.temp_var matches 1 run return run t
   "fallback": "§cYou do not have the nessecary requirements to remotely open this grave.",\
   "with": [\
     {\
-      "nbt": "configs.grave_ropening_costs.owners.xp.levels.text_value",\
+      "nbt": "configs.costs.grave_ropening_costs.owners.xp.levels.text_value",\
       "storage": "sgrave2:common",\
       "color": "red"\
     }\

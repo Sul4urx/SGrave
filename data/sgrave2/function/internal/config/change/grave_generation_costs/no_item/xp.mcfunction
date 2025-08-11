@@ -143,7 +143,7 @@ execute unless score .xp_weight.total sgrave2.temp_var matches 1.. run return ru
 }
 
 ## Otherwise change values
-data modify storage sgrave2:common configs.grave_generation_costs.no_item.xp set from storage sgrave2:common temp.config
+data modify storage sgrave2:common configs.costs.grave_generation_costs.no_item.xp set from storage sgrave2:common temp.config
 
 ## Update configs
 function sgrave2:internal/config/register
