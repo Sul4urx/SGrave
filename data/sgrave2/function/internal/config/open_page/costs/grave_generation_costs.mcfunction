@@ -67,7 +67,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/grave_generation_costs/with_item/items/change_list {value:[{…}]}"\
+      "command": "/function sgrave2:internal/config/change/costs/grave_generation_costs/with_item/items/change_list {value:[{…}]}"\
     }\
   }\
 ]
@@ -122,7 +122,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/grave_generation_costs/with_item/xp {value: {levels: ?, weights: {fail: {remove: ?, keep: ?}, success: {remove: ?, keep: ?, take: ?}}}}"\
+      "command": "/function sgrave2:internal/config/change/costs/grave_generation_costs/with_item/xp {value: {levels: ?, weights: {fail: {remove: ?, keep: ?}, success: {remove: ?, keep: ?, take: ?}}}}"\
     }\
   }\
 ]
@@ -160,7 +160,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/grave_generation_costs/with_item/gamemodes {gamemode:'survival'}"\
+          "command": "/function sgrave2:internal/config/toggle/costs/grave_generation_costs/with_item/gamemodes {gamemode:'survival'}"\
         }\
       },\
       {\
@@ -180,7 +180,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/grave_generation_costs/with_item/gamemodes {gamemode:'adventure'}"\
+          "command": "/function sgrave2:internal/config/toggle/costs/grave_generation_costs/with_item/gamemodes {gamemode:'adventure'}"\
         }\
       },\
       {\
@@ -200,7 +200,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/grave_generation_costs/with_item/gamemodes {gamemode:'creative'}"\
+          "command": "/function sgrave2:internal/config/toggle/costs/grave_generation_costs/with_item/gamemodes {gamemode:'creative'}"\
         }\
       }\
     ]\
@@ -272,7 +272,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/grave_generation_costs/no_item/xp {value: {levels: ?, weights: {fail: {remove: ?, keep: ?}, success: {remove: ?, keep: ?, take: ?}}}}"\
+      "command": "/function sgrave2:internal/config/change/costs/grave_generation_costs/no_item/xp {value: {levels: ?, weights: {fail: {remove: ?, keep: ?}, success: {remove: ?, keep: ?, take: ?}}}}"\
     }\
   }\
 ]
@@ -310,7 +310,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/grave_generation_costs/no_item/gamemodes {gamemode:'survival'}"\
+          "command": "/function sgrave2:internal/config/toggle/costs/grave_generation_costs/no_item/gamemodes {gamemode:'survival'}"\
         }\
       },\
       {\
@@ -330,7 +330,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/grave_generation_costs/no_item/gamemodes {gamemode:'adventure'}"\
+          "command": "/function sgrave2:internal/config/toggle/costs/grave_generation_costs/no_item/gamemodes {gamemode:'adventure'}"\
         }\
       },\
       {\
@@ -350,7 +350,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/grave_generation_costs/no_item/gamemodes {gamemode:'creative'}"\
+          "command": "/function sgrave2:internal/config/toggle/costs/grave_generation_costs/no_item/gamemodes {gamemode:'creative'}"\
         }\
       }\
     ]\

@@ -67,7 +67,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/grave_ropening_costs/owners/items/change_list {value:[{…}]}"\
+      "command": "/function sgrave2:internal/config/change/costs/grave_ropening_costs/owners/items/change_list {value:[{…}]}"\
     }\
   }\
 ]
@@ -103,7 +103,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/grave_ropening_costs/owners/xp {value:}"\
+      "command": "/function sgrave2:internal/config/change/costs/grave_ropening_costs/owners/xp {value:}"\
     }\
   }\
 ]
@@ -141,7 +141,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/grave_ropening_costs/owners/gamemodes {gamemode:'survival'}"\
+          "command": "/function sgrave2:internal/config/toggle/costs/grave_ropening_costs/owners/gamemodes {gamemode:'survival'}"\
         }\
       },\
       {\
@@ -161,7 +161,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/grave_ropening_costs/owners/gamemodes {gamemode:'adventure'}"\
+          "command": "/function sgrave2:internal/config/toggle/costs/grave_ropening_costs/owners/gamemodes {gamemode:'adventure'}"\
         }\
       },\
       {\
@@ -181,7 +181,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/grave_ropening_costs/owners/gamemodes {gamemode:'creative'}"\
+          "command": "/function sgrave2:internal/config/toggle/costs/grave_ropening_costs/owners/gamemodes {gamemode:'creative'}"\
         }\
       }\
     ]\
@@ -234,7 +234,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/grave_ropening_costs/non_owners/items/change_list {value:[{…}]}"\
+      "command": "/function sgrave2:internal/config/change/costs/grave_ropening_costs/non_owners/items/change_list {value:[{…}]}"\
     }\
   }\
 ]
@@ -270,7 +270,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/grave_ropening_costs/non_owners/xp {value:}"\
+      "command": "/function sgrave2:internal/config/change/costs/grave_ropening_costs/non_owners/xp {value:}"\
     }\
   }\
 ]
@@ -308,7 +308,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/grave_ropening_costs/non_owners/gamemodes {gamemode:'survival'}"\
+          "command": "/function sgrave2:internal/config/toggle/costs/grave_ropening_costs/non_owners/gamemodes {gamemode:'survival'}"\
         }\
       },\
       {\
@@ -328,7 +328,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/grave_ropening_costs/non_owners/gamemodes {gamemode:'adventure'}"\
+          "command": "/function sgrave2:internal/config/toggle/costs/grave_ropening_costs/non_owners/gamemodes {gamemode:'adventure'}"\
         }\
       },\
       {\
@@ -348,7 +348,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/grave_ropening_costs/non_owners/gamemodes {gamemode:'creative'}"\
+          "command": "/function sgrave2:internal/config/toggle/costs/grave_ropening_costs/non_owners/gamemodes {gamemode:'creative'}"\
         }\
       }\
     ]\

@@ -52,7 +52,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "run_command",\
-      "command": "/function sgrave2:internal/config/toggle/grave_placement_restrictions/on_air"\
+      "command": "/function sgrave2:internal/config/toggle/graves/grave_placement_restrictions/on_air"\
     }\
   }\
 ]
@@ -88,7 +88,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "run_command",\
-      "command": "/function sgrave2:internal/config/toggle/grave_placement_restrictions/on_water"\
+      "command": "/function sgrave2:internal/config/toggle/graves/grave_placement_restrictions/on_water"\
     }\
   },\
   {\
@@ -123,7 +123,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "run_command",\
-      "command": "/function sgrave2:internal/config/toggle/grave_placement_restrictions/in_water"\
+      "command": "/function sgrave2:internal/config/toggle/graves/grave_placement_restrictions/in_water"\
     }\
   }\
 ]
@@ -159,7 +159,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "run_command",\
-      "command": "/function sgrave2:internal/config/toggle/grave_placement_restrictions/on_lava"\
+      "command": "/function sgrave2:internal/config/toggle/graves/grave_placement_restrictions/on_lava"\
     }\
   },\
   {\
@@ -194,7 +194,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "run_command",\
-      "command": "/function sgrave2:internal/config/toggle/grave_placement_restrictions/in_lava"\
+      "command": "/function sgrave2:internal/config/toggle/graves/grave_placement_restrictions/in_lava"\
     }\
   }\
 ]
@@ -230,7 +230,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "run_command",\
-      "command": "/function sgrave2:internal/config/toggle/grave_placement_restrictions/on_non_solid_blocks"\
+      "command": "/function sgrave2:internal/config/toggle/graves/grave_placement_restrictions/on_non_solid_blocks"\
     }\
   },\
   {\
@@ -265,7 +265,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "run_command",\
-      "command": "/function sgrave2:internal/config/toggle/grave_placement_restrictions/in_solid_blocks"\
+      "command": "/function sgrave2:internal/config/toggle/graves/grave_placement_restrictions/in_solid_blocks"\
     }\
   }\
 ]
@@ -301,7 +301,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "run_command",\
-      "command": "/function sgrave2:internal/config/toggle/grave_placement_restrictions/above_build_height_limit"\
+      "command": "/function sgrave2:internal/config/toggle/graves/grave_placement_restrictions/above_build_height_limit"\
     }\
   },\
   {\
@@ -336,7 +336,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "run_command",\
-      "command": "/function sgrave2:internal/config/toggle/grave_placement_restrictions/below_build_height_limit"\
+      "command": "/function sgrave2:internal/config/toggle/graves/grave_placement_restrictions/below_build_height_limit"\
     }\
   }\
 ]

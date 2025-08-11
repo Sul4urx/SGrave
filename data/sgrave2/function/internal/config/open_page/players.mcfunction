@@ -37,7 +37,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/blacklist_items/change_list {value:[{…}]}"\
+      "command": "/function sgrave2:internal/config/change/players/blacklist_items/change_list {value:[{…}]}"\
     }\
   }\
 ]
@@ -73,7 +73,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/blacklist_slots/change_list {value:[{slot:<slot>},{slot:'<slot>'},…]}"\
+      "command": "/function sgrave2:internal/config/change/players/blacklist_slots/change_list {value:[{slot:<slot>},{slot:'<slot>'},…]}"\
     }\
   }\
 ]
@@ -108,7 +108,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "run_command",\
-      "command": "/function sgrave2:internal/config/toggle/tell_grave_mini_info"\
+      "command": "/function sgrave2:internal/config/toggle/graves/tell_grave_mini_info"\
     }\
   }\
 ]

@@ -36,7 +36,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "run_command",\
-      "command": "/function sgrave2:internal/config/toggle/change_gamerules"\
+      "command": "/function sgrave2:internal/config/toggle/general/change_gamerules"\
     }\
   }\
 ]
@@ -71,7 +71,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "run_command",\
-      "command": "/function sgrave2:internal/config/toggle/mod_compatibility_mode"\
+      "command": "/function sgrave2:internal/config/toggle/general/mod_compability_mode"\
     }\
   },\
 ]
@@ -107,7 +107,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/mod_compatibility_mode/item_collection_distance {value:<value>}"\
+      "command": "/function sgrave2:internal/config/change/general/mod_compatibility_mode/item_collection_distance {value:<value>}"\
     }\
   }\
 ]

@@ -52,7 +52,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "run_command",\
-      "command": "/function sgrave2:internal/config/toggle/icd/activate_for"\
+      "command": "/function sgrave2:internal/config/toggle/graves/icd/activate_for"\
     }\
   }\
 ]
@@ -88,7 +88,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/icd/item_cycle_cooldown {value:<value>}"\
+      "command": "/function sgrave2:internal/config/change/graves/icd/item_cycle_cooldown {value:<value>}"\
     }\
   }\
 ]
@@ -124,7 +124,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "run_command",\
-      "command": "/function sgrave2:internal/config/toggle/icd/requires_sneaking"\
+      "command": "/function sgrave2:internal/config/toggle/graves/icd/requires_sneaking"\
     }\
   }\
 ]
@@ -160,7 +160,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "run_command",\
-      "command": "/function sgrave2:internal/config/toggle/icd/switch_text_display"\
+      "command": "/function sgrave2:internal/config/toggle/graves/icd/switch_text_display"\
     }\
   }\
 ]

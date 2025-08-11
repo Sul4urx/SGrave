@@ -74,10 +74,10 @@ execute unless data storage sgrave2:common configs.players.blacklist_slots[] run
 
 
 ## Sub-configs
+function sgrave2:internal/config/register/costs/grave_opening_costs
+function sgrave2:internal/config/register/costs/grave_ropening_costs
+function sgrave2:internal/config/register/costs/grave_generation_costs
 
-function sgrave2:internal/config/register/grave_opening_costs
-function sgrave2:internal/config/register/grave_ropening_costs
-function sgrave2:internal/config/register/grave_generation_costs
-function sgrave2:internal/config/register/grave_placement_restrictions
-function sgrave2:internal/config/register/show_grave_info
-function sgrave2:internal/config/register/icd
+function sgrave2:internal/config/register/graves/grave_placement_restrictions
+function sgrave2:internal/config/register/graves/show_grave_info
+function sgrave2:internal/config/register/graves/icd

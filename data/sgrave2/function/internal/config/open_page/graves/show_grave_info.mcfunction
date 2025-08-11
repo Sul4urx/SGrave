@@ -94,7 +94,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/ao/all"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/all"\
         }\
       },\
       {\
@@ -114,7 +114,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/bo/all"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/all"\
         }\
       },\
       {\
@@ -134,7 +134,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/an/all"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/all"\
         }\
       },\
       {\
@@ -154,7 +154,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/bn/all"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/all"\
         }\
       }\
     ]\
@@ -195,7 +195,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/ao/owner"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/owner"\
         }\
       },\
       {\
@@ -215,7 +215,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/bo/owner"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/owner"\
         }\
       },\
       {\
@@ -235,7 +235,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/an/owner"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/owner"\
         }\
       },\
       {\
@@ -255,7 +255,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/bn/owner"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/owner"\
         }\
       }\
     ]\
@@ -296,7 +296,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/ao/location_xyz"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/location_xyz"\
         }\
       },\
       {\
@@ -316,7 +316,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/bo/location_xyz"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/location_xyz"\
         }\
       },\
       {\
@@ -336,7 +336,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/an/location_xyz"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/location_xyz"\
         }\
       },\
       {\
@@ -356,7 +356,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/bn/location_xyz"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/location_xyz"\
         }\
       }\
     ]\
@@ -397,7 +397,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/ao/location_dim"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/location_dim"\
         }\
       },\
       {\
@@ -417,7 +417,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/bo/location_dim"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/location_dim"\
         }\
       },\
       {\
@@ -437,7 +437,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/an/location_dim"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/location_dim"\
         }\
       },\
       {\
@@ -457,7 +457,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/bn/location_dim"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/location_dim"\
         }\
       }\
     ]\
@@ -498,7 +498,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/ao/despawn_time"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/despawn_time"\
         }\
       },\
       {\
@@ -518,7 +518,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/an/despawn_time"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/despawn_time"\
         }\
       }\
     ]\
@@ -559,7 +559,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/ao/creation_time"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/creation_time"\
         }\
       },\
       {\
@@ -579,7 +579,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/bo/creation_time"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/creation_time"\
         }\
       },\
       {\
@@ -599,7 +599,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/an/creation_time"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/creation_time"\
         }\
       },\
       {\
@@ -619,7 +619,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/bn/creation_time"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/creation_time"\
         }\
       }\
     ]\
@@ -660,7 +660,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/ao/items"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/items"\
         }\
       },\
       {\
@@ -680,7 +680,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/bo/items"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/items"\
         }\
       },\
       {\
@@ -700,7 +700,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/an/items"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/items"\
         }\
       },\
       {\
@@ -720,7 +720,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/bn/items"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/items"\
         }\
       }\
     ]\
@@ -761,7 +761,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/ao/xp_before_death"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/xp_before_death"\
         }\
       },\
       {\
@@ -781,7 +781,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/bo/xp_before_death"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/xp_before_death"\
         }\
       },\
       {\
@@ -801,7 +801,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/an/xp_before_death"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/xp_before_death"\
         }\
       },\
       {\
@@ -821,7 +821,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/bn/xp_before_death"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/xp_before_death"\
         }\
       }\
     ]\
@@ -862,7 +862,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/ao/xp_after_death"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/xp_after_death"\
         }\
       },\
       {\
@@ -882,7 +882,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/bo/xp_after_death"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/xp_after_death"\
         }\
       },\
       {\
@@ -902,7 +902,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/an/xp_after_death"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/xp_after_death"\
         }\
       },\
       {\
@@ -922,7 +922,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/bn/xp_after_death"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/xp_after_death"\
         }\
       }\
     ]\
@@ -963,7 +963,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/bo/obstruction_type"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/obstruction_type"\
         }\
       },\
       {\
@@ -983,7 +983,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/bn/obstruction_type"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/obstruction_type"\
         }\
       }\
     ]\
@@ -1024,7 +1024,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/bo/obstructor"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/obstructor"\
         }\
       },\
       {\
@@ -1044,7 +1044,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/show_grave_info/bn/obstructor"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/obstructor"\
         }\
       }\
     ]\

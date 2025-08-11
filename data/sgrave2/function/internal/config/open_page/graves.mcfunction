@@ -36,7 +36,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "run_command",\
-      "command": "/function sgrave2:internal/config/toggle/glowing_graves"\
+      "command": "/function sgrave2:internal/config/toggle/graves/glowing_graves"\
     }\
   }\
 ]
@@ -72,7 +72,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/despawn_time/grave {value:<value>}"\
+      "command": "/function sgrave2:internal/config/change/graves/grave_despawn_time {value:<value>}"\
     }\
   }\
 ]
