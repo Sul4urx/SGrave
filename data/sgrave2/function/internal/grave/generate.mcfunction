@@ -14,7 +14,7 @@ tag @s add sgrave2.temp.grave.owner
 execute align xyz run summon minecraft:item_display ~0.5 ~ ~0.5 {Tags:["sgrave2.grave.base","sgrave2.temp.grave.base"],item:{id:"minecraft:light_blue_dye",components:{"minecraft:custom_data":{"sgrave2:common":{}}}},view_range:0}
 
 ## Set despawn time
-scoreboard players operation @n[tag=sgrave2.temp.grave.base] sgrave2.despawn_time = <despawn_time.grave> sgrave2.config
+scoreboard players operation @n[tag=sgrave2.temp.grave.base] sgrave2.despawn_time = (config:graves/despawn_time) sgrave2.config
 execute as @n[tag=sgrave2.temp.grave.base] at @s store result entity @s item.components.minecraft:custom_data.sgrave2:common.despawn_time int 1 run scoreboard players get @s sgrave2.despawn_time
 
 ## Set XP for before death
@@ -31,12 +31,12 @@ summon minecraft:item_display ~ ~ ~ {Tags: ["sgrave2.grave.player_head", "sgrave
 item modify entity @n[tag=sgrave2.temp.grave.player_head] contents {function:"minecraft:fill_player_head",entity:"this"}
 
 ## If Glowing Graves config is false, set the grave to not glow
-execute if score <glowing_graves> sgrave2.config matches 0 run data modify entity @n[tag=sgrave2.temp.grave.player_head] Glowing set value 0b
+execute if score (config:graves/glowing_graves) sgrave2.config matches 0 run data modify entity @n[tag=sgrave2.temp.grave.player_head] Glowing set value 0b
 
 ## Copy items from player to grave
-execute if score <mod_compability_mode> sgrave2.config matches 0 run function sgrave2:internal/grave/generate/copy_items
-execute if score <mod_compability_mode> sgrave2.config matches 1 run data modify storage sgrave2:common temp.args.distance set from storage sgrave2:common configs.mod_compability_mode.item_collection_distance.value
-execute if score <mod_compability_mode> sgrave2.config matches 1 as @e[type=item,distance=..16] at @s run function sgrave2:internal/grave/generate/collect_items with storage sgrave2:common temp.args
+execute if score (config:general/mod_compatibility_mode) sgrave2.config matches 0 run function sgrave2:internal/grave/generate/copy_items
+execute if score (config:general/mod_compatibility_mode) sgrave2.config matches 1 run data modify storage sgrave2:common temp.args.distance set from storage sgrave2:common configs.mod_compatibility_mode.item_collection_distance.value
+execute if score (config:general/mod_compatibility_mode) sgrave2.config matches 1 as @e[type=item,distance=..16] at @s run function sgrave2:internal/grave/generate/collect_items with storage sgrave2:common temp.args
 
 ## Take XP from player
 function sgrave2:internal/grave/generate/take_xp/main
@@ -49,14 +49,14 @@ execute unless score .check_costs.gamemodes sgrave2.temp_var matches 1 run retur
 execute unless score .check_costs.items sgrave2.temp_var matches 1 run return run function sgrave2:internal/grave/generate/cancel
 execute unless score .check_costs.xp sgrave2.temp_var matches 1 run return run function sgrave2:internal/grave/generate/cancel
 
-## If compability mode is set to true
+## If compatibility mode is set to true
 ## Get rid of player's dropped XP and items
 kill @e[type=minecraft:experience_orb,nbt={Age:0s},distance=..16]
 kill @e[type=minecraft:experience_orb,nbt={Age:1s},distance=..16]
 kill @e[tag=sgrave2.temp.item_to_be_deleted]
 
 ## Clear player's inventory
-execute if score <mod_compability_mode> sgrave2.config matches 0 run function sgrave2:internal/grave/generate/clear_player_inv
+execute if score (config:general/mod_compatibility_mode) sgrave2.config matches 0 run function sgrave2:internal/grave/generate/clear_player_inv
 
 ## Give back XP
 function sgrave2:internal/grave/generate/give_back_xp
@@ -94,8 +94,8 @@ data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:cus
 scoreboard players operation (last_gid) sgrave2.var = @n[tag=sgrave2.temp.grave.base] sgrave2.gid
 
 ## Tell grave mini-info
-execute if score <tell_grave_mini_info> sgrave2.config matches 1..2 run function sgrave2:internal/grave/generate/tell_grave_mini_info/self
-execute if score <tell_grave_mini_info> sgrave2.config matches 2 run function sgrave2:internal/grave/generate/tell_grave_mini_info/others
+execute if score (config:graves/tell_grave_mini_info) sgrave2.config matches 1..2 run function sgrave2:internal/grave/generate/tell_grave_mini_info/self
+execute if score (config:graves/tell_grave_mini_info) sgrave2.config matches 2 run function sgrave2:internal/grave/generate/tell_grave_mini_info/others
 
 ## Remove temp tags
 tag @e[tag=sgrave2.temp.grave.base] remove sgrave2.temp.grave.base

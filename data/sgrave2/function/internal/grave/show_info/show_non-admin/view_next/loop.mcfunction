@@ -19,13 +19,13 @@ scoreboard players remove .loop_count sgrave2.temp_var 1
 
 ## Check if the grave with that ID can be shown to player
 ## If yes, break out of loop and show ID to player
-$execute if data storage sgrave2:common graves[{data:{id:$(id)}}] if data storage sgrave2:common graves[{data:{id:$(id),status:{obstructed:1b}}}] if data storage sgrave2:common graves[{data:{id:$(id),owner:{id:$(pid)}}}] if score <show_grave_info--bo> sgrave2.config matches 1 run return $(id)
+$execute if data storage sgrave2:common graves[{data:{id:$(id)}}] if data storage sgrave2:common graves[{data:{id:$(id),status:{obstructed:1b}}}] if data storage sgrave2:common graves[{data:{id:$(id),owner:{id:$(pid)}}}] if score (config:graves/show_grave_info/bo) sgrave2.config matches 1 run return $(id)
 
-$execute if data storage sgrave2:common graves[{data:{id:$(id)}}] if data storage sgrave2:common graves[{data:{id:$(id),status:{obstructed:1b}}}] unless data storage sgrave2:common graves[{data:{id:$(id),owner:{id:$(pid)}}}] if score <show_grave_info--bn> sgrave2.config matches 1 run return $(id)
+$execute if data storage sgrave2:common graves[{data:{id:$(id)}}] if data storage sgrave2:common graves[{data:{id:$(id),status:{obstructed:1b}}}] unless data storage sgrave2:common graves[{data:{id:$(id),owner:{id:$(pid)}}}] if score (config:graves/show_grave_info/bn) sgrave2.config matches 1 run return $(id)
 
-$execute if data storage sgrave2:common graves[{data:{id:$(id)}}] unless data storage sgrave2:common graves[{data:{id:$(id),status:{obstructed:1b}}}] if data storage sgrave2:common graves[{data:{id:$(id),owner:{id:$(pid)}}}] if score <show_grave_info--ao> sgrave2.config matches 1 run return $(id)
+$execute if data storage sgrave2:common graves[{data:{id:$(id)}}] unless data storage sgrave2:common graves[{data:{id:$(id),status:{obstructed:1b}}}] if data storage sgrave2:common graves[{data:{id:$(id),owner:{id:$(pid)}}}] if score (config:graves/show_grave_info/ao) sgrave2.config matches 1 run return $(id)
 
-$execute if data storage sgrave2:common graves[{data:{id:$(id)}}] unless data storage sgrave2:common graves[{data:{id:$(id),status:{obstructed:1b}}}] unless data storage sgrave2:common graves[{data:{id:$(id),owner:{id:$(pid)}}}] if score <show_grave_info--an> sgrave2.config matches 1 run return $(id)
+$execute if data storage sgrave2:common graves[{data:{id:$(id)}}] unless data storage sgrave2:common graves[{data:{id:$(id),status:{obstructed:1b}}}] unless data storage sgrave2:common graves[{data:{id:$(id),owner:{id:$(pid)}}}] if score (config:graves/show_grave_info/an) sgrave2.config matches 1 run return $(id)
 
 ## Add 1 to ID each time
 ## until the grave with that ID can be shown to player

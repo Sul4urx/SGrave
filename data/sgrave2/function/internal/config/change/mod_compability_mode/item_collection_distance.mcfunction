@@ -14,22 +14,22 @@ execute unless predicate {\
     max: 16\
   }\
 } run return run title @s actionbar {\
-  "translate": "sgrave2.change_config_message.mod_compability_mode.item_collection_distance.fail",\
+  "translate": "sgrave2.change_config_message.mod_compatibility_mode.item_collection_distance.fail",\
   "fallback": "§cThe value must be an integer between 0 and 16 (inclusive)."\
 }
 
 ## Otherwise success
 title @s actionbar {\
-  "translate": "sgrave2.change_config_message.mod_compability_mode.item_collection_distance.success",\
+  "translate": "sgrave2.change_config_message.mod_compatibility_mode.item_collection_distance.success",\
   "fallback": "Successfully changed the Item Collection Distance config from %s to %s.",\
   "with": [\
-    {"storage": "sgrave2:common", "nbt": "configs.mod_compability_mode.item_collection_distance.text_value"},\
+    {"storage": "sgrave2:common", "nbt": "configs.mod_compatibility_mode.item_collection_distance.text_value"},\
     {"storage": "sgrave2:common", "nbt": "temp.config.value"}\
   ]\
 }
 
 ## If success, change value
-execute store result score <mod_compability_mode.item_collection_distance> sgrave2.config run data get storage sgrave2:common temp.config.value
+execute store result score (config:general/mod_compatibility_mode/item_collection_distance) sgrave2.config run data get storage sgrave2:common temp.config.value
 
 ## Update configs
 function sgrave2:internal/config/register

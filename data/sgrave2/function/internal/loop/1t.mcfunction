@@ -33,8 +33,8 @@ function sgrave2:internal/config/register
 execute as @a at @s unless score @s sgrave2.pid matches 1.. run function sgrave2:internal/map/players/insert
 
 ## Change game rules so that SGrave can work properly
-execute if score <change_gamerules> sgrave2.config matches 1 if score <mod_compability_mode> sgrave2.config matches 0 run gamerule keepInventory true
-execute if score <change_gamerules> sgrave2.config matches 1 run gamerule doImmediateRespawn false
+execute if score (config:general/change_gamerules) sgrave2.config matches 1 if score (config:general/mod_compatibility_mode) sgrave2.config matches 0 run gamerule keepInventory true
+execute if score (config:general/change_gamerules) sgrave2.config matches 1 run gamerule doImmediateRespawn false
 
 ## Player died
 execute as @a[scores={sgrave2.death_count=1..}] at @s run function sgrave2:internal/event/player/player_died

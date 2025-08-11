@@ -2,9 +2,9 @@
 
 ## Game Modes
 scoreboard players set .check_costs.gamemodes sgrave2.temp_var 1
-execute if score <grave_generation_costs.with_item.gamemodes.survival> sgrave2.config matches 0 if entity @s[gamemode=survival] run return run scoreboard players set .check_costs.gamemodes sgrave2.temp_var 0
-execute if score <grave_generation_costs.with_item.gamemodes.adventure> sgrave2.config matches 0 if entity @s[gamemode=adventure] run return run scoreboard players set .check_costs.gamemodes sgrave2.temp_var 0
-execute if score <grave_generation_costs.with_item.gamemodes.creative> sgrave2.config matches 0 if entity @s[gamemode=creative] run return run scoreboard players set .check_costs.gamemodes sgrave2.temp_var 0
+execute if score (config:costs/grave_generation_costs/with_item/gamemodes/survival) sgrave2.config matches 0 if entity @s[gamemode=survival] run return run scoreboard players set .check_costs.gamemodes sgrave2.temp_var 0
+execute if score (config:costs/grave_generation_costs/with_item/gamemodes/adventure) sgrave2.config matches 0 if entity @s[gamemode=adventure] run return run scoreboard players set .check_costs.gamemodes sgrave2.temp_var 0
+execute if score (config:costs/grave_generation_costs/with_item/gamemodes/creative) sgrave2.config matches 0 if entity @s[gamemode=creative] run return run scoreboard players set .check_costs.gamemodes sgrave2.temp_var 0
 
 ## Items
 execute if data storage sgrave2:common configs.grave_generation_costs.with_item.items[] run data modify storage sgrave2:common temp.config_copy.items set from storage sgrave2:common configs.grave_generation_costs.with_item.items
@@ -18,7 +18,7 @@ execute unless score .loop_count sgrave2.temp_var matches 1.. run scoreboard pla
 
 execute if score .loop_count sgrave2.temp_var matches 1.. run function sgrave2:internal/grave/generate/check_costs/with_item/items with storage sgrave2:common temp.args
 
-execute if score <mod_compability_mode> sgrave2.config matches 1 run scoreboard players set .check_costs.items sgrave2.temp_var 1
+execute if score (config:general/mod_compatibility_mode) sgrave2.config matches 1 run scoreboard players set .check_costs.items sgrave2.temp_var 1
 
 ## XP
 scoreboard players set .check_costs.xp sgrave2.temp_var 0

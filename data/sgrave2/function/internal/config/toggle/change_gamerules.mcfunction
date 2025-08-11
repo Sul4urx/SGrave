@@ -1,8 +1,8 @@
 #<< config/open_page/general
 
 ## Toggle value
-scoreboard players add <change_gamerules> sgrave2.config 1
-execute if score <change_gamerules> sgrave2.config matches 2.. run scoreboard players set <change_gamerules> sgrave2.config 0
+scoreboard players add (config:general/change_gamerules) sgrave2.config 1
+execute if score (config:general/change_gamerules) sgrave2.config matches 2.. run scoreboard players set (config:general/change_gamerules) sgrave2.config 0
 
 ## Play sound
 playsound minecraft:ui.button.click

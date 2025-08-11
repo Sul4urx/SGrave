@@ -28,7 +28,7 @@ execute unless data entity @s item.components.minecraft:custom_data.sgrave2:comm
 
 ## Item cycle cooldown
 scoreboard players add @n[tag=sgrave2.temp.grave.icd] sgrave2.icd.cooldown 1
-execute if score @n[tag=sgrave2.temp.grave.icd] sgrave2.icd.cooldown >= <icd.item_cycle_cooldown> sgrave2.config run function sgrave2:internal/grave/icd/cycle_items
+execute if score @n[tag=sgrave2.temp.grave.icd] sgrave2.icd.cooldown >= (config:graves/icd/item_cycle_cooldown) sgrave2.config run function sgrave2:internal/grave/icd/cycle_items
 
 ## Remove temp tag
 tag @s remove sgrave2.temp.grave.icd
