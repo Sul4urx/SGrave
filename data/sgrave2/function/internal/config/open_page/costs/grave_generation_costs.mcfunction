@@ -81,48 +81,29 @@ tellraw @s [\
       "action":"show_text",\
       "value": {\
         "translate": "sgrave2.config_description.grave_generation_costs.with_item.xp",\
-        "fallback": "The amount of XP levels required to generate a grave\n\
-        §aℹ Read this carefully, it's a bit complicated!\n\
-        \n\
-        §bℹ Format: §7{value: {levels: §6N§7, weights: {fail: {remove: §6remove_weight§7, keep: §6keep_weight§7}, success: {remove: §6remove_weight§7, keep: §6keep_weight§7, take: §6take_weight§7}}}} \n\
-        §fThe player must have at least §6N§f XP levels to generate a grave.\n\
-        \n\
-        §bℹ §fEach operation (keep, remove or take) is applied on §6W§f × §6(Player's total XP)§f, where §6W§f =  §6(Operation's weight)§f / §6(Sum of all operation weights)§f\nFor example if value is §7{levels: §64§7, weights: {fail: {remove: §62§7, keep: §63§7}, success: {remove: §66§7, keep: §60§7, take: §62§7}}}§f:\
-        \n  \
-          §7∙ §fIf a player fails to generate a grave: \n    \
-            §7∙ §63§f/§e5§f of the player's XP will be kept inside their inventory.\n    \
-            §7∙ §62§f/§e5§f of the player's XP will be removed.\n    \
-            §7∙ §e5§f = §63§f + §62§f \n  \
-          §7∙ §fIf a player successfully generates a grave:\n    \
-            §7∙ §62§f/§e8§f of the player's XP will be taken by the grave.\n    \
-            §7∙ §60§f/§e8§f (i.e. none) of the player's XP will be kept inside their inventory.\n    \
-            §7∙ §66§f/§e8§f of the player's XP will be removed.\n    \
-            §7∙ §e8§f = §62§f + §60§f + §66§f\n  \
-          \n  \
-        \n\
-        §8Default: {levels: 0, weights: {fail: {remove: 1, keep: 2}, success: {remove: 1, keep: 0, take: 11}}}"\
+        "fallback": "The amount of XP levels required to generate a grave\n§8Default: 0"\
       }\
     }\
   },\
   {\
-    "translate": "§7[§b✎§7]",\
+    "translate": "§7[%s§7]",\
+    "with": [\
+      {\
+        "nbt": "configs.costs.grave_generation_costs.with_item.xp.levels.text_value",\
+        "storage": "sgrave2:common",\
+        "color": "aqua"\
+      }\
+    ],\
     "hover_event": {\
       "action": "show_text",\
       "value": {\
         "translate": "sgrave2.config_change_description.grave_generation_costs.with_item.xp",\
-        "fallback": "Click to change the config.\n\n§8Current value: %s",\
-        "with": [\
-          {\
-            "nbt": "configs.costs.grave_generation_costs.with_item.xp",\
-            "storage": "sgrave2:common",\
-            "color": "dark_gray"\
-          }\
-        ]\
+        "fallback": "Click to change the config."\
       }\
     },\
     "click_event": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/costs/grave_generation_costs/with_item/xp {value: {levels: ?, weights: {fail: {remove: ?, keep: ?}, success: {remove: ?, keep: ?, take: ?}}}}"\
+      "command": "/function sgrave2:internal/config/change/costs/grave_generation_costs/with_item/xp {value: ?}"\
     }\
   }\
 ]
@@ -231,48 +212,29 @@ tellraw @s [\
       "action":"show_text",\
       "value": {\
         "translate": "sgrave2.config_description.grave_generation_costs.no_item.xp",\
-        "fallback": "The amount of XP levels required to generate a grave\n\
-        §aℹ Read this carefully, it's a bit complicated!\n\
-        \n\
-        §bℹ Format: §7{value: {levels: §6N§7, weights: {fail: {remove: §6remove_weight§7, keep: §6keep_weight§7}, success: {remove: §6remove_weight§7, keep: §6keep_weight§7, take: §6take_weight§7}}}} \n\
-        §fThe player must have at least §6N§f XP levels to generate a grave.\n\
-        \n\
-        §bℹ §fEach operation (keep, remove or take) is applied on §6W§f × §6(Player's total XP)§f, where §6W§f =  §6(Operation's weight)§f / §6(Sum of all operation weights)§f\nFor example if value is §7{levels: §64§7, weights: {fail: {remove: §62§7, keep: §63§7}, success: {remove: §66§7, keep: §60§7, take: §62§7}}}§f:\
-        \n  \
-          §7∙ §fIf a player fails to generate a grave: \n    \
-            §7∙ §63§f/§e5§f of the player's XP will be kept inside their inventory.\n    \
-            §7∙ §62§f/§e5§f of the player's XP will be removed.\n    \
-            §7∙ §e5§f = §63§f + §62§f \n  \
-          §7∙ §fIf a player successfully generates a grave:\n    \
-            §7∙ §62§f/§e8§f of the player's XP will be taken by the grave.\n    \
-            §7∙ §60§f/§e8§f (i.e. none) of the player's XP will be kept inside their inventory.\n    \
-            §7∙ §66§f/§e8§f of the player's XP will be removed.\n    \
-            §7∙ §e8§f = §62§f + §60§f + §66§f\n  \
-          \n  \
-        \n\
-        §8Default: {levels: 3, weights: {fail: {remove: 1, keep: 2}, success: {remove: 1, keep: 0, take: 11}}}"\
+        "fallback": "The amount of XP levels required to generate a grave\n§8Default: 0"\
       }\
     }\
   },\
   {\
-    "translate": "§7[§b✎§7]",\
+    "translate": "§7[%s§7]",\
+    "with": [\
+      {\
+        "nbt": "configs.costs.grave_generation_costs.no_item.xp.levels.text_value",\
+        "storage": "sgrave2:common",\
+        "color": "aqua"\
+      }\
+    ],\
     "hover_event": {\
       "action": "show_text",\
       "value": {\
         "translate": "sgrave2.config_change_description.grave_generation_costs.no_item.xp",\
-        "fallback": "Click to change the config.\n\n§8Current value: %s",\
-        "with": [\
-          {\
-            "nbt": "configs.costs.grave_generation_costs.no_item.xp",\
-            "storage": "sgrave2:common",\
-            "color": "dark_gray"\
-          }\
-        ]\
+        "fallback": "Click to change the config."\
       }\
     },\
     "click_event": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/costs/grave_generation_costs/no_item/xp {value: {levels: ?, weights: {fail: {remove: ?, keep: ?}, success: {remove: ?, keep: ?, take: ?}}}}"\
+      "command": "/function sgrave2:internal/config/change/costs/grave_generation_costs/no_item/xp {value: ?}"\
     }\
   }\
 ]

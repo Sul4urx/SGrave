@@ -38,7 +38,7 @@ execute if score (general/mod_compatibility_mode) sgrave2.config matches 0 run f
 execute if score (general/mod_compatibility_mode) sgrave2.config matches 1 run data modify storage sgrave2:common temp.args.distance set from storage sgrave2:common configs.general.mod_compatibility_mode.item_collection_distance.value
 execute if score (general/mod_compatibility_mode) sgrave2.config matches 1 as @e[type=item,distance=..16] at @s run function sgrave2:internal/grave/generate/collect_items with storage sgrave2:common temp.args
 
-## Take XP from player
+## Calculate total XP
 function sgrave2:internal/grave/generate/take_xp/main
 
 ## Check costs
@@ -58,8 +58,8 @@ kill @e[tag=sgrave2.temp.item_to_be_deleted]
 ## Clear player's inventory
 execute if score (general/mod_compatibility_mode) sgrave2.config matches 0 run function sgrave2:internal/grave/generate/clear_player_inv
 
-## Give back XP
-function sgrave2:internal/grave/generate/give_back_xp
+## Distribute XP
+function sgrave2:internal/grave/generate/distribute_xp
 
 ## Store creation time data
 execute as @n[tag=sgrave2.temp.grave.base] at @s run function sgrave2:internal/grave/generate/get_creation_time

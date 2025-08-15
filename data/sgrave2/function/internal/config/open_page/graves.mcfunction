@@ -164,6 +164,35 @@ tellraw @s [\
   }\
 ]
 
+##> XP Distribution
+tellraw @s [\
+  {\
+    "translate": "sgrave2.config.xp_distribution",\
+    "fallback": "   XP Distribution: ",\
+    "hover_event": {\
+      "action":"show_text",\
+      "value": {\
+        "translate": "sgrave2.config_description.xp_distribution",\
+        "fallback": "The amount of XP to remove, keep or take."\
+      }\
+    }\
+  },\
+  {\
+    "translate": "§7[§b>§7]",\
+    "hover_event": {\
+      "action": "show_text",\
+      "value": {\
+        "translate": "sgrave2.config_sub_page_open_description.xp_distribution",\
+        "fallback": "Click to open the \"§lXP Distribution§r\" sub-page."\
+      }\
+    },\
+    "click_event": {\
+      "action": "run_command",\
+      "command": "/function sgrave2:internal/config/open_page/graves/xp_distribution"\
+    }\
+  }\
+]
+
 ##
 tellraw @s ""
 

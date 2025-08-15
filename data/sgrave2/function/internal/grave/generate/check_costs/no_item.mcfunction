@@ -12,7 +12,7 @@ scoreboard players set .check_costs.items sgrave2.temp_var 1
 ## XP
 scoreboard players set .check_costs.xp sgrave2.temp_var 0
 
-execute store result score .xp_cost_levels sgrave2.temp_var run data get storage sgrave2:common configs.costs.grave_generation_costs.no_item.xp.levels
+execute store result score .xp_cost_levels sgrave2.temp_var run data get storage sgrave2:common configs.costs.grave_generation_costs.no_item.xp.levels.value
 
 execute store result score .player_xp sgrave2.temp_var run data get entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.xp.before_death.levels
 execute if score .player_xp sgrave2.temp_var >= .xp_cost_levels sgrave2.temp_var run scoreboard players set .check_costs.xp sgrave2.temp_var 1

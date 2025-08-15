@@ -8,7 +8,11 @@
 execute unless data storage sgrave2:common configs.costs.grave_generation_costs.with_item.items[] run data modify storage sgrave2:common configs.costs.grave_generation_costs.with_item.items set value [{}]
 
 ##> XP
-execute unless data storage sgrave2:common configs.costs.grave_generation_costs.with_item.xp{} run data modify storage sgrave2:common configs.costs.grave_generation_costs.with_item.xp set value {levels: 0, weights: {fail: {remove: 1, keep: 2}, success: {remove: 1, keep: 0, take: 11}}}
+execute unless score (costs/grave_generation_costs/with_item/xp) sgrave2.config matches 0.. run scoreboard players set (costs/grave_generation_costs/with_item/xp) sgrave2.config 0
+
+execute store result storage sgrave2:common configs.costs.grave_generation_costs.with_item.xp.levels.value int 1 run scoreboard players get (costs/grave_generation_costs/with_item/xp) sgrave2.config
+
+data modify storage sgrave2:common configs.costs.grave_generation_costs.with_item.xp.levels.text_value set string storage sgrave2:common configs.costs.grave_generation_costs.with_item.xp.levels.value
 
 ##> Game Modes
 execute unless score (costs/grave_generation_costs/with_item/gamemodes/survival) sgrave2.config matches 0..1 run scoreboard players set (costs/grave_generation_costs/with_item/gamemodes/survival) sgrave2.config 1
@@ -30,7 +34,11 @@ data modify storage sgrave2:common configs.costs.grave_generation_costs.with_ite
 ## Without Item
 
 ##> XP
-execute unless data storage sgrave2:common configs.costs.grave_generation_costs.no_item.xp{} run data modify storage sgrave2:common configs.costs.grave_generation_costs.no_item.xp set value {levels: 3, weights: {fail: {remove: 1, keep: 2}, success: {remove: 1, keep: 0, take: 11}}}
+execute unless score (costs/grave_generation_costs/no_item/xp) sgrave2.config matches 0.. run scoreboard players set (costs/grave_generation_costs/no_item/xp) sgrave2.config 3
+
+execute store result storage sgrave2:common configs.costs.grave_generation_costs.no_item.xp.levels.value int 1 run scoreboard players get (costs/grave_generation_costs/no_item/xp) sgrave2.config
+
+data modify storage sgrave2:common configs.costs.grave_generation_costs.no_item.xp.levels.text_value set string storage sgrave2:common configs.costs.grave_generation_costs.no_item.xp.levels.value
 
 ##> Game Modes
 execute unless score (costs/grave_generation_costs/no_item/gamemodes/survival) sgrave2.config matches 0..1 run scoreboard players set (costs/grave_generation_costs/no_item/gamemodes/survival) sgrave2.config 1

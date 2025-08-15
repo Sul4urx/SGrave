@@ -1,13 +1,15 @@
+#<< grave/generate
+
+## If total weight is 0, reset all weights
+execute unless score (graves/xp_distribution/grave_generation_success/total) sgrave2.config matches 1.. run scoreboard players reset (graves/xp_distribution/grave_generation_success/remove)
+execute unless score (graves/xp_distribution/grave_generation_success/total) sgrave2.config matches 1.. run scoreboard players reset (graves/xp_distribution/grave_generation_success/keep)
+execute unless score (graves/xp_distribution/grave_generation_success/total) sgrave2.config matches 1.. run scoreboard players reset (graves/xp_distribution/grave_generation_success/take)
+
+execute unless score (graves/xp_distribution/grave_generation_success/total) sgrave2.config matches 1.. run function sgrave2:internal/config/register
+
 ## Initialize variables
-execute store result score .xp_weight.remove sgrave2.temp_var run data get storage sgrave2:common configs.costs.grave_generation_costs.no_item.xp.weights.success.remove
-execute store result score .xp_weight.keep sgrave2.temp_var run data get storage sgrave2:common configs.costs.grave_generation_costs.no_item.xp.weights.success.keep
-execute store result score .xp_weight.take sgrave2.temp_var run data get storage sgrave2:common configs.costs.grave_generation_costs.no_item.xp.weights.success.take
-
-scoreboard players operation .xp_weight.total sgrave2.temp_var = .xp_weight.remove sgrave2.temp_var
-scoreboard players operation .xp_weight.total sgrave2.temp_var += .xp_weight.keep sgrave2.temp_var
-scoreboard players operation .xp_weight.total sgrave2.temp_var += .xp_weight.take sgrave2.temp_var
-
 execute store result score .xp.total.before_death sgrave2.temp_var run data get entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.xp.before_death.total
+
 
 ## Calculate keep XP
 ########################################
@@ -19,8 +21,8 @@ execute store result score .xp.total.before_death sgrave2.temp_var run data get 
 # tw = Total operation weight          #
 ########################################
 scoreboard players operation .xb sgrave2.temp_var = .xp.total.before_death sgrave2.temp_var
-scoreboard players operation .wk sgrave2.temp_var = .xp_weight.keep sgrave2.temp_var
-scoreboard players operation .tw sgrave2.temp_var = .xp_weight.total sgrave2.temp_var
+scoreboard players operation .wk sgrave2.temp_var = (graves/xp_distribution/grave_generation_success/keep) sgrave2.config
+scoreboard players operation .tw sgrave2.temp_var = (graves/xp_distribution/grave_generation_success/total) sgrave2.config
 
 scoreboard players set .v1 sgrave2.temp_var 2520
 scoreboard players operation .v1 sgrave2.temp_var *= .xb sgrave2.temp_var
@@ -47,8 +49,8 @@ function sgrave2:internal/macro/xp_add with storage sgrave2:common temp.args
 # tw = Total operation weight          #
 ########################################
 scoreboard players operation .xb sgrave2.temp_var = .xp.total.before_death sgrave2.temp_var
-scoreboard players operation .wt sgrave2.temp_var = .xp_weight.take sgrave2.temp_var
-scoreboard players operation .tw sgrave2.temp_var = .xp_weight.total sgrave2.temp_var
+scoreboard players operation .wt sgrave2.temp_var = (graves/xp_distribution/grave_generation_success/take) sgrave2.config
+scoreboard players operation .tw sgrave2.temp_var = (graves/xp_distribution/grave_generation_success/total) sgrave2.config
 
 scoreboard players set .v1 sgrave2.temp_var 2520
 scoreboard players operation .v1 sgrave2.temp_var *= .xb sgrave2.temp_var
