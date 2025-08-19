@@ -30,7 +30,7 @@ tellraw @s [\
       "action":"show_text",\
       "value": {\
         "translate": "sgrave2.config_description.icd.activate_for",\
-        "fallback": "The players whom ICD should be activated for\n§cN §7→§r§fNo one §7(Disable ICD)\n§eO §7→§f The owner\n§aE §7→§r Anyone\n§bℹ This doesn't change who can take items from the grave. To change that, use other configs.\n§8Default: N"\
+        "fallback": "The players whom ICD should be activated for\n§cN §7→§r§fNo one §7(Disable ICD)\n§eO §7→§f The owner\n§aE §7→§r Anyone\n§bℹ This doesn't change who can take items from the grave. To change that, use other configs.value.\n§8Default: N"\
       }\
     }\
   },\
@@ -38,7 +38,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.graves.icd.activate_for.text_value",\
+        "nbt": "configs.text.graves.icd.activate_for",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\
@@ -74,7 +74,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.graves.icd.item_cycle_cooldown.text_value",\
+        "nbt": "configs.text.graves.icd.item_cycle_cooldown",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\
@@ -110,7 +110,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.graves.icd.requires_sneaking.text_value",\
+        "nbt": "configs.text.graves.icd.requires_sneaking",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\
@@ -146,7 +146,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.graves.icd.switch_text_display.text_value",\
+        "nbt": "configs.text.graves.icd.switch_text_display",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\

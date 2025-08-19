@@ -53,7 +53,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.graves.xp_distribution.grave_generation_fail.remove.text_value",\
+        "nbt": "configs.text.graves.xp_distribution.grave_generation_fail.remove",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\
@@ -89,7 +89,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.graves.xp_distribution.grave_generation_fail.keep.text_value",\
+        "nbt": "configs.text.graves.xp_distribution.grave_generation_fail.keep",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\
@@ -125,7 +125,7 @@ tellraw @s [\
     "translate": "%s",\
     "with": [\
       {\
-        "nbt": "configs.graves.xp_distribution.grave_generation_fail.total.text_value",\
+        "nbt": "configs.text.graves.xp_distribution.grave_generation_fail.total",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\
@@ -172,7 +172,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.graves.xp_distribution.grave_generation_success.remove.text_value",\
+        "nbt": "configs.text.graves.xp_distribution.grave_generation_success.remove",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\
@@ -208,7 +208,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.graves.xp_distribution.grave_generation_success.keep.text_value",\
+        "nbt": "configs.text.graves.xp_distribution.grave_generation_success.keep",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\
@@ -244,7 +244,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.graves.xp_distribution.grave_generation_success.take.text_value",\
+        "nbt": "configs.text.graves.xp_distribution.grave_generation_success.take",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\
@@ -280,7 +280,7 @@ tellraw @s [\
     "translate": "%s",\
     "with": [\
       {\
-        "nbt": "configs.graves.xp_distribution.grave_generation_success.total.text_value",\
+        "nbt": "configs.text.graves.xp_distribution.grave_generation_success.total",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\

@@ -23,7 +23,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.graves.glowing_graves.text_value",\
+        "nbt": "configs.text.graves.glowing_graves",\
         "storage": "sgrave2:common" \
       }\
     ],\
@@ -58,7 +58,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.graves.despawn_time.text_value",\
+        "nbt": "configs.text.graves.despawn_time",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\

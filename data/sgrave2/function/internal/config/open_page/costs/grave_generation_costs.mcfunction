@@ -58,7 +58,7 @@ tellraw @s [\
         "fallback": "Click to change the list.\n\n§8Current value: %s",\
         "with": [\
           {\
-            "nbt": "configs.costs.grave_generation_costs.with_item.items",\
+            "nbt": "configs.value.costs.grave_generation_costs.with_item.items",\
             "storage": "sgrave2:common",\
             "color": "dark_gray"\
           }\
@@ -89,7 +89,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.costs.grave_generation_costs.with_item.xp.levels.text_value",\
+        "nbt": "configs.text.costs.grave_generation_costs.with_item.xp.levels",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\
@@ -128,7 +128,7 @@ tellraw @s [\
         "translate": "%s ",\
         "with": [\
           {\
-            "nbt": "configs.costs.grave_generation_costs.with_item.gamemodes.survival.text_value",\
+            "nbt": "configs.text.costs.grave_generation_costs.with_item.gamemodes.survival",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -148,7 +148,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.costs.grave_generation_costs.with_item.gamemodes.adventure.text_value",\
+            "nbt": "configs.text.costs.grave_generation_costs.with_item.gamemodes.adventure",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -168,7 +168,7 @@ tellraw @s [\
         "translate": " %s",\
         "with": [\
           {\
-            "nbt": "configs.costs.grave_generation_costs.with_item.gamemodes.creative.text_value",\
+            "nbt": "configs.text.costs.grave_generation_costs.with_item.gamemodes.creative",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -220,7 +220,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.costs.grave_generation_costs.no_item.xp.levels.text_value",\
+        "nbt": "configs.text.costs.grave_generation_costs.no_item.xp.levels",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\
@@ -259,7 +259,7 @@ tellraw @s [\
         "translate": "%s ",\
         "with": [\
           {\
-            "nbt": "configs.costs.grave_generation_costs.no_item.gamemodes.survival.text_value",\
+            "nbt": "configs.text.costs.grave_generation_costs.no_item.gamemodes.survival",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -279,7 +279,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.costs.grave_generation_costs.no_item.gamemodes.adventure.text_value",\
+            "nbt": "configs.text.costs.grave_generation_costs.no_item.gamemodes.adventure",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -299,7 +299,7 @@ tellraw @s [\
         "translate": " %s",\
         "with": [\
           {\
-            "nbt": "configs.costs.grave_generation_costs.no_item.gamemodes.creative.text_value",\
+            "nbt": "configs.text.costs.grave_generation_costs.no_item.gamemodes.creative",\
             "storage": "sgrave2:common"\
           }\
         ],\

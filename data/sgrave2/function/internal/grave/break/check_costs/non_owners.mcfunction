@@ -7,11 +7,11 @@ execute if score (costs/grave_opening_costs/non_owners/gamemodes/adventure) sgra
 execute if score (costs/grave_opening_costs/non_owners/gamemodes/creative) sgrave2.config matches 0 if entity @s[gamemode=creative] run return run scoreboard players set .check_costs.gamemodes sgrave2.temp_var 0
 
 ## Items
-execute if data storage sgrave2:common configs.costs.grave_opening_costs.non_owners.items[] run data modify storage sgrave2:common temp.config_copy.items set from storage sgrave2:common configs.costs.grave_opening_costs.non_owners.items
+execute if data storage sgrave2:common configs.value.costs.grave_opening_costs.non_owners.items[] run data modify storage sgrave2:common temp.config_copy.items set from storage sgrave2:common configs.value.costs.grave_opening_costs.non_owners.items
 data modify storage sgrave2:common temp.args.value set from storage sgrave2:common temp.config_copy.items[-1]
 
 
-execute store result score .loop_count sgrave2.temp_var if data storage sgrave2:common configs.costs.grave_opening_costs.non_owners.items[]
+execute store result score .loop_count sgrave2.temp_var if data storage sgrave2:common configs.value.costs.grave_opening_costs.non_owners.items[]
 scoreboard players set .check_costs.items sgrave2.temp_var 0
 
 execute unless score .loop_count sgrave2.temp_var matches 1.. run scoreboard players set .check_costs.items sgrave2.temp_var 1
@@ -26,4 +26,4 @@ scoreboard players set .check_costs.xp sgrave2.temp_var 0
 execute store result score .player_xp sgrave2.temp_var run xp query @s levels
 execute if score .player_xp sgrave2.temp_var >= (costs/grave_opening_costs/non_owners/xp) sgrave2.config run scoreboard players set .check_costs.xp sgrave2.temp_var 1
 
-execute if score .check_costs.xp sgrave2.temp_var matches 1 run function sgrave2:internal/grave/open/check_costs/non_owners/xp/remove with storage sgrave2:common configs.costs.grave_opening_costs.non_owners.xp.levels
+execute if score .check_costs.xp sgrave2.temp_var matches 1 run function sgrave2:internal/grave/open/check_costs/non_owners/xp/remove with storage sgrave2:common configs.value.costs.grave_opening_costs.non_owners.xp.levels

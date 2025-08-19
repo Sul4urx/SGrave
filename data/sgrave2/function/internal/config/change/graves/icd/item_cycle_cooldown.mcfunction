@@ -23,7 +23,7 @@ title @s actionbar {\
   "translate": "sgrave2.change_config_message.icd.item_cycle_cooldown.success",\
   "fallback": "Successfully changed the Item Cycle Cooldown config from %s levels to %s levels.",\
   "with": [\
-    {"storage": "sgrave2:common", "nbt": "configs.graves.icd.item_cycle_cooldown.text_value"},\
+    {"storage": "sgrave2:common", "nbt": "configs.text.graves.icd.item_cycle_cooldown"},\
     {"storage": "sgrave2:common", "nbt": "temp.config.value"}\
   ]\
 }

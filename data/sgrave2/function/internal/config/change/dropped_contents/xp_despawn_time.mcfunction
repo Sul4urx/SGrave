@@ -20,7 +20,7 @@ title @s actionbar {\
   "translate": "sgrave2.change_config_message.despawn_time.xp.success",\
   "fallback": "Successfully changed the XP Despawn Time config from %s seconds to %s seconds.",\
   "with": [\
-    {"storage": "sgrave2:common", "nbt": "configs.dropped_contents.xp.despawn_time.value"},\
+    {"storage": "sgrave2:common", "nbt": "configs.value.dropped_contents.xp.despawn_time"},\
     {"storage": "sgrave2:common", "nbt": "temp.config.value"}\
   ]\
 }

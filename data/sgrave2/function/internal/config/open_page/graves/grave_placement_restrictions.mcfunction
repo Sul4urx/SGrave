@@ -39,7 +39,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.graves.grave_placement_restrictions.on_air.text_value",\
+        "nbt": "configs.text.graves.grave_placement_restrictions.on_air",\
         "storage": "sgrave2:common" \
       }\
     ],\
@@ -75,7 +75,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.graves.grave_placement_restrictions.on_water.text_value",\
+        "nbt": "configs.text.graves.grave_placement_restrictions.on_water",\
         "storage": "sgrave2:common" \
       }\
     ],\
@@ -92,7 +92,7 @@ tellraw @s [\
     }\
   },\
   {\
-    "translate": "sgrave2.space_between_configs.graves.grave_placement_restrictions.on_water..in_water",\
+    "translate": "sgrave2.space_between_configs.value.graves.grave_placement_restrictions.on_water..in_water",\
     "fallback": "                  §l   §r" \
   },\
   {\
@@ -110,7 +110,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.graves.grave_placement_restrictions.in_water.text_value",\
+        "nbt": "configs.text.graves.grave_placement_restrictions.in_water",\
         "storage": "sgrave2:common" \
       }\
     ],\
@@ -146,7 +146,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.graves.grave_placement_restrictions.on_lava.text_value",\
+        "nbt": "configs.text.graves.grave_placement_restrictions.on_lava",\
         "storage": "sgrave2:common" \
       }\
     ],\
@@ -163,7 +163,7 @@ tellraw @s [\
     }\
   },\
   {\
-    "translate": "sgrave2.space_between_configs.graves.grave_placement_restrictions.on_lava..in_lava",\
+    "translate": "sgrave2.space_between_configs.value.graves.grave_placement_restrictions.on_lava..in_lava",\
     "fallback": "                   §l   §r" \
   },\
   {\
@@ -181,7 +181,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.graves.grave_placement_restrictions.in_lava.text_value",\
+        "nbt": "configs.text.graves.grave_placement_restrictions.in_lava",\
         "storage": "sgrave2:common" \
       }\
     ],\
@@ -217,7 +217,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.graves.grave_placement_restrictions.on_non_solid_blocks.text_value",\
+        "nbt": "configs.text.graves.grave_placement_restrictions.on_non_solid_blocks",\
         "storage": "sgrave2:common" \
       }\
     ],\
@@ -234,7 +234,7 @@ tellraw @s [\
     }\
   },\
   {\
-    "translate": "sgrave2.space_between_configs.graves.grave_placement_restrictions.on_non_solid_blocks..in_solid_blocks",\
+    "translate": "sgrave2.space_between_configs.value.graves.grave_placement_restrictions.on_non_solid_blocks..in_solid_blocks",\
     "fallback": "        " \
   },\
   {\
@@ -252,7 +252,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.graves.grave_placement_restrictions.in_solid_blocks.text_value",\
+        "nbt": "configs.text.graves.grave_placement_restrictions.in_solid_blocks",\
         "storage": "sgrave2:common" \
       }\
     ],\
@@ -288,7 +288,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.graves.grave_placement_restrictions.above_build_height_limit.text_value",\
+        "nbt": "configs.text.graves.grave_placement_restrictions.above_build_height_limit",\
         "storage": "sgrave2:common" \
       }\
     ],\
@@ -305,7 +305,7 @@ tellraw @s [\
     }\
   },\
   {\
-    "translate": "sgrave2.space_between_configs.graves.grave_placement_restrictions.above_build_height_limit..below_build_height_limit",\
+    "translate": "sgrave2.space_between_configs.value.graves.grave_placement_restrictions.above_build_height_limit..below_build_height_limit",\
     "fallback": " §l   §r" \
   },\
   {\
@@ -323,7 +323,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.graves.grave_placement_restrictions.below_build_height_limit.text_value",\
+        "nbt": "configs.text.graves.grave_placement_restrictions.below_build_height_limit",\
         "storage": "sgrave2:common" \
       }\
     ],\

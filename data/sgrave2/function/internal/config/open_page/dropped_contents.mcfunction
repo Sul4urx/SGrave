@@ -23,7 +23,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.dropped_contents.item.despawn_time.text_value",\
+        "nbt": "configs.text.dropped_contents.item.despawn_time",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\
@@ -59,7 +59,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.dropped_contents.xp.despawn_time.text_value",\
+        "nbt": "configs.text.dropped_contents.xp.despawn_time",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\

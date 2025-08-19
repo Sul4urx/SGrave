@@ -20,7 +20,7 @@ title @s actionbar {\
   "translate": "sgrave2.change_config_message.graves.xp_distribution.grave_generation_success.take.success",\
   "fallback": "Successfully changed the 'take' operation weight from %s to %s.",\
   "with": [\
-    {"storage": "sgrave2:common", "nbt": "configs.graves.xp_distribution.grave_generation_success.take.value"},\
+    {"storage": "sgrave2:common", "nbt": "configs.value.graves.xp_distribution.grave_generation_success.take"},\
     {"storage": "sgrave2:common", "nbt": "temp.config.value"}\
   ]\
 }

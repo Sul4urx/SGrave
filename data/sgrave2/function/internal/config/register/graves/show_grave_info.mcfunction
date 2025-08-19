@@ -88,160 +88,160 @@ execute unless score (graves/show_grave_info/bn/obstruction_type) sgrave2.config
 
 
 ## N(ormal graves) (Store as NBT)
-execute store result storage sgrave2:common configs.graves.show_grave_info.ao.all.value byte 1 run scoreboard players get (graves/show_grave_info/ao) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.ao.all{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.ao.all{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.ao.all byte 1 run scoreboard players get (graves/show_grave_info/ao) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.ao{all:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.ao.all set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.ao{all:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.ao.all set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.ao.owner.value byte 1 run scoreboard players get (graves/show_grave_info/ao/owner) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.ao.owner{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.ao.owner{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.ao.owner byte 1 run scoreboard players get (graves/show_grave_info/ao/owner) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.ao{owner:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.ao.owner set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.ao{owner:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.ao.owner set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.ao.location.xyz.value byte 1 run scoreboard players get (graves/show_grave_info/ao/location.xyz) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.ao.location.xyz{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.ao.location.xyz{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.ao.location.xyz byte 1 run scoreboard players get (graves/show_grave_info/ao/location.xyz) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.ao.location{xyz:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.ao.location.xyz set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.ao.location{xyz:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.ao.location.xyz set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.ao.location.dim.value byte 1 run scoreboard players get (graves/show_grave_info/ao/location.dim) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.ao.location.dim{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.ao.location.dim{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.ao.location.dim byte 1 run scoreboard players get (graves/show_grave_info/ao/location.dim) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.ao.location{dim:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.ao.location.dim set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.ao.location{dim:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.ao.location.dim set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.ao.despawn_time.value byte 1 run scoreboard players get (graves/show_grave_info/ao/despawn_time) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.ao.despawn_time{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.ao.despawn_time{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.ao.despawn_time byte 1 run scoreboard players get (graves/show_grave_info/ao/despawn_time) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.ao{despawn_time:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.ao.despawn_time set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.ao{despawn_time:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.ao.despawn_time set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.ao.creation_time.value byte 1 run scoreboard players get (graves/show_grave_info/ao/creation_time) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.ao.creation_time{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.ao.creation_time{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.ao.creation_time byte 1 run scoreboard players get (graves/show_grave_info/ao/creation_time) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.ao{creation_time:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.ao.creation_time set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.ao{creation_time:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.ao.creation_time set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.ao.xp.before_death.value byte 1 run scoreboard players get (graves/show_grave_info/ao/xp/before_death) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.ao.xp.before_death{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.ao.xp.before_death{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.ao.xp.before_death byte 1 run scoreboard players get (graves/show_grave_info/ao/xp/before_death) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.ao.xp{before_death:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.ao.xp.before_death set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.ao.xp{before_death:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.ao.xp.before_death set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.ao.xp.after_death.value byte 1 run scoreboard players get (graves/show_grave_info/ao/xp/after_death) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.ao.xp.after_death{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.ao.xp.after_death{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.ao.xp.after_death byte 1 run scoreboard players get (graves/show_grave_info/ao/xp/after_death) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.ao.xp{after_death:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.ao.xp.after_death set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.ao.xp{after_death:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.ao.xp.after_death set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.ao.items.value byte 1 run scoreboard players get (graves/show_grave_info/ao/items) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.ao.items{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.ao.items{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.ao.items byte 1 run scoreboard players get (graves/show_grave_info/ao/items) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.ao{items:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.ao.items set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.ao{items:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.ao.items set value "§a✔"
 
 
 ## B(roken graves) (Store as NBT)
-execute store result storage sgrave2:common configs.graves.show_grave_info.bo.all.value byte 1 run scoreboard players get (graves/show_grave_info/bo) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.bo.all{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.bo.all{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.bo.all byte 1 run scoreboard players get (graves/show_grave_info/bo) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo{all:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.all set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo{all:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.all set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.bo.owner.value byte 1 run scoreboard players get (graves/show_grave_info/bo/owner) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.bo.owner{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.bo.owner{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.bo.owner byte 1 run scoreboard players get (graves/show_grave_info/bo/owner) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo{owner:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.owner set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo{owner:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.owner set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.bo.location.xyz.value byte 1 run scoreboard players get (graves/show_grave_info/bo/location.xyz) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.bo.location.xyz{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.bo.location.xyz{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.bo.location.xyz byte 1 run scoreboard players get (graves/show_grave_info/bo/location.xyz) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo.location{xyz:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.location.xyz set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo.location{xyz:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.location.xyz set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.bo.location.dim.value byte 1 run scoreboard players get (graves/show_grave_info/bo/location.dim) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.bo.location.dim{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.bo.location.dim{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.bo.location.dim byte 1 run scoreboard players get (graves/show_grave_info/bo/location.dim) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo.location{dim:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.location.dim set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo.location{dim:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.location.dim set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.bo.creation_time.value byte 1 run scoreboard players get (graves/show_grave_info/bo/creation_time) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.bo.creation_time{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.bo.creation_time{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.bo.creation_time byte 1 run scoreboard players get (graves/show_grave_info/bo/creation_time) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo{creation_time:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.creation_time set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo{creation_time:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.creation_time set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.bo.xp.before_death.value byte 1 run scoreboard players get (graves/show_grave_info/bo/xp/before_death) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.bo.xp.before_death{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.bo.xp.before_death{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.bo.xp.before_death byte 1 run scoreboard players get (graves/show_grave_info/bo/xp/before_death) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo.xp{before_death:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.xp.before_death set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo.xp{before_death:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.xp.before_death set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.bo.xp.after_death.value byte 1 run scoreboard players get (graves/show_grave_info/bo/xp/after_death) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.bo.xp.after_death{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.bo.xp.after_death{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.bo.xp.after_death byte 1 run scoreboard players get (graves/show_grave_info/bo/xp/after_death) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo.xp{after_death:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.xp.after_death set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo.xp{after_death:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.xp.after_death set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.bo.items.value byte 1 run scoreboard players get (graves/show_grave_info/bo/items) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.bo.items{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.bo.items{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.bo.items byte 1 run scoreboard players get (graves/show_grave_info/bo/items) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo{items:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.items set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo{items:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.items set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.bo.obstructor.value byte 1 run scoreboard players get (graves/show_grave_info/bo/obstructor) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.bo.obstructor{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.bo.obstructor{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.bo.obstructor byte 1 run scoreboard players get (graves/show_grave_info/bo/obstructor) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo{obstructor:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.obstructor set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo{obstructor:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.obstructor set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.bo.obstruction_type.value byte 1 run scoreboard players get (graves/show_grave_info/bo/obstruction_type) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.bo.obstruction_type{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.bo.obstruction_type{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.bo.obstruction_type byte 1 run scoreboard players get (graves/show_grave_info/bo/obstruction_type) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo{obstruction_type:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.obstruction_type set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo{obstruction_type:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.obstruction_type set value "§a✔"
 
 
 ## O(thers' graves) (Store as NBT)
-execute store result storage sgrave2:common configs.graves.show_grave_info.an.all.value byte 1 run scoreboard players get (graves/show_grave_info/an) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.an.all{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.an.all{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.an.all byte 1 run scoreboard players get (graves/show_grave_info/an) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.an{all:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.an.all set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.an{all:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.an.all set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.an.owner.value byte 1 run scoreboard players get (graves/show_grave_info/an/owner) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.an.owner{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.an.owner{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.an.owner byte 1 run scoreboard players get (graves/show_grave_info/an/owner) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.an{owner:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.an.owner set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.an{owner:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.an.owner set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.an.location.xyz.value byte 1 run scoreboard players get (graves/show_grave_info/an/location.xyz) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.an.location.xyz{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.an.location.xyz{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.an.location.xyz byte 1 run scoreboard players get (graves/show_grave_info/an/location.xyz) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.an.location{xyz:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.an.location.xyz set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.an.location{xyz:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.an.location.xyz set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.an.location.dim.value byte 1 run scoreboard players get (graves/show_grave_info/an/location.dim) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.an.location.dim{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.an.location.dim{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.an.location.dim byte 1 run scoreboard players get (graves/show_grave_info/an/location.dim) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.an.location{dim:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.an.location.dim set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.an.location{dim:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.an.location.dim set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.an.despawn_time.value byte 1 run scoreboard players get (graves/show_grave_info/an/despawn_time) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.an.despawn_time{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.an.despawn_time{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.an.despawn_time byte 1 run scoreboard players get (graves/show_grave_info/an/despawn_time) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.an{despawn_time:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.an.despawn_time set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.an{despawn_time:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.an.despawn_time set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.an.creation_time.value byte 1 run scoreboard players get (graves/show_grave_info/an/creation_time) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.an.creation_time{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.an.creation_time{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.an.creation_time byte 1 run scoreboard players get (graves/show_grave_info/an/creation_time) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.an{creation_time:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.an.creation_time set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.an{creation_time:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.an.creation_time set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.an.xp.before_death.value byte 1 run scoreboard players get (graves/show_grave_info/an/xp/before_death) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.an.xp.before_death{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.an.xp.before_death{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.an.xp.before_death byte 1 run scoreboard players get (graves/show_grave_info/an/xp/before_death) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.an.xp{before_death:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.an.xp.before_death set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.an.xp{before_death:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.an.xp.before_death set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.an.xp.after_death.value byte 1 run scoreboard players get (graves/show_grave_info/an/xp/after_death) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.an.xp.after_death{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.an.xp.after_death{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.an.xp.after_death byte 1 run scoreboard players get (graves/show_grave_info/an/xp/after_death) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.an.xp{after_death:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.an.xp.after_death set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.an.xp{after_death:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.an.xp.after_death set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.an.items.value byte 1 run scoreboard players get (graves/show_grave_info/an/items) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.an.items{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.an.items{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.an.items byte 1 run scoreboard players get (graves/show_grave_info/an/items) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.an{items:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.an.items set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.an{items:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.an.items set value "§a✔"
 
 
 ## B(roken) O(thers' graves) (Store as NBT)
-execute store result storage sgrave2:common configs.graves.show_grave_info.bn.all.value byte 1 run scoreboard players get (graves/show_grave_info/bn) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.bn.all{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.bn.all{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.bn.all byte 1 run scoreboard players get (graves/show_grave_info/bn) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn{all:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.all set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn{all:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.all set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.bn.owner.value byte 1 run scoreboard players get (graves/show_grave_info/bn/owner) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.bn.owner{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.bn.owner{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.bn.owner byte 1 run scoreboard players get (graves/show_grave_info/bn/owner) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn{owner:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.owner set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn{owner:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.owner set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.bn.location.xyz.value byte 1 run scoreboard players get (graves/show_grave_info/bn/location.xyz) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.bn.location.xyz{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.bn.location.xyz{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.bn.location.xyz byte 1 run scoreboard players get (graves/show_grave_info/bn/location.xyz) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn.location{xyz:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.location.xyz set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn.location{xyz:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.location.xyz set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.bn.location.dim.value byte 1 run scoreboard players get (graves/show_grave_info/bn/location.dim) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.bn.location.dim{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.bn.location.dim{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.bn.location.dim byte 1 run scoreboard players get (graves/show_grave_info/bn/location.dim) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn.location{dim:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.location.dim set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn.location{dim:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.location.dim set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.bn.creation_time.value byte 1 run scoreboard players get (graves/show_grave_info/bn/creation_time) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.bn.creation_time{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.bn.creation_time{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.bn.creation_time byte 1 run scoreboard players get (graves/show_grave_info/bn/creation_time) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn{creation_time:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.creation_time set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn{creation_time:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.creation_time set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.bn.xp.before_death.value byte 1 run scoreboard players get (graves/show_grave_info/bn/xp/before_death) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.bn.xp.before_death{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.bn.xp.before_death{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.bn.xp.before_death byte 1 run scoreboard players get (graves/show_grave_info/bn/xp/before_death) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn.xp{before_death:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.xp.before_death set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn.xp{before_death:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.xp.before_death set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.bn.xp.after_death.value byte 1 run scoreboard players get (graves/show_grave_info/bn/xp/after_death) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.bn.xp.after_death{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.bn.xp.after_death{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.bn.xp.after_death byte 1 run scoreboard players get (graves/show_grave_info/bn/xp/after_death) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn.xp{after_death:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.xp.after_death set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn.xp{after_death:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.xp.after_death set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.bn.items.value byte 1 run scoreboard players get (graves/show_grave_info/bn/items) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.bn.items{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.bn.items{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.bn.items byte 1 run scoreboard players get (graves/show_grave_info/bn/items) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn{items:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.items set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn{items:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.items set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.bn.obstructor.value byte 1 run scoreboard players get (graves/show_grave_info/bn/obstructor) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.bn.obstructor{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.bn.obstructor{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.bn.obstructor byte 1 run scoreboard players get (graves/show_grave_info/bn/obstructor) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn{obstructor:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.obstructor set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn{obstructor:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.obstructor set value "§a✔"
 
-execute store result storage sgrave2:common configs.graves.show_grave_info.bn.obstruction_type.value byte 1 run scoreboard players get (graves/show_grave_info/bn/obstruction_type) sgrave2.config
-data modify storage sgrave2:common configs.graves.show_grave_info.bn.obstruction_type{value:0b}.text_value set value "§c❌"
-data modify storage sgrave2:common configs.graves.show_grave_info.bn.obstruction_type{value:1b}.text_value set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.bn.obstruction_type byte 1 run scoreboard players get (graves/show_grave_info/bn/obstruction_type) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn{obstruction_type:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.obstruction_type set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn{obstruction_type:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.obstruction_type set value "§a✔"

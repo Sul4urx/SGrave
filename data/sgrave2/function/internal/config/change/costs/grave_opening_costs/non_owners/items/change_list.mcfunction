@@ -33,8 +33,8 @@ execute if data storage sgrave2:common temp.config{value:[]} run title @s action
 }
 
 ## If success, change value
-execute if data storage sgrave2:common temp.config.value[] if score .list_is_valid sgrave2.temp_var matches 1 run data modify storage sgrave2:common configs.costs.grave_opening_costs.non_owners.items set from storage sgrave2:common temp.config.value
-execute if data storage sgrave2:common temp.config{value:[]} run data modify storage sgrave2:common configs.costs.grave_opening_costs.non_owners.items set value []
+execute if data storage sgrave2:common temp.config.value[] if score .list_is_valid sgrave2.temp_var matches 1 run data modify storage sgrave2:common configs.value.costs.grave_opening_costs.non_owners.items set from storage sgrave2:common temp.config.value
+execute if data storage sgrave2:common temp.config{value:[]} run data modify storage sgrave2:common configs.value.costs.grave_opening_costs.non_owners.items set value []
 
 ## Update configs
 function sgrave2:internal/config/register
