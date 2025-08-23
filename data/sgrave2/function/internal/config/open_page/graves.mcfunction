@@ -164,6 +164,35 @@ tellraw @s [\
   }\
 ]
 
+##> Text Display Properties
+tellraw @s [\
+  {\
+    "translate": "sgrave2.config.text_display_properties",\
+    "fallback": "   Text Display Properties: ",\
+    "hover_event": {\
+      "action":"show_text",\
+      "value": {\
+        "translate": "sgrave2.config_description.text_display_properties",\
+        "fallback": "The properties of the text display part of the grave, which normally shows the owner's name, the GID and the despawn time."\
+      }\
+    }\
+  },\
+  {\
+    "translate": "§7[§b>§7]",\
+    "hover_event": {\
+      "action": "show_text",\
+      "value": {\
+        "translate": "sgrave2.config_sub_page_open_description.text_display_properties",\
+        "fallback": "Click to open the \"§lText Display Properties§r\" sub-page."\
+      }\
+    },\
+    "click_event": {\
+      "action": "run_command",\
+      "command": "/function sgrave2:internal/config/open_page/graves/text_display_properties"\
+    }\
+  }\
+]
+
 ##> XP Distribution
 tellraw @s [\
   {\

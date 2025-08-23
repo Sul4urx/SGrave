@@ -81,4 +81,5 @@ function sgrave2:internal/config/register/costs/grave_generation_costs
 function sgrave2:internal/config/register/graves/icd
 function sgrave2:internal/config/register/graves/grave_placement_restrictions
 function sgrave2:internal/config/register/graves/show_grave_info
+function sgrave2:internal/config/register/graves/text_display
 function sgrave2:internal/config/register/graves/xp_distribution
