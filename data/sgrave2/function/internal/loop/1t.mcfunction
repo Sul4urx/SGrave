@@ -56,7 +56,8 @@ scoreboard players enable @a sgrave2.help
 ## Respond to score triggers
 
 ##> Show grave info
-execute as @a at @s unless score @s sgrave2.show_grave_info matches 0 run function sgrave2:internal/grave/show_info/check_conditions
+execute as @a at @s if score @s sgrave2.show_grave_info matches 1.. run function sgrave2:internal/grave/show_info/check_conditions
+execute as @a at @s if score @s sgrave2.show_grave_info matches ..-1 run function sgrave2:internal/grave/show_info/check_conditions
 scoreboard players set @a sgrave2.show_grave_info 0
 scoreboard players enable @a sgrave2.show_grave_info
 
