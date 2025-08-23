@@ -26,9 +26,9 @@ data modify storage sgrave2:common configs.text.dropped_contents.xp.despawn_time
 ## Mod Compatibility Mode / Item Collection Distance
 execute unless score (general/mod_compatibility_mode/item_collection_distance) sgrave2.config matches 0..16 run scoreboard players set (general/mod_compatibility_mode/item_collection_distance) sgrave2.config 4
 
-execute store result storage sgrave2:common configs.value.general.mod_compatibility_mode.item_collection_distance int 1 run scoreboard players get (general/mod_compatibility_mode/item_collection_distance) sgrave2.config
+execute store result storage sgrave2:common configs.value.general.'mod_compatibility_mode/item_collection_distance' int 1 run scoreboard players get (general/mod_compatibility_mode/item_collection_distance) sgrave2.config
 
-data modify storage sgrave2:common configs.text.general.mod_compatibility_mode.item_collection_distance set string storage sgrave2:common configs.value.general.mod_compatibility_mode.item_collection_distance
+data modify storage sgrave2:common configs.text.general.'mod_compatibility_mode/item_collection_distance' set string storage sgrave2:common configs.value.general.'mod_compatibility_mode/item_collection_distance'
 
 
 

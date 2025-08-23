@@ -93,7 +93,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.text.general.mod_compatibility_mode.item_collection_distance",\
+        "nbt": "configs.text.general.'mod_compatibility_mode/item_collection_distance'",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\
