@@ -1,16 +1,16 @@
 #<< config/open_page/costs
 
-# Grave Opening/Breaking Costs
+# Grave Opening-Breaking Costs
 
 ##
 tellraw @s ""
 
-## Category: Grave Opening/Breaking Costs
+## Category: Grave Opening-Breaking Costs
 tellraw @s [\
   "",\
   {\
     "translate": "sgrave2.config_category.grave_opening_costs",\
-    "fallback": " §lGrave Opening/Breaking Costs",\
+    "fallback": " §lGrave Opening-Breaking Costs",\
     "hover_event": {\
       "action": "show_text",\
       "value": {\

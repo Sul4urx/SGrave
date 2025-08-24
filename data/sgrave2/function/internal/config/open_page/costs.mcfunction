@@ -6,11 +6,11 @@ tellraw @s ""
 ## Category: Costs
 tellraw @s {"translate": "sgrave2.config_category.Costs","fallback": " §lCosts:"}
 
-##> Grave Opening/Breaking Costs
+##> Grave Opening-Breaking Costs
 tellraw @s [\
   {\
     "translate": "sgrave2.config.grave_opening_costs",\
-    "fallback": "   Grave Opening/Breaking Costs: ",\
+    "fallback": "   Grave Opening-Breaking Costs: ",\
     "hover_event": {\
       "action":"show_text",\
       "value": {\
@@ -25,7 +25,7 @@ tellraw @s [\
       "action": "show_text",\
       "value": {\
         "translate": "sgrave2.config_sub_page_open_description.grave_opening_costs",\
-        "fallback": "Click to open the \"§lGrave Opening/Breaking Costs§r\" sub-page."\
+        "fallback": "Click to open the \"§lGrave Opening-Breaking Costs§r\" sub-page."\
       }\
     },\
     "click_event": {\
