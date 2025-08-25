@@ -3,7 +3,7 @@
 
 $execute unless data storage sgrave2:common unobstructed_graves[{data:{id:$(id)}}] run return run title @s actionbar {\
   "translate": "sgrave2.ropen_grave.fail.grave_obstructed",\
-  "fallback": "§cGrave §6#$(id)§c either does not exist or has been obstructed.",\
+  "fallback": "§cGrave #$(id) either does not exist or has been obstructed.",\
 }
 
 $function sgrave2:internal/map/graves/lookup {id:$(id)}

@@ -5,7 +5,7 @@ execute store result storage sgrave2:common temp.args.id int 1 run scoreboard pl
 
 ## Check if the grave has ever existed before
 execute store result score .grave_exists sgrave2.temp_var run function sgrave2:internal/grave/show_info/check_if_grave_exists with storage sgrave2:common temp.args
-execute if score .grave_exists sgrave2.temp_var matches 0 run return run title @s actionbar {"translate": "sgrave2.grave_info.fail.gid_no_exist", "fallback": "Grave §6#%s§r does not exist.", "with": [{"nbt": "temp.args.id", "storage": "sgrave2:common", "color": "gold"}]}
+execute if score .grave_exists sgrave2.temp_var matches 0 run return run title @s actionbar {"translate": "sgrave2.grave_info.fail.gid_no_exist", "fallback": "§cGrave #%s§c does not exist.", "with": [{"nbt": "temp.args.id", "storage": "sgrave2:common", "color": "red"}]}
 
 ## If not, tell error to player
 function sgrave2:internal/map/graves/lookup with storage sgrave2:common temp.args

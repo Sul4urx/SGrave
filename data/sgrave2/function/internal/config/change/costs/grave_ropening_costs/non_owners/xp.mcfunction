@@ -12,7 +12,7 @@ execute unless predicate {\
   range: {min: 0}\
 } run return run title @s actionbar {\
   "translate": "sgrave2.change_config_message.grave_ropening_costs.non_owners.xp.fail",\
-  "fallback": "§Value must be a non-negative integer."\
+  "fallback": "§cValue must be a non-negative integer."\
 }
 
 ## Otherwise change values
