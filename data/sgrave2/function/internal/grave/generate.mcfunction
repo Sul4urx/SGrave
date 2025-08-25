@@ -79,9 +79,9 @@ function sgrave2:internal/grave/generate/grave_placement_restrictions with entit
 ## Store other data
 execute as @n[tag=sgrave2.temp.grave.base] at @s run function sgrave2:internal/map/graves/insert
 
-##> Store player and grave IDs
+##> Store PID and GIDs
 execute store result entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.owner.pid int 1 run scoreboard players get @s sgrave2.pid
-data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.gid set from storage sgrave2:common graves[-1].data.id
+data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.gid set from storage sgrave2:common graves[-1].data.gid
 
 ##> Add grave data to player/grave map
 data modify storage sgrave2:common players[-1].graves append from storage sgrave2:common graves[-1]

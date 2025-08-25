@@ -5,7 +5,7 @@ scoreboard players remove @s sgrave2.despawn_time 1
 
 ##
 function sgrave2:internal/map/players/lookup with entity @s item.components.minecraft:custom_data.sgrave2:common.owner
-data modify storage sgrave2:common temp.args.id set from entity @s item.components.minecraft:custom_data.sgrave2:common.gid
+data modify storage sgrave2:common temp.args.gid set from entity @s item.components.minecraft:custom_data.sgrave2:common.gid
 function sgrave2:internal/map/graves/lookup with storage sgrave2:common temp.args
 function sgrave2:internal/map/players/graves/lookup with storage sgrave2:common temp.args
 

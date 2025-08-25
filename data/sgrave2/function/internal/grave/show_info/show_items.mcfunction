@@ -1,7 +1,7 @@
 #<< grave/show_info/show_admin
 #<< grave/show_info/show_non-admin/*
 
-$function sgrave2:internal/map/graves/lookup {id: $(id)}
+$function sgrave2:internal/map/graves/lookup {gid: $(gid)}
 
 ## The text to show for each slot
 ## This will be outputted as macro later

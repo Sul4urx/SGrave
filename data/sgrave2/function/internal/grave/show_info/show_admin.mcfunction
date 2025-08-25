@@ -1,11 +1,11 @@
 #<! show_admin_grave_info
 
-## Read the input ID and store it
-execute store result storage sgrave2:common temp.args.id int 1 run scoreboard players get @s sgrave2.show_grave_info
+## Read the input GID and store it
+execute store result storage sgrave2:common temp.args.gid int 1 run scoreboard players get @s sgrave2.show_grave_info
 
 ## Check if the grave has ever existed before
 execute store result score .grave_exists sgrave2.temp_var run function sgrave2:internal/grave/show_info/check_if_grave_exists with storage sgrave2:common temp.args
-execute if score .grave_exists sgrave2.temp_var matches 0 run return run title @s actionbar {"translate": "sgrave2.grave_info.fail.gid_no_exist", "fallback": "§cGrave #%s§c does not exist.", "with": [{"nbt": "temp.args.id", "storage": "sgrave2:common", "color": "red"}]}
+execute if score .grave_exists sgrave2.temp_var matches 0 run return run title @s actionbar {"translate": "sgrave2.grave_info.fail.gid_no_exist", "fallback": "§cGrave #%s§c does not exist.", "with": [{"nbt": "temp.args.gid", "storage": "sgrave2:common", "color": "red"}]}
 
 ## If not, tell error to player
 function sgrave2:internal/map/graves/lookup with storage sgrave2:common temp.args
@@ -31,7 +31,7 @@ scoreboard players operation .despawn_time.hours sgrave2.temp_var = .despawn_tim
 scoreboard players operation .despawn_time.hours sgrave2.temp_var /= (3600) sgrave2.var
 
 ## Title
-tellraw @s [{"translate": "sgrave2.grave_info.title", "fallback": "\nGrave §6#%s info", "with": [{"nbt": "graves[-1].data.id", "storage": "sgrave2:common", "color": "gold"}]}]
+tellraw @s [{"translate": "sgrave2.grave_info.title", "fallback": "\nGrave §6#%s info", "with": [{"nbt": "graves[-1].data.gid", "storage": "sgrave2:common", "color": "gold"}]}]
 
 ## Owner
 tellraw @s {"translate": "sgrave2.grave_info.owner", "fallback": "  §bOwner: %s", "with": [{"nbt": "graves[-1].data.owner.name", "color": "green", "storage": "sgrave2:common"}]}
@@ -91,7 +91,7 @@ $execute unless data storage sgrave2:common graves[-1].data.status{obstructed:1b
       },\
       "click_event": {\
         "action": "run_command",\
-        "command": "/function sgrave2:internal/grave/show_info/show_admin/view_previous {id: $(id)}"\
+        "command": "/function sgrave2:internal/grave/show_info/show_admin/view_previous {gid: $(gid)}"\
       }\
     },\
     {\
@@ -106,7 +106,7 @@ $execute unless data storage sgrave2:common graves[-1].data.status{obstructed:1b
       },\
       "click_event": {\
         "action": "suggest_command",\
-        "command": "/function sgrave2:run/remote_open_grave {id: $(id)}"\
+        "command": "/function sgrave2:run/remote_open_grave {gid: $(gid)}"\
       }\
     },\
     {\
@@ -121,7 +121,7 @@ $execute unless data storage sgrave2:common graves[-1].data.status{obstructed:1b
       },\
       "click_event": {\
         "action": "run_command",\
-        "command": "/function sgrave2:internal/grave/show_info/show_admin/view_next {id: $(id)}"\
+        "command": "/function sgrave2:internal/grave/show_info/show_admin/view_next {gid: $(gid)}"\
       }\
     }\
   ]\
@@ -142,7 +142,7 @@ $execute if data storage sgrave2:common graves[-1].data.status{obstructed:1b} ru
       },\
       "click_event": {\
         "action": "run_command",\
-        "command": "/function sgrave2:internal/grave/show_info/show_admin/view_previous {id: $(id)}"\
+        "command": "/function sgrave2:internal/grave/show_info/show_admin/view_previous {gid: $(gid)}"\
       }\
     },\
     {\
@@ -157,7 +157,7 @@ $execute if data storage sgrave2:common graves[-1].data.status{obstructed:1b} ru
       },\
       "click_event": {\
         "action": "run_command",\
-        "command": "/function sgrave2:internal/grave/show_info/show_admin/view_next {id: $(id)}"\
+        "command": "/function sgrave2:internal/grave/show_info/show_admin/view_next {gid: $(gid)}"\
       }\
     }\
   ]\

@@ -3,7 +3,7 @@
 # Show grave info for obstructed graves not belonging to the player
 
 ## Title
-tellraw @s [{"translate": "sgrave2.grave_info.title", "fallback": "\nGrave §6#%s info", "with": [{"nbt": "graves[-1].data.id", "storage": "sgrave2:common", "color": "gold"}]}]
+tellraw @s [{"translate": "sgrave2.grave_info.title", "fallback": "\nGrave §6#%s info", "with": [{"nbt": "graves[-1].data.gid", "storage": "sgrave2:common", "color": "gold"}]}]
 
 ## Owner
 execute unless score (graves/show_grave_info/bn/owner) sgrave2.config matches 0 run tellraw @s {"translate": "sgrave2.grave_info.owner", "fallback": "  §bOwner: %s", "with": [{"nbt": "graves[-1].data.owner.name", "color": "green", "storage": "sgrave2:common"}]}
@@ -74,7 +74,7 @@ $execute unless data storage sgrave2:common graves[-1].data.status{obstructed:1b
       },\
       "click_event": {\
         "action": "run_command",\
-        "command": "/trigger sgrave2.show_grave_info.view_previous set $(id)"\
+        "command": "/trigger sgrave2.show_grave_info.view_previous set $(gid)"\
       }\
     },\
     {\
@@ -89,7 +89,7 @@ $execute unless data storage sgrave2:common graves[-1].data.status{obstructed:1b
       },\
       "click_event": {\
         "action": "suggest_command",\
-        "command": "/trigger sgrave2.remote_open_grave set $(id)"\
+        "command": "/trigger sgrave2.remote_open_grave set $(gid)"\
       }\
     },\
     {\
@@ -104,7 +104,7 @@ $execute unless data storage sgrave2:common graves[-1].data.status{obstructed:1b
       },\
       "click_event": {\
         "action": "run_command",\
-        "command": "/trigger sgrave2.show_grave_info.view_next set $(id)"\
+        "command": "/trigger sgrave2.show_grave_info.view_next set $(gid)"\
       }\
     }\
   ]\
@@ -125,7 +125,7 @@ $execute if data storage sgrave2:common graves[-1].data.status{obstructed:1b} ru
       },\
       "click_event": {\
         "action": "run_command",\
-        "command": "/trigger sgrave2.show_grave_info.view_previous set $(id)"\
+        "command": "/trigger sgrave2.show_grave_info.view_previous set $(gid)"\
       }\
     },\
     {\
@@ -140,7 +140,7 @@ $execute if data storage sgrave2:common graves[-1].data.status{obstructed:1b} ru
       },\
       "click_event": {\
         "action": "run_command",\
-        "command": "/trigger sgrave2.show_grave_info.view_next set $(id)"\
+        "command": "/trigger sgrave2.show_grave_info.view_next set $(gid)"\
       }\
     }\
   ]\

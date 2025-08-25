@@ -17,10 +17,10 @@ scoreboard players set (1625) sgrave2.var 1625
 scoreboard players set (3600) sgrave2.var 3600
 scoreboard players set (2520) sgrave2.var 2520
 
-##> Start grave IDs from 1000
+##> Start GIDs from 1000
 execute unless score .global sgrave2.gid matches 1000.. run scoreboard players set .global sgrave2.gid 1000
 
-##> First grave ID
+##> First GID
 execute if score .global sgrave2.gid matches ..1127 run scoreboard players set (first_gid) sgrave2.var 1001
 execute if score .global sgrave2.gid matches 1128.. run scoreboard players operation (first_gid) sgrave2.var = .global sgrave2.gid
 execute if score .global sgrave2.gid matches 1128.. run scoreboard players remove (first_gid) sgrave2.var 126

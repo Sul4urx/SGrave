@@ -33,7 +33,7 @@ execute if dimension minecraft:overworld run data modify storage sgrave2:common 
 execute if dimension minecraft:the_nether run data modify storage sgrave2:common graves[-1].data.dimension.name set value "The Nether"
 execute if dimension minecraft:the_end run data modify storage sgrave2:common graves[-1].data.dimension.name set value "The End"
 
-## Set Grave ID
+## Set GID
 execute store result score @s sgrave2.gid run scoreboard players add .global sgrave2.gid 1
-execute store result storage sgrave2:common graves[-1].data.id int 1 run scoreboard players get @s sgrave2.gid
+execute store result storage sgrave2:common graves[-1].data.gid int 1 run scoreboard players get @s sgrave2.gid
 

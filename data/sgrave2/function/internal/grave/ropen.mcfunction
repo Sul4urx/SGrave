@@ -1,12 +1,12 @@
 #<< event/player/player_tried_to_ropen_grave
 
 
-$execute unless data storage sgrave2:common unobstructed_graves[{data:{id:$(id)}}] run return run title @s actionbar {\
+$execute unless data storage sgrave2:common unobstructed_graves[{data:{gid:$(gid)}}] run return run title @s actionbar {\
   "translate": "sgrave2.ropen_grave.fail.grave_obstructed",\
-  "fallback": "§cGrave #$(id) either does not exist or has been obstructed.",\
+  "fallback": "§cGrave #$(gid) either does not exist or has been obstructed.",\
 }
 
-$function sgrave2:internal/map/graves/lookup {id:$(id)}
+$function sgrave2:internal/map/graves/lookup {gid:$(gid)}
 
 ## Add temp tags
 tag @s add sgrave2.temp.grave.interactor
@@ -49,7 +49,7 @@ playsound minecraft:entity.item_frame.remove_item master @a ~ ~ ~ 1 1
 execute store result storage sgrave2:common temp.args1.pid int 1 run scoreboard players get @s sgrave2.pid
 function sgrave2:internal/map/players/lookup with storage sgrave2:common temp.args1
 
-data modify storage sgrave2:common temp.args2.id set from entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.gid
+data modify storage sgrave2:common temp.args2.gid set from entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.gid
 data modify storage sgrave2:common graves[-1].data.status set value {obstructed:1b,obstruction_type:"ropened"}
 data modify storage sgrave2:common graves[-1].data.status.obstructor set from storage sgrave2:common players[-1].player
 

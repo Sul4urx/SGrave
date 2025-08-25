@@ -35,7 +35,7 @@ playsound minecraft:entity.item_frame.remove_item master @a ~ ~ ~ 1 1
 ## Update grave status
 execute as @p[tag=sgrave2.temp.grave.interactor] at @s run function sgrave2:internal/map/players/lookup with entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.owner
 
-data modify storage sgrave2:common temp.args.id set from entity @s item.components.minecraft:custom_data.sgrave2:common.gid
+data modify storage sgrave2:common temp.args.gid set from entity @s item.components.minecraft:custom_data.sgrave2:common.gid
 function sgrave2:internal/map/graves/lookup with storage sgrave2:common temp.args
 data modify storage sgrave2:common graves[-1].data.status set value {obstructed:1b,obstruction_type:"broken"}
 data modify storage sgrave2:common graves[-1].data.status.obstructor set from storage sgrave2:common players[-1].player
