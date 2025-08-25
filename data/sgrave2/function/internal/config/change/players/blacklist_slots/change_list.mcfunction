@@ -4,7 +4,7 @@ $data modify storage sgrave2:common temp.config.value set value $(value)
 ## Error if value is not list
 execute unless data storage sgrave2:common temp.config.value[] unless data storage sgrave2:common temp.config{value:[]} run title @s actionbar {\
   "translate": "sgrave2.change_config_message.blacklist_slots.change_list.fail",\
-  "fallback": "§cThe value must be a list of slots in format [{slot:<slot>},{slot:<slot>},…]"\
+  "fallback": "§cThe value must be a list."\
 }
 
 ## Error if list is not valid

@@ -73,7 +73,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/players/blacklist_slots/change_list {value:[{slot:<slot>},{slot:'<slot>'},…]}"\
+      "command": "/function sgrave2:internal/config/change/players/blacklist_slots/change_list {value:[{slot:?},{slot:'?'},…]}"\
     }\
   }\
 ]

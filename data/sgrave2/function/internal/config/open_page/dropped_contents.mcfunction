@@ -32,12 +32,12 @@ tellraw @s [\
       "action": "show_text",\
       "value": {\
         "translate": "sgrave2.config_change_description.replace_value",\
-        "fallback": "Click to change the config's value. \nReplace §o<value> §rwith the value you want to change the config to."\
+        "fallback": "Click to change the config's value. \nReplace §o?§r with the value you want to change the config to."\
       }\
     },\
     "click_event": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/dropped_contents/item_despawn_time {value:<value>}"\
+      "command": "/function sgrave2:internal/config/change/dropped_contents/item_despawn_time {value:?"\ 
     }\
   }\
 ]
@@ -68,12 +68,12 @@ tellraw @s [\
       "action": "show_text",\
       "value": {\
         "translate": "sgrave2.config_change_description.replace_value",\
-        "fallback": "Click to change the config's value. \nReplace §o<value> §rwith the value you want to change the config to."\
+        "fallback": "Click to change the config's value. \nReplace §o?§r with the value you want to change the config to."\
       }\
     },\
     "click_event": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/dropped_contents/xp_despawn_time {value:<value>}"\
+      "command": "/function sgrave2:internal/config/change/dropped_contents/xp_despawn_time {value:?"\ 
     }\
   }\
 ]
