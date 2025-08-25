@@ -8,9 +8,13 @@ $execute unless data storage sgrave2:common unobstructed_graves[{data:{id:$(id)}
 
 $function sgrave2:internal/map/graves/lookup {id:$(id)}
 
+## Add temp tags
+tag @s add sgrave2.temp.grave.interactor
+function sgrave2:internal/grave/tag_owner with storage sgrave2:common graves[-1].data.owner
+
 ## Check and apply costs
-function sgrave2:internal/grave/ropen/check_costs/owners
-function sgrave2:internal/grave/ropen/check_costs/non_owners
+execute as @p[tag=sgrave2.temp.grave.interactor,tag=sgrave2.temp.grave.owner] at @s run function sgrave2:internal/grave/ropen/check_costs/owners
+execute as @p[tag=sgrave2.temp.grave.interactor,tag=!sgrave2.temp.grave.owner] at @s run function sgrave2:internal/grave/ropen/check_costs/non_owners
 
 execute unless score .check_costs.gamemodes sgrave2.temp_var matches 1 run return run title @s actionbar {\
   "translate": "sgrave2.grave.ropen.fail.cannot_afford_cost.gamemodes",\
@@ -31,9 +35,6 @@ execute unless score .check_costs.xp sgrave2.temp_var matches 1 run return run t
     }\
   ]\
 }
-
-## Add temp tags
-tag @s add sgrave2.temp.grave.interactor
 
 ## Give items
 function sgrave2:internal/grave/ropen/give_items/main
