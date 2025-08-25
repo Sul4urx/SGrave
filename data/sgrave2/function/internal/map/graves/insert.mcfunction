@@ -25,9 +25,6 @@ data modify storage sgrave2:common graves[-1].data.pos_integer append from stora
 data modify storage sgrave2:common graves[-1].data.pos_integer append from storage sgrave2:common graves[-1].data.pos[1]
 data modify storage sgrave2:common graves[-1].data.pos_integer append from storage sgrave2:common graves[-1].data.pos[2]
 
-##> XP before death (used for show grave info feature)
-data modify storage sgrave2:common graves[-1].data.xp_before_death set from entity @s item.components.minecraft:custom_data.sgrave2:common.xp.before_death
-
 ##> Creation time (used for show grave info feature)
 data modify storage sgrave2:common graves[-1].data.creation_time set from entity @s item.components.minecraft:custom_data.sgrave2:common.creation_time
 

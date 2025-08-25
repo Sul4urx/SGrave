@@ -43,10 +43,10 @@ tellraw @s {"translate": "sgrave2.grave_info.location", "fallback": "  §bLocati
 tellraw @s {"translate": "sgrave2.grave_info.xp", "fallback": "  §bExperience:"}
 
 ##> XP before death
-tellraw @s {"translate": "sgrave2.grave_info.xp.before_death", "fallback": "    §eBefore death: %s levels §7+ %s points", "with": [{"nbt": "graves[-1].data.xp_before_death.levels", "color": "gold", "storage": "sgrave2:common"}, {"nbt": "graves[-1].data.xp_before_death.points", "color": "gold", "storage": "sgrave2:common"}]}
+tellraw @s {"translate": "sgrave2.grave_info.xp.before_death", "fallback": "    §eBefore death: %s levels §7+ %s points", "with": [{"nbt": "graves[-1].contents.xp.before_death.levels", "color": "gold", "storage": "sgrave2:common"}, {"nbt": "graves[-1].contents.xp.before_death.points", "color": "gold", "storage": "sgrave2:common"}]}
 
 ##> XP after death
-tellraw @s {"translate": "sgrave2.grave_info.xp.after_death", "fallback": "    §eAfter death: %s levels §7+ %s points", "with": [{"nbt": "graves[-1].contents.xp.levels", "color": "gold", "storage": "sgrave2:common"}, {"nbt": "graves[-1].contents.xp.points", "color": "gold", "storage": "sgrave2:common"}]}
+tellraw @s {"translate": "sgrave2.grave_info.xp.after_death", "fallback": "    §eAfter death: %s levels §7+ %s points", "with": [{"nbt": "graves[-1].contents.xp.after_death.levels", "color": "gold", "storage": "sgrave2:common"}, {"nbt": "graves[-1].contents.xp.after_death.points", "color": "gold", "storage": "sgrave2:common"}]}
 
 ## Despawn time
 execute unless data storage sgrave2:common graves[-1].status{obstructed:1b} run tellraw @s {"translate": "sgrave2.grave_info.despawn_time", "fallback": "  §bDespawn time: %s hours§7, %s minutes§7, %s seconds", "with": [{"score": {"name": ".despawn_time.hours", "objective": "sgrave2.temp_var"}, "color": "gold"}, {"score": {"name": ".despawn_time.minutes", "objective": "sgrave2.temp_var"}, "color": "gold"}, {"score": {"name": ".despawn_time.seconds", "objective": "sgrave2.temp_var"}, "color": "gold"}]}

@@ -29,7 +29,7 @@ execute unless data entity @s item.components.minecraft:custom_data.sgrave2:comm
 execute if data entity @s item.components.minecraft:custom_data.sgrave2:common{icd_activated:1b} as @n[tag=sgrave2.temp.grave.interactor] at @s run return run function sgrave2:internal/grave/open/give_icd_item
 
 ## Give XP
-execute as @p[tag=sgrave2.temp.grave.interactor] at @s run function sgrave2:internal/grave/open/give_xp with entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.xp
+execute as @p[tag=sgrave2.temp.grave.interactor] at @s run function sgrave2:internal/grave/open/give_xp with entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.xp.after_death
 
 ## Play sound
 playsound minecraft:entity.item_frame.remove_item master @a ~ ~ ~ 1 1
