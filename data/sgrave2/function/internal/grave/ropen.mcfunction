@@ -40,7 +40,9 @@ execute unless score .check_costs.xp sgrave2.temp_var matches 1 run return run t
 function sgrave2:internal/grave/ropen/give_items/main
 
 ## Give XP
-function sgrave2:internal/grave/ropen/give_xp with storage sgrave2:common graves[-1].contents.xp.after_death
+data modify storage sgrave2:common temp.args.value set from storage sgrave2:common graves[-1].contents.xp.after_death.total
+
+execute as @p[tag=sgrave2.temp.grave.interactor] at @s run function sgrave2:internal/macro/xp_add with storage sgrave2:common temp.args
 
 ## Play sound
 playsound minecraft:entity.item_frame.remove_item master @a ~ ~ ~ 1 1

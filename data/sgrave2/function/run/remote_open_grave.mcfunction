@@ -13,7 +13,9 @@ tag @s add sgrave2.temp.grave.interactor
 function sgrave2:internal/grave/ropen/give_items/main
 
 ## Give XP
-function sgrave2:internal/grave/ropen/give_xp with storage sgrave2:common graves[-1].contents.xp.after_death
+data modify storage sgrave2:common temp.args.value set from entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.xp.after_death
+
+execute as @p[tag=sgrave2.temp.grave.interactor] at @s run function sgrave2:internal/macro/xp_add with storage sgrave2:common temp.args
 
 ## Play sound
 playsound minecraft:entity.item_frame.remove_item master @a ~ ~ ~ 1 1

@@ -26,4 +26,6 @@ scoreboard players set .check_costs.xp sgrave2.temp_var 0
 execute store result score .player_xp sgrave2.temp_var run xp query @s levels
 execute if score .player_xp sgrave2.temp_var >= (costs/grave_ropening_costs/owners/xp) sgrave2.config run scoreboard players set .check_costs.xp sgrave2.temp_var 1
 
-execute if score .check_costs.xp sgrave2.temp_var matches 1 run function sgrave2:internal/grave/ropen/check_costs/owners/xp/remove with storage sgrave2:common configs.value.costs.grave_ropening_costs.owners.xp.levels
+execute store result storage sgrave2:common temp.args.value int 1 run data get storage sgrave2:common configs.value.costs.grave_ropening_costs.owners.xp.levels -1
+
+execute if score .check_costs.xp sgrave2.temp_var matches 1 run function sgrave2:internal/macro/xp_add_level with storage sgrave2:common temp.args
