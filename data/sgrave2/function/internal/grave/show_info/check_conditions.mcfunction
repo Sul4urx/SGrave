@@ -1,4 +1,5 @@
 #<< loop/1t
+#<< grave/show_info/show_non-admin/view_*
 
 # Check conditions to see if grave info should be shown to player
 

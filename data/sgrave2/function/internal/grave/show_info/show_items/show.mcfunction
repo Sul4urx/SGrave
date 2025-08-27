@@ -1,3 +1,5 @@
+#<< grave/show_info/show_items
+
 tellraw @s {"translate": "sgrave2.grave_info.items", "fallback": "  §bItems:"}
 $tellraw @s [\
   {"text": "       ", "font": "minecraft:uniform"}, \
