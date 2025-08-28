@@ -41,8 +41,8 @@ execute as @p[tag=sgrave2.temp.grave.interactor] at @s run function sgrave2:inte
 
 data modify storage sgrave2:common temp.args.gid set from entity @s item.components.minecraft:custom_data.sgrave2:common.gid
 function sgrave2:internal/map/graves/lookup with storage sgrave2:common temp.args
-data modify storage sgrave2:common graves[-1].data.status set value {obstructed:1b,obstruction_type:"opened"}
-data modify storage sgrave2:common graves[-1].data.status.obstructor set from storage sgrave2:common players[-1].player
+data modify storage sgrave2:common graves[-1].data.status set value {destroyed:1b,destruction_type:"opened"}
+data modify storage sgrave2:common graves[-1].data.status.destroyer set from storage sgrave2:common players[-1].player
 
 function sgrave2:internal/map/players/graves/lookup with storage sgrave2:common temp.args
 data modify storage sgrave2:common players[-1].graves[-1].data.status set from storage sgrave2:common graves[-1].data.status

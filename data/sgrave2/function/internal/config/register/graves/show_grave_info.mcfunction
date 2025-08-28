@@ -39,9 +39,9 @@ execute unless score (graves/show_grave_info/bo/xp/before_death) sgrave2.config 
 
 execute unless score (graves/show_grave_info/bo/xp/after_death) sgrave2.config matches 0..1 run scoreboard players set (graves/show_grave_info/bo/xp/after_death) sgrave2.config 1
 
-execute unless score (graves/show_grave_info/bo/obstructor) sgrave2.config matches 0..1 run scoreboard players set (graves/show_grave_info/bo/obstructor) sgrave2.config 1
+execute unless score (graves/show_grave_info/bo/destroyer) sgrave2.config matches 0..1 run scoreboard players set (graves/show_grave_info/bo/destroyer) sgrave2.config 1
 
-execute unless score (graves/show_grave_info/bo/obstruction_type) sgrave2.config matches 0..1 run scoreboard players set (graves/show_grave_info/bo/obstruction_type) sgrave2.config 1
+execute unless score (graves/show_grave_info/bo/destruction_type) sgrave2.config matches 0..1 run scoreboard players set (graves/show_grave_info/bo/destruction_type) sgrave2.config 1
 
 
 ## O(thers' graves) (Set default)
@@ -81,9 +81,9 @@ execute unless score (graves/show_grave_info/bn/xp/before_death) sgrave2.config 
 
 execute unless score (graves/show_grave_info/bn/xp/after_death) sgrave2.config matches 0..1 run scoreboard players set (graves/show_grave_info/bn/xp/after_death) sgrave2.config 1
 
-execute unless score (graves/show_grave_info/bn/obstructor) sgrave2.config matches 0..1 run scoreboard players set (graves/show_grave_info/bn/obstructor) sgrave2.config 1
+execute unless score (graves/show_grave_info/bn/destroyer) sgrave2.config matches 0..1 run scoreboard players set (graves/show_grave_info/bn/destroyer) sgrave2.config 1
 
-execute unless score (graves/show_grave_info/bn/obstruction_type) sgrave2.config matches 0..1 run scoreboard players set (graves/show_grave_info/bn/obstruction_type) sgrave2.config 1
+execute unless score (graves/show_grave_info/bn/destruction_type) sgrave2.config matches 0..1 run scoreboard players set (graves/show_grave_info/bn/destruction_type) sgrave2.config 1
 
 
 
@@ -158,13 +158,13 @@ execute store result storage sgrave2:common configs.value.graves.show_grave_info
 execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo{items:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.items set value "§c❌"
 execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo{items:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.items set value "§a✔"
 
-execute store result storage sgrave2:common configs.value.graves.show_grave_info.bo.obstructor byte 1 run scoreboard players get (graves/show_grave_info/bo/obstructor) sgrave2.config
-execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo{obstructor:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.obstructor set value "§c❌"
-execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo{obstructor:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.obstructor set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.bo.destroyer byte 1 run scoreboard players get (graves/show_grave_info/bo/destroyer) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo{destroyer:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.destroyer set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo{destroyer:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.destroyer set value "§a✔"
 
-execute store result storage sgrave2:common configs.value.graves.show_grave_info.bo.obstruction_type byte 1 run scoreboard players get (graves/show_grave_info/bo/obstruction_type) sgrave2.config
-execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo{obstruction_type:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.obstruction_type set value "§c❌"
-execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo{obstruction_type:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.obstruction_type set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.bo.destruction_type byte 1 run scoreboard players get (graves/show_grave_info/bo/destruction_type) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo{destruction_type:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.destruction_type set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bo{destruction_type:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bo.destruction_type set value "§a✔"
 
 
 ## O(thers' graves) (Store as NBT)
@@ -238,10 +238,10 @@ execute store result storage sgrave2:common configs.value.graves.show_grave_info
 execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn{items:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.items set value "§c❌"
 execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn{items:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.items set value "§a✔"
 
-execute store result storage sgrave2:common configs.value.graves.show_grave_info.bn.obstructor byte 1 run scoreboard players get (graves/show_grave_info/bn/obstructor) sgrave2.config
-execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn{obstructor:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.obstructor set value "§c❌"
-execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn{obstructor:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.obstructor set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.bn.destroyer byte 1 run scoreboard players get (graves/show_grave_info/bn/destroyer) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn{destroyer:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.destroyer set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn{destroyer:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.destroyer set value "§a✔"
 
-execute store result storage sgrave2:common configs.value.graves.show_grave_info.bn.obstruction_type byte 1 run scoreboard players get (graves/show_grave_info/bn/obstruction_type) sgrave2.config
-execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn{obstruction_type:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.obstruction_type set value "§c❌"
-execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn{obstruction_type:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.obstruction_type set value "§a✔"
+execute store result storage sgrave2:common configs.value.graves.show_grave_info.bn.destruction_type byte 1 run scoreboard players get (graves/show_grave_info/bn/destruction_type) sgrave2.config
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn{destruction_type:0b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.destruction_type set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.show_grave_info.bn{destruction_type:1b} run data modify storage sgrave2:common configs.text.graves.show_grave_info.bn.destruction_type set value "§a✔"

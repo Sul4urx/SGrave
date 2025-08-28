@@ -61,7 +61,7 @@ tellraw @s {"translate": "sgrave2.grave_info.status.active", "fallback": "  §bS
 tellraw @s ""
 
 ## Menu
-$execute unless data storage sgrave2:common graves[-1].data.status{obstructed:1b} run tellraw @s {\
+$execute unless data storage sgrave2:common graves[-1].data.status{destroyed:1b} run tellraw @s {\
   "translate": "sgrave2.grave_info.menu",\
   "fallback": "§7[%s§7|%s§7|%s§7]",\
   "with": [\
@@ -112,7 +112,7 @@ $execute unless data storage sgrave2:common graves[-1].data.status{obstructed:1b
     }\
   ]\
 }
-$execute if data storage sgrave2:common graves[-1].data.status{obstructed:1b} run tellraw @s {\
+$execute if data storage sgrave2:common graves[-1].data.status{destroyed:1b} run tellraw @s {\
   "translate": "sgrave2.grave_info.menu_no_open",\
   "fallback": "§7[%s§7| Open |%s§7]",\
   "with": [\

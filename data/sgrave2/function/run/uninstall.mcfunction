@@ -4,7 +4,7 @@ schedule clear sgrave2:internal/loop/1s
 
 ## Remove all stored data
 data remove storage sgrave2:common graves
-data remove storage sgrave2:common unobstructed_graves
+data remove storage sgrave2:common active_graves
 data remove storage sgrave2:common players
 data remove storage sgrave2:common dimensions
 data remove storage sgrave2:common configs

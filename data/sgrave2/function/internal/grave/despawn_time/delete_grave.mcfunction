@@ -1,7 +1,7 @@
 #<< grave/despawn_time/decrease
 
 ## Update status
-data modify storage sgrave2:common graves[-1].data.status set value {obstructed:1b,obstruction_type:"despawned"}
+data modify storage sgrave2:common graves[-1].data.status set value {destroyed:1b,destruction_type:"despawned"}
 data modify storage sgrave2:common players[-1].graves[-1].data.status set from storage sgrave2:common graves[-1].data.status
 
 ## Delete grave

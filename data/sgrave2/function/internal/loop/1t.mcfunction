@@ -40,8 +40,8 @@ execute if score (general/change_gamerules) sgrave2.config matches 1 run gamerul
 execute as @a[scores={sgrave2.death_count=1..}] at @s run function sgrave2:internal/event/player/player_died
 scoreboard players set @a sgrave2.death_count 0
 
-## Update unobstructed graves (i.e. active graves)
-function sgrave2:internal/map/graves/unobstructed/update
+## Update active graves
+function sgrave2:internal/map/graves/active/update
 
 ## Show SGrave info
 execute as @a at @s unless score @s sgrave2.info matches 0 run function sgrave2:run/info

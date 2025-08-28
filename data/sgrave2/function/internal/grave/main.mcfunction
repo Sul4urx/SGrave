@@ -1,6 +1,6 @@
 #<< loop/1t
 
-## Check if the grave exists in data `unobstructed_graves` in storage `sgrave2:common`
+## Check if the grave exists in data `active_graves` in storage `sgrave2:common`
 ## If not, delete the grave
 ## This allows for deleting the grave entity remotely
 scoreboard players set .grave_is_in_storage sgrave2.temp_var 0

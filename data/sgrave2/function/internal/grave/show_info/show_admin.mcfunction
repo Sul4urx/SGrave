@@ -49,7 +49,7 @@ tellraw @s {"translate": "sgrave2.grave_info.xp.before_death", "fallback": "    
 tellraw @s {"translate": "sgrave2.grave_info.xp.after_death", "fallback": "    §eAfter death: %s (%s levels §7+ %s points)", "with": [{"nbt": "graves[-1].contents.xp.after_death.total", "color": "gold", "storage": "sgrave2:common"},{"nbt": "graves[-1].contents.xp.after_death.levels", "color": "gold", "storage": "sgrave2:common"}, {"nbt": "graves[-1].contents.xp.after_death.points", "color": "gold", "storage": "sgrave2:common"}]}
 
 ## Despawn time
-execute unless data storage sgrave2:common graves[-1].status{obstructed:1b} run tellraw @s {"translate": "sgrave2.grave_info.despawn_time", "fallback": "  §bDespawn time: %s hours§7, %s minutes§7, %s seconds", "with": [{"score": {"name": ".despawn_time.hours", "objective": "sgrave2.temp_var"}, "color": "gold"}, {"score": {"name": ".despawn_time.minutes", "objective": "sgrave2.temp_var"}, "color": "gold"}, {"score": {"name": ".despawn_time.seconds", "objective": "sgrave2.temp_var"}, "color": "gold"}]}
+execute unless data storage sgrave2:common graves[-1].status{destroyed:1b} run tellraw @s {"translate": "sgrave2.grave_info.despawn_time", "fallback": "  §bDespawn time: %s hours§7, %s minutes§7, %s seconds", "with": [{"score": {"name": ".despawn_time.hours", "objective": "sgrave2.temp_var"}, "color": "gold"}, {"score": {"name": ".despawn_time.minutes", "objective": "sgrave2.temp_var"}, "color": "gold"}, {"score": {"name": ".despawn_time.seconds", "objective": "sgrave2.temp_var"}, "color": "gold"}]}
 
 ## Creation time
 tellraw @s {"translate": "sgrave2.grave_info.creation_time", "fallback": "  §bCreation time: §rDay %s§7, %s hours §7: %s minutes", "with": [{"nbt": "graves[-1].data.creation_time.day", "color": "gold", "storage": "sgrave2:common"}, {"nbt": "graves[-1].data.creation_time.hours", "color": "gold", "storage": "sgrave2:common"}, {"nbt": "graves[-1].data.creation_time.minutes", "color": "gold", "storage": "sgrave2:common"}]}
@@ -61,21 +61,21 @@ function sgrave2:internal/grave/show_info/show_items with storage sgrave2:common
 tellraw @s ""
 
 ## Status
-execute unless data storage sgrave2:common graves[-1].data.status{obstructed:1b} run tellraw @s {"translate": "sgrave2.grave_info.status.active", "fallback": "  §bStatus: §aActive"}
+execute unless data storage sgrave2:common graves[-1].data.status{destroyed:1b} run tellraw @s {"translate": "sgrave2.grave_info.status.active", "fallback": "  §bStatus: §aActive"}
 
-execute if data storage sgrave2:common graves[-1].data.status{obstruction_type:"opened"} run tellraw @s {"translate": "sgrave2.grave_info.status.opened_by", "fallback": "  §bStatus: §cOpened by %s", "with": [{"nbt": "graves[-1].data.status.obstructor.name", "color": "red", "storage": "sgrave2:common"}]}
+execute if data storage sgrave2:common graves[-1].data.status{destruction_type:"opened"} run tellraw @s {"translate": "sgrave2.grave_info.status.opened_by", "fallback": "  §bStatus: §cOpened by %s", "with": [{"nbt": "graves[-1].data.status.destroyer.name", "color": "red", "storage": "sgrave2:common"}]}
 
-execute if data storage sgrave2:common graves[-1].data.status{obstruction_type:"ropened"} run tellraw @s {"translate": "sgrave2.grave_info.status.opened_by", "fallback": "  §bStatus: §cRemotely opened by %s", "with": [{"nbt": "graves[-1].data.status.obstructor.name", "color": "red", "storage": "sgrave2:common"}]}
+execute if data storage sgrave2:common graves[-1].data.status{destruction_type:"ropened"} run tellraw @s {"translate": "sgrave2.grave_info.status.opened_by", "fallback": "  §bStatus: §cRemotely opened by %s", "with": [{"nbt": "graves[-1].data.status.destroyer.name", "color": "red", "storage": "sgrave2:common"}]}
 
-execute if data storage sgrave2:common graves[-1].data.status{obstruction_type:"broken"} run tellraw @s {"translate": "sgrave2.grave_info.status.broken_by", "fallback": "  §bStatus: §cBroken by %s", "with": [{"nbt": "graves[-1].data.status.obstructor.name", "color": "red", "storage": "sgrave2:common"}]}
+execute if data storage sgrave2:common graves[-1].data.status{destruction_type:"broken"} run tellraw @s {"translate": "sgrave2.grave_info.status.broken_by", "fallback": "  §bStatus: §cBroken by %s", "with": [{"nbt": "graves[-1].data.status.destroyer.name", "color": "red", "storage": "sgrave2:common"}]}
 
-execute if data storage sgrave2:common graves[-1].data.status{obstruction_type:"despawned"} run tellraw @s {"translate": "sgrave2.grave_info.status.despawned", "fallback": "  §bStatus: §cDespawned"}
+execute if data storage sgrave2:common graves[-1].data.status{destruction_type:"despawned"} run tellraw @s {"translate": "sgrave2.grave_info.status.despawned", "fallback": "  §bStatus: §cDespawned"}
 
 ##
 tellraw @s ""
 
 ## Menu
-$execute unless data storage sgrave2:common graves[-1].data.status{obstructed:1b} run tellraw @s {\
+$execute unless data storage sgrave2:common graves[-1].data.status{destroyed:1b} run tellraw @s {\
   "translate": "sgrave2.grave_info.menu",\
   "fallback": "§7[%s§7|%s§7|%s§7]",\
   "with": [\
@@ -126,7 +126,7 @@ $execute unless data storage sgrave2:common graves[-1].data.status{obstructed:1b
     }\
   ]\
 }
-$execute if data storage sgrave2:common graves[-1].data.status{obstructed:1b} run tellraw @s {\
+$execute if data storage sgrave2:common graves[-1].data.status{destroyed:1b} run tellraw @s {\
   "translate": "sgrave2.grave_info.menu_grayed_open",\
   "fallback": "§7[%s§7| Open |%s§7]",\
   "with": [\

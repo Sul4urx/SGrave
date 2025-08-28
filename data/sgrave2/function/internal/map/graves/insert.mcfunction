@@ -8,7 +8,7 @@ data modify storage sgrave2:common graves[-1].contents.xp set from entity @s ite
 ## Set data (status, position, dimension, etc)
 
 ##> Status
-data modify storage sgrave2:common graves[-1].data.status set value {obstructed:0b}
+data modify storage sgrave2:common graves[-1].data.status set value {destroyed:0b}
 
 ##> Position
 data modify storage sgrave2:common graves[-1].data.pos set from entity @s Pos

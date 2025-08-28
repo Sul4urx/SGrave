@@ -34,7 +34,7 @@ tellraw @s [\
       "action": "show_text",\
       "value": {\
         "translate": "sgrave2.config_description.show_grave_info.b",\
-        "fallback": "For obstructed graves that belong to the reader (O§lb§rstructed §lO§rwner)"\
+        "fallback": "For destroyed graves that belong to the reader (§lB§rroken §lO§rwner)"\
       }\
     }\
   },\
@@ -54,7 +54,7 @@ tellraw @s [\
       "action": "show_text",\
       "value": {\
         "translate": "sgrave2.config_description.show_grave_info.bo",\
-        "fallback": "For obstructed graves that belong to other players (O§lb§rstructed §lN§ron-Owner)"\
+        "fallback": "For destroyed graves that belong to other players (§lB§rroken §lN§ron-Owner)"\
       }\
     }\
   }\
@@ -929,17 +929,17 @@ tellraw @s [\
   }\
 ]
 
-## OBT
+## DTP
 tellraw @s [\
   "",\
   {\
-    "translate": "sgrave2.config.show_grave_info.obstruction_type",\
-    "fallback": "   OBT:                   ",\
+    "translate": "sgrave2.config.show_grave_info.destruction_type",\
+    "fallback": "   DTP:                   ",\
     "hover_event": {\
       "action":"show_text",\
       "value": {\
-        "translate": "sgrave2.config_description.show_grave_info.obstruction_type",\
-        "fallback": "Whether how the grave was obstructed should be shown (e.g. broken, opened, despawned). §7(OBstruction Type)"\
+        "translate": "sgrave2.config_description.show_grave_info.destruction_type",\
+        "fallback": "Whether how the grave was destroyed should be shown (e.g. broken, opened, despawned). §7(Destruction TyPe)"\
       }\
     }\
   },\
@@ -950,7 +950,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.text.graves.show_grave_info.bo.obstruction_type",\
+            "nbt": "configs.text.graves.show_grave_info.bo.destruction_type",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -963,14 +963,14 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/obstruction_type"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/destruction_type"\
         }\
       },\
       {\
         "translate": " %s",\
         "with": [\
           {\
-            "nbt": "configs.text.graves.show_grave_info.bn.obstruction_type",\
+            "nbt": "configs.text.graves.show_grave_info.bn.destruction_type",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -983,24 +983,24 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/obstruction_type"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/destruction_type"\
         }\
       }\
     ]\
   }\
 ]
 
-## OBR
+## DER
 tellraw @s [\
   "",\
   {\
-    "translate": "sgrave2.config.show_grave_info.obstructor",\
-    "fallback": "   OBR:                   ",\
+    "translate": "sgrave2.config.show_grave_info.destroyer",\
+    "fallback": "   DER:                   ",\
     "hover_event": {\
       "action":"show_text",\
       "value": {\
-        "translate": "sgrave2.config_description.show_grave_info.obstructor",\
-        "fallback": "Whether the player who broke the grave should be shown. §7(OBstructoR)"\
+        "translate": "sgrave2.config_description.show_grave_info.destroyer",\
+        "fallback": "Whether the player who broke the grave should be shown. §7(DestroyER)"\
       }\
     }\
   },\
@@ -1011,7 +1011,7 @@ tellraw @s [\
         "translate": " %s ",\
         "with": [\
           {\
-            "nbt": "configs.text.graves.show_grave_info.bo.obstructor",\
+            "nbt": "configs.text.graves.show_grave_info.bo.destroyer",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -1024,14 +1024,14 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/obstructor"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/destroyer"\
         }\
       },\
       {\
         "translate": " %s",\
         "with": [\
           {\
-            "nbt": "configs.text.graves.show_grave_info.bn.obstructor",\
+            "nbt": "configs.text.graves.show_grave_info.bn.destroyer",\
             "storage": "sgrave2:common"\
           }\
         ],\
@@ -1044,7 +1044,7 @@ tellraw @s [\
         },\
         "click_event": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/obstructor"\
+          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/destroyer"\
         }\
       }\
     ]\

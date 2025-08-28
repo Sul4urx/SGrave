@@ -1,7 +1,7 @@
 
-$execute unless data storage sgrave2:common unobstructed_graves[{data:{gid:$(gid)}}] run return run title @s actionbar {\
-  "translate": "sgrave2.ropen_grave.fail.grave_obstructed",\
-  "fallback": "§cGrave #$(gid) either does not exist or has been obstructed.",\
+$execute unless data storage sgrave2:common active_graves[{data:{gid:$(gid)}}] run return run title @s actionbar {\
+  "translate": "sgrave2.ropen_grave.fail.grave_destroyed",\
+  "fallback": "§cGrave #$(gid) either does not exist or has been destroyed.",\
 }
 
 $function sgrave2:internal/map/graves/lookup {gid:$(gid)}
@@ -25,8 +25,8 @@ execute store result storage sgrave2:common temp.args1.pid int 1 run scoreboard 
 function sgrave2:internal/map/players/lookup with storage sgrave2:common temp.args1
 
 data modify storage sgrave2:common temp.args2.gid set from storage sgrave2:common graves[-1].data.gid
-data modify storage sgrave2:common graves[-1].data.status set value {obstructed:1b,obstruction_type:"ropened"}
-data modify storage sgrave2:common graves[-1].data.status.obstructor set from storage sgrave2:common players[-1].player
+data modify storage sgrave2:common graves[-1].data.status set value {destroyed:1b,destruction_type:"ropened"}
+data modify storage sgrave2:common graves[-1].data.status.destroyer set from storage sgrave2:common players[-1].player
 
 data modify storage sgrave2:common temp.args2.pid set from storage sgrave2:common graves[-1].data.owner.pid
 
