@@ -10,14 +10,7 @@ tellraw @s [\
   "",\
   {\
     "translate": "sgrave2.config_category.grave_placement_restrictions",\
-    "fallback": " §lGrave Placement Restrictions:",\
-    "hover_event": {\
-      "action": "show_text",\
-      "value": {\
-        "translate": "sgrave2.config_category_description.grave_placement_restrictions",\
-        "fallback": "The blocks that a grave cannot generate on or generate in."\
-      }\
-    }\
+    "fallback": " Graves §7/ §r§lGrave Placement Restrictions:"\
   }\
 ]
 

@@ -50,7 +50,7 @@ tellraw @s [\
       "action":"show_text",\
       "value": {\
         "translate": "sgrave2.config_description.mod_compatibility_mode",\
-        "fallback": "§a✔ §7→§r keepInventory game rule is set to false (can be rechanged later) and Graves collect dropped items\n§c❌ §7→§r KeepInventory is set to true (can't be rechanged if Change Game Rules config is set to true) and Graves take items frome player's inventory.\n\n§bPros:\n§f  §7•§f Better compatibility (especially with mods that add custom slots)\n§cCons:\n  §7•§f Increased risk of item loss\n  §7•§f Blacklist Slots and Blacklist Items configs and Items sub-config in Grave Generation Costs / With Items won't work.\n  §7•§f Items won't be put in appropriate slots and instead dropped.\n\n§3ℹ This is an experimental config!\n\n§8Default: ❌"\
+        "fallback": "§a✔ §7→§r keepInventory game rule is set to false (can be rechanged later) and Graves collect dropped items\n§c❌ §7→§r keepInventory is set to true (can't be rechanged if Change Game Rules config is set to true) and Graves take items from player's inventory.\n\n§bPros:\n§f  §7•§f Better compatibility (especially with mods that add custom slots)\n§cCons:\n  §7•§f Increased risk of item loss\n  §7•§f Blacklist Slots and Blacklist Items configs in Players category and Items config in Costs / Grave Generation Costs / With Items category won't work.\n  §7•§f Items won't be put in appropriate slots and instead dropped.\n\n§3ℹ This is an experimental config!\n\n§8Default: ❌"\
       }\
     }\
   },\
@@ -85,7 +85,7 @@ tellraw @s [\
       "action":"show_text",\
       "value": {\
         "translate": "sgrave2.config_description.mod_compatibility_mode.item_collection_distance",\
-        "fallback": "Items that are within N blocks from player's death point will be collected by the grave. N is the value.\nThe bigger the value, the lower the risk of losing items, but the more likely to collect additional dropped items.\n§8Default: 4"\
+        "fallback": "The distance (in blocks) an item must be from the grave in order to be collected by the grave.\nThe bigger the value, the lower the risk of losing items, but the more likely to collect additional dropped items.\n§8Default: 4"\
       }\
     }\
   },\

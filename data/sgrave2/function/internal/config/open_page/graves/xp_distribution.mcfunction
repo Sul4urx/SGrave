@@ -10,12 +10,15 @@ tellraw @s [\
   "",\
   {\
     "translate": "sgrave2.config_category.xp_distribution.",\
-    "fallback": " §lXP Distribution:",\
+    "fallback": " Graves §7/ §r§lXP Distribution:"\
+  },\
+  {\
+    "text": " §bℹ",\
     "hover_event": {\
       "action": "show_text",\
       "value": {\
         "translate": "sgrave2.config_category_description.xp_distribution",\
-        "fallback": "The amount of XP to remove, keep or take.\n\n§bℹ Each operation (remove, keep, take) is applied on a portion of player's XP. Each operation has something called weight, which determines this portion.\n\nOperations with a higher weight are applied on a higher portion of the player's XP.\n\nThe formula for the portion is:\n§6(Operation's weight) / (Total weight of all operations)"\
+        "fallback": "Each operation (remove, keep, take) is applied on a portion of player's XP. Each operation has something called weight, which determines this portion.\n\nOperations with a higher weight are applied on a higher portion of the player's XP.\n\nThe formula for the portion is:\n§6(Operation's weight) / (Total weight of all operations)"\
       }\
     }\
   }\

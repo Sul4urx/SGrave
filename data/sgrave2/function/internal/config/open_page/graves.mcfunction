@@ -86,7 +86,7 @@ tellraw @s [\
       "action":"show_text",\
       "value": {\
         "translate": "sgrave2.config_description.grave_placement_restrictions",\
-        "fallback": "The blocks that a grave cannot generate on or generate in."\
+        "fallback": "The blocks that a grave cannot generate on or generate in.\n§bℹ This config might be a bit confusing. Remember that if a condition is set to false, that would mean that graves will not be restricted to generate in that condition, meaning graves can generate in that condition."\
       }\
     }\
   },\
@@ -144,7 +144,7 @@ tellraw @s [\
       "action":"show_text",\
       "value": {\
         "translate": "sgrave2.config_description.show_grave_info",\
-        "fallback": "The contents of a grave that should be shown when a player wants to view the information of a grave."\
+        "fallback": "The contents of a grave that should be shown when a player wants to view the information of a grave. By default, all players can see all information."\
       }\
     }\
   },\

@@ -15,7 +15,7 @@ tellraw @s [\
       "action":"show_text",\
       "value": {\
         "translate": "sgrave2.config_description.grave_opening_costs",\
-        "fallback": "The costs of opening a grave"\
+        "fallback": "The costs of opening or breaking a grave"\
       }\
     }\
   },\
@@ -73,7 +73,7 @@ tellraw @s [\
       "action":"show_text",\
       "value": {\
         "translate": "sgrave2.config_description.grave_generation_costs",\
-        "fallback": "The costs of generating a grave"\
+        "fallback": "The costs of generating a grave\n§bℹ This doesn't change the amount of XP or Item that should be deleted or kept. For that use other configs."\
       }\
     }\
   },\

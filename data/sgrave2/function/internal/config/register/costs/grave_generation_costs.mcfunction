@@ -17,7 +17,7 @@ data modify storage sgrave2:common configs.text.costs.grave_generation_costs.wit
 ##> Game Modes
 execute unless score (costs/grave_generation_costs/with_item/gamemodes/survival) sgrave2.config matches 0..1 run scoreboard players set (costs/grave_generation_costs/with_item/gamemodes/survival) sgrave2.config 1
 execute unless score (costs/grave_generation_costs/with_item/gamemodes/adventure) sgrave2.config matches 0..1 run scoreboard players set (costs/grave_generation_costs/with_item/gamemodes/adventure) sgrave2.config 1
-execute unless score (costs/grave_generation_costs/with_item/gamemodes/creative) sgrave2.config matches 0..1 run scoreboard players set (costs/grave_generation_costs/with_item/gamemodes/creative) sgrave2.config 1
+execute unless score (costs/grave_generation_costs/with_item/gamemodes/creative) sgrave2.config matches 0..1 run scoreboard players set (costs/grave_generation_costs/with_item/gamemodes/creative) sgrave2.config 0
 
 execute store result storage sgrave2:common configs.value.costs.grave_generation_costs.with_item.gamemodes.survival byte 1 run scoreboard players get (costs/grave_generation_costs/with_item/gamemodes/survival) sgrave2.config
 execute store result storage sgrave2:common configs.value.costs.grave_generation_costs.with_item.gamemodes.adventure byte 1 run scoreboard players get (costs/grave_generation_costs/with_item/gamemodes/adventure) sgrave2.config
@@ -43,7 +43,7 @@ data modify storage sgrave2:common configs.text.costs.grave_generation_costs.no_
 ##> Game Modes
 execute unless score (costs/grave_generation_costs/no_item/gamemodes/survival) sgrave2.config matches 0..1 run scoreboard players set (costs/grave_generation_costs/no_item/gamemodes/survival) sgrave2.config 1
 execute unless score (costs/grave_generation_costs/no_item/gamemodes/adventure) sgrave2.config matches 0..1 run scoreboard players set (costs/grave_generation_costs/no_item/gamemodes/adventure) sgrave2.config 1
-execute unless score (costs/grave_generation_costs/no_item/gamemodes/creative) sgrave2.config matches 0..1 run scoreboard players set (costs/grave_generation_costs/no_item/gamemodes/creative) sgrave2.config 1
+execute unless score (costs/grave_generation_costs/no_item/gamemodes/creative) sgrave2.config matches 0..1 run scoreboard players set (costs/grave_generation_costs/no_item/gamemodes/creative) sgrave2.config 0
 
 execute store result storage sgrave2:common configs.value.costs.grave_generation_costs.no_item.gamemodes.survival byte 1 run scoreboard players get (costs/grave_generation_costs/no_item/gamemodes/survival) sgrave2.config
 execute store result storage sgrave2:common configs.value.costs.grave_generation_costs.no_item.gamemodes.adventure byte 1 run scoreboard players get (costs/grave_generation_costs/no_item/gamemodes/adventure) sgrave2.config

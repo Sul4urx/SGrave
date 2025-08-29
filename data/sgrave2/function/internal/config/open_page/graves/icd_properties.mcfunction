@@ -10,14 +10,7 @@ tellraw @s [\
   "",\
   {\
     "translate": "sgrave2.config_category.icd",\
-    "fallback": " §lICD Properties:",\
-    "hover_event": {\
-      "action": "show_text",\
-      "value": {\
-        "translate": "sgrave2.config_category_description.icd",\
-        "fallback": "The properties of the ICD feature."\
-      }\
-    }\
+    "fallback": " Graves §7/ §r§lICD Properties:"\
   }\
 ]
 
@@ -30,7 +23,7 @@ tellraw @s [\
       "action":"show_text",\
       "value": {\
         "translate": "sgrave2.config_description.icd.activate_for",\
-        "fallback": "The players whom ICD should be activated for\n§cN §7→§r§fNo one §7(Disable ICD)\n§eO §7→§f The owner\n§aE §7→§r Anyone\n§bℹ This doesn't change who can take items from the grave. To change that, use other configs.value.\n§8Default: N"\
+        "fallback": "The players whom ICD should be activated for\n§cN §7→§f No one §7(Disables ICD)\n§eO §7→§f The owner\n§aE §7→§r Anyone\n§bℹ This doesn't change who can take items from the grave. To change that, use other configs.value.\n§8Default: N"\
       }\
     }\
   },\
@@ -138,7 +131,7 @@ tellraw @s [\
       "action":"show_text",\
       "value": {\
         "translate": "sgrave2.config_description.icd.switch_text_display",\
-        "fallback": "§a✔ §7→§r The text display will change to show the stack count and ID of the item §7(Recommended)§r.\n§c❌ §7→§r The text display will remain the same.\n§8Default: ✔"\
+        "fallback": "§a✔ §7→§r The text display will change to show properties about the item §7(Recommended)§r.\n§c❌ §7→§r The text display will remain the same.\n§8Default: ✔"\
       }\
     }\
   },\

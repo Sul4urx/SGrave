@@ -8,14 +8,7 @@ tellraw @s [\
   "",\
   {\
     "translate": "sgrave2.config_category.text_display_properties",\
-    "fallback": " §lText Display Properties:",\
-    "hover_event": {\
-      "action": "show_text",\
-      "value": {\
-        "translate": "sgrave2.config_category_description.text_display_properties",\
-        "fallback": "The properties of the text display part of the grave, which normally shows the owner's name, the GID and the despawn time."\
-      }\
-    }\
+    "fallback": " Graves §7/ §r§lText Display Properties:"\
   }\
 ]
 
@@ -371,7 +364,7 @@ tellraw @s [\
       "action":"show_text",\
       "value": {\
         "translate": "sgrave2.config_description.text_display_properties.icd_text.",\
-        "fallback": "The displayed text when ICD is activated. Uses text component format (i.e. The format used in /tellraw command).\n\n§bIf you are not familiar with text component format: \n§fJust change the §7translate§f field with the autocompleted option. To type certain characters or modify text, use these escape sequences:\n §7• %%%% §7→§f %%\n §7• \\n §7→§f New line\n §7• \\\" §7→§f \"\n §7• \\s §7→§f Space\n §7• \\\\ §7→§f \\\n §7• \\u00a7§o?§r §7→§f Changes the next characters' color and effects. Replace §o?§f with these characters to produce the following result:\n  §11 §22 §33 §44 §55 §66 §77 §88 §99 §00 §aa §bb §cc §dd §ee §ff §ll§r §oo§r §nn§r\n  m §7→§f §mStrikethrough§r\n  k §7→§f §kGibberish§r\n  r §7→§f Reset color and effects\n\n§fCodes:\n §7• %s§61$s §7→§f Current item count\n §7• %s§62$s §7→§f Current item slot\nThis is just a simple and basic part of text component fomrat. It's highly recommended to learn how to use text component format to further customize the text.\n\n§bℹ You can't modify the sub-configs in the chat due to the 255 character limit. You have to use a command block for that.\n\n§8Default: %s",\
+        "fallback": "The displayed text when ICD is activated. Uses text component format (i.e. The format used in /tellraw command).\n\n§bIf you are not familiar with text component format: \n§fJust change the §7translate§f field with the autocompleted option. To type certain characters or modify text, use these escape sequences:\n §7• %%%% §7→§f %%\n §7• \\n §7→§f New line\n §7• \\\" §7→§f \"\n §7• \\s §7→§f Space\n §7• \\\\ §7→§f \\\n §7• \\u00a7§o?§r §7→§f Changes the next characters' color and effects. Replace §o?§f with these characters to produce the following result:\n  §11 §22 §33 §44 §55 §66 §77 §88 §99 §00 §aa §bb §cc §dd §ee §ff §ll§r §oo§r §nn§r\n  m §7→§f §mStrikethrough§r\n  k §7→§f §kGibberish§r\n  r §7→§f Reset color and effects\n\n§fCodes:\n §7• %s§61$s §7→§f Current item count\n §7• %s§62$s §7→§f Current item slot\nThis is just a simple and basic part of text component fomrat. It's highly recommended to learn how to use text component format to further customize the text.\n\n§bℹ You can't modify the sub-configs in the chat due to the 255 character limit. You have to use a command block for that.\n\n§bℹ If config Switch Text Display in Graves / ICD Properties is set to false, this field will not be used.\n\n§8Default: %s",\
         "with": [\
           {\
             "text": "%",\

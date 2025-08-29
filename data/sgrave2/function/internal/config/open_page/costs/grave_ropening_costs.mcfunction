@@ -10,14 +10,7 @@ tellraw @s [\
   "",\
   {\
     "translate": "sgrave2.config_category.grave_ropening_costs",\
-    "fallback": " §lGrave Remote Opening Costs",\
-    "hover_event": {\
-      "action": "show_text",\
-      "value": {\
-        "translate": "sgrave2.config_category_description.grave_ropening_costs",\
-        "fallback": "The costs of remotely opening a grave"\
-      }\
-    }\
+    "fallback": " Costs §7/ §r§lGrave Remote Opening Costs"\
   }\
 ]
 
@@ -117,7 +110,7 @@ tellraw @s [\
       "action":"show_text",\
       "value": {\
         "translate": "sgrave2.config_description.grave_ropening_costs.owners.gamemodes",\
-        "fallback": "§a⬛ §7→§r Player in that game mode can remotely open the grave. Other costs will still apply.\n§c⬛ §7→§r Player in that game mode cannot remotely open the grave.\n\n§bS §7→§r Survival\n§bA §7→§r Adventure\n§bC §7→§r Creative\n\n§cS§7, §cA§7, §cC §7→§r Essentially disables opening or breaking the grave for owners of the grave.\n\n§8Default: §aS§8, §aA§8, §aC"\
+        "fallback": "§a⬛ §7→§r Players in that game mode can remotely open the grave. Other costs will still apply.\n§c⬛ §7→§r Players in that game mode cannot remotely open the grave.\n\n§bS §7→§r Survival\n§bA §7→§r Adventure\n§bC §7→§r Creative\n\n§cS§7, §cA§7, §cC §7→§r Essentially disables opening or breaking the grave for owners of the grave.\n\n§8Default: §aS§8, §aA§8, §aC"\
       }\
     }\
   },\
@@ -284,7 +277,7 @@ tellraw @s [\
       "action":"show_text",\
       "value": {\
         "translate": "sgrave2.config_description.grave_ropening_costs.non_owners.gamemodes",\
-        "fallback": "§a⬛ §7→§r Player in that game mode can remotely open the grave. Other costs will still apply.\n§c⬛ §7→§r Player in that game mode cannot remotely open the grave.\n\n§bS §7→§r Survival\n§bA §7→§r Adventure\n§bC §7→§r Creative\n\n§cS§7, §cA§7, §cC §7→§r Essentially disables opening or breaking the grave for non-owners of the grave.\n\n§8Default: §aS§8, §aA§8, §aC"\
+        "fallback": "§a⬛ §7→§r Players in that game mode can remotely open the grave. Other costs will still apply.\n§c⬛ §7→§r Players in that game mode cannot remotely open the grave.\n\n§bS §7→§r Survival\n§bA §7→§r Adventure\n§bC §7→§r Creative\n\n§cS§7, §cA§7, §cC §7→§r Essentially disables opening or breaking the grave for non-owners of the grave.\n\n§8Default: §aS§8, §aA§8, §aC"\
       }\
     }\
   },\

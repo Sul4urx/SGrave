@@ -8,16 +8,9 @@ tellraw @s [\
   "",\
   {\
     "translate": "sgrave2.config_category.show_grave_info",\
-    "fallback": " §lShow Grave Info:",\
-    "hover_event": {\
-      "action": "show_text",\
-      "value": {\
-        "translate": "sgrave2.config_category_description.show_grave_info",\
-        "fallback": "The contents of a grave that should be shown when a player wants to view the information of a grave. All values are true by default."\
-      }\
-    }\
+    "fallback": " Graves §7/ §r§lShow Grave Info:"\
   },\
-  " ",\
+  "\n\n            ",\
   {\
     "text":"AO§l §r",\
     "hover_event": {\
@@ -65,7 +58,7 @@ tellraw @s [\
   "",\
   {\
     "translate": "sgrave2.config.show_grave_info.all",\
-    "fallback": "   ALL:                   ",\
+    "fallback": "   ALL:§l   ",\
     "hover_event": {\
       "action":"show_text",\
       "value": {\
@@ -109,7 +102,7 @@ tellraw @s [\
           "action": "show_text",\
           "value": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.b",\
-            "fallback": "Click to toggle the config's value for broken graves."\
+            "fallback": "Click to toggle the config's value for destroyed graves."\
           }\
         },\
         "click_event": {\
@@ -149,7 +142,7 @@ tellraw @s [\
           "action": "show_text",\
           "value": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.bo",\
-            "fallback": "Click to toggle the config's value for broken graves that belong to other players."\
+            "fallback": "Click to toggle the config's value for destroyed graves that belong to other players."\
           }\
         },\
         "click_event": {\
@@ -166,7 +159,7 @@ tellraw @s [\
   "",\
   {\
     "translate": "sgrave2.config.show_grave_info.owner",\
-    "fallback": "   OWN:                   ",\
+    "fallback": "   OWN:§l   ",\
     "hover_event": {\
       "action":"show_text",\
       "value": {\
@@ -210,7 +203,7 @@ tellraw @s [\
           "action": "show_text",\
           "value": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.b",\
-            "fallback": "Click to toggle the config's value for broken graves."\
+            "fallback": "Click to toggle the config's value for destroyed graves."\
           }\
         },\
         "click_event": {\
@@ -250,7 +243,7 @@ tellraw @s [\
           "action": "show_text",\
           "value": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.bo",\
-            "fallback": "Click to toggle the config's value for broken graves that belong to other players."\
+            "fallback": "Click to toggle the config's value for destroyed graves that belong to other players."\
           }\
         },\
         "click_event": {\
@@ -267,7 +260,7 @@ tellraw @s [\
   "",\
   {\
     "translate": "sgrave2.config.show_grave_info.location_xyz",\
-    "fallback": "   LOC:                   ",\
+    "fallback": "   LOC:§l   ",\
     "hover_event": {\
       "action":"show_text",\
       "value": {\
@@ -311,7 +304,7 @@ tellraw @s [\
           "action": "show_text",\
           "value": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.b",\
-            "fallback": "Click to toggle the config's value for broken graves."\
+            "fallback": "Click to toggle the config's value for destroyed graves."\
           }\
         },\
         "click_event": {\
@@ -351,7 +344,7 @@ tellraw @s [\
           "action": "show_text",\
           "value": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.bo",\
-            "fallback": "Click to toggle the config's value for broken graves that belong to other players."\
+            "fallback": "Click to toggle the config's value for destroyed graves that belong to other players."\
           }\
         },\
         "click_event": {\
@@ -368,7 +361,7 @@ tellraw @s [\
   "",\
   {\
     "translate": "sgrave2.config.show_grave_info.location_dim",\
-    "fallback": "   LOD:                   ",\
+    "fallback": "   LOD:§l   ",\
     "hover_event": {\
       "action":"show_text",\
       "value": {\
@@ -412,7 +405,7 @@ tellraw @s [\
           "action": "show_text",\
           "value": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.b",\
-            "fallback": "Click to toggle the config's value for broken graves."\
+            "fallback": "Click to toggle the config's value for destroyed graves."\
           }\
         },\
         "click_event": {\
@@ -452,7 +445,7 @@ tellraw @s [\
           "action": "show_text",\
           "value": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.bo",\
-            "fallback": "Click to toggle the config's value for broken graves that belong to other players."\
+            "fallback": "Click to toggle the config's value for destroyed graves that belong to other players."\
           }\
         },\
         "click_event": {\
@@ -469,7 +462,7 @@ tellraw @s [\
   "",\
   {\
     "translate": "sgrave2.config.show_grave_info.despawn_time",\
-    "fallback": "   DST:                   ",\
+    "fallback": "   DST:§l   ",\
     "hover_event": {\
       "action":"show_text",\
       "value": {\
@@ -530,7 +523,7 @@ tellraw @s [\
   "",\
   {\
     "translate": "sgrave2.config.show_grave_info.creation_time",\
-    "fallback": "   CRT:                   ",\
+    "fallback": "   CRT:§l   ",\
     "hover_event": {\
       "action":"show_text",\
       "value": {\
@@ -574,7 +567,7 @@ tellraw @s [\
           "action": "show_text",\
           "value": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.b",\
-            "fallback": "Click to toggle the config's value for broken graves."\
+            "fallback": "Click to toggle the config's value for destroyed graves."\
           }\
         },\
         "click_event": {\
@@ -614,7 +607,7 @@ tellraw @s [\
           "action": "show_text",\
           "value": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.bo",\
-            "fallback": "Click to toggle the config's value for broken graves that belong to other players."\
+            "fallback": "Click to toggle the config's value for destroyed graves that belong to other players."\
           }\
         },\
         "click_event": {\
@@ -631,7 +624,7 @@ tellraw @s [\
   "",\
   {\
     "translate": "sgrave2.config.show_grave_info.items",\
-    "fallback": "   ITM:                 §l  §r",\
+    "fallback": "   ITM:§l §r   ",\
     "hover_event": {\
       "action":"show_text",\
       "value": {\
@@ -675,7 +668,7 @@ tellraw @s [\
           "action": "show_text",\
           "value": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.b",\
-            "fallback": "Click to toggle the config's value for broken graves."\
+            "fallback": "Click to toggle the config's value for destroyed graves."\
           }\
         },\
         "click_event": {\
@@ -715,7 +708,7 @@ tellraw @s [\
           "action": "show_text",\
           "value": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.bo",\
-            "fallback": "Click to toggle the config's value for broken graves that belong to other players."\
+            "fallback": "Click to toggle the config's value for destroyed graves that belong to other players."\
           }\
         },\
         "click_event": {\
@@ -732,12 +725,12 @@ tellraw @s [\
   "",\
   {\
     "translate": "sgrave2.config.show_grave_info.xp_before_death",\
-    "fallback": "   XPB:                   ",\
+    "fallback": "   XPB:§l   ",\
     "hover_event": {\
       "action":"show_text",\
       "value": {\
         "translate": "sgrave2.config_description.show_grave_info.xp_before_death",\
-        "fallback": "Whether the experience the player had right before he or she died should be shown. §7(XP Before death)"\
+        "fallback": "Whether the experience the player had right before they died should be shown. §7(XP Before death)"\
       }\
     }\
   },\
@@ -776,7 +769,7 @@ tellraw @s [\
           "action": "show_text",\
           "value": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.b",\
-            "fallback": "Click to toggle the config's value for broken graves."\
+            "fallback": "Click to toggle the config's value for destroyed graves."\
           }\
         },\
         "click_event": {\
@@ -816,7 +809,7 @@ tellraw @s [\
           "action": "show_text",\
           "value": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.bo",\
-            "fallback": "Click to toggle the config's value for broken graves that belong to other players."\
+            "fallback": "Click to toggle the config's value for destroyed graves that belong to other players."\
           }\
         },\
         "click_event": {\
@@ -833,12 +826,12 @@ tellraw @s [\
   "",\
   {\
     "translate": "sgrave2.config.show_grave_info.xp_after_death",\
-    "fallback": "   XPA:                   ",\
+    "fallback": "   XPA:§l   ",\
     "hover_event": {\
       "action":"show_text",\
       "value": {\
         "translate": "sgrave2.config_description.show_grave_info.xp_after_death",\
-        "fallback": "Whether the experience that is stored in the grave should be shown. §7(XP After death)"\
+        "fallback": "Whether the experience that is stored in the grave (i.e. the experience the player is going to get after destroying the grave) should be shown. §7(XP After death)"\
       }\
     }\
   },\
@@ -877,7 +870,7 @@ tellraw @s [\
           "action": "show_text",\
           "value": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.b",\
-            "fallback": "Click to toggle the config's value for broken graves."\
+            "fallback": "Click to toggle the config's value for destroyed graves."\
           }\
         },\
         "click_event": {\
@@ -917,7 +910,7 @@ tellraw @s [\
           "action": "show_text",\
           "value": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.bo",\
-            "fallback": "Click to toggle the config's value for broken graves that belong to other players."\
+            "fallback": "Click to toggle the config's value for destroyed graves that belong to other players."\
           }\
         },\
         "click_event": {\
@@ -934,12 +927,12 @@ tellraw @s [\
   "",\
   {\
     "translate": "sgrave2.config.show_grave_info.destruction_type",\
-    "fallback": "   DTP:                   ",\
+    "fallback": "   DTP:§l   ",\
     "hover_event": {\
       "action":"show_text",\
       "value": {\
         "translate": "sgrave2.config_description.show_grave_info.destruction_type",\
-        "fallback": "Whether how the grave was destroyed should be shown (e.g. broken, opened, despawned). §7(Destruction TyPe)"\
+        "fallback": "Whether how the grave was destroyed should be shown (e.g. destroyed, opened, despawned). §7(Destruction TyPe)"\
       }\
     }\
   },\
@@ -958,7 +951,7 @@ tellraw @s [\
           "action": "show_text",\
           "value": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.b",\
-            "fallback": "Click to toggle the config's value for broken graves."\
+            "fallback": "Click to toggle the config's value for destroyed graves."\
           }\
         },\
         "click_event": {\
@@ -978,7 +971,7 @@ tellraw @s [\
           "action": "show_text",\
           "value": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.bo",\
-            "fallback": "Click to toggle the config's value for broken graves that belong to other players."\
+            "fallback": "Click to toggle the config's value for destroyed graves that belong to other players."\
           }\
         },\
         "click_event": {\
@@ -995,12 +988,12 @@ tellraw @s [\
   "",\
   {\
     "translate": "sgrave2.config.show_grave_info.destroyer",\
-    "fallback": "   DER:                   ",\
+    "fallback": "   DER:§l   ",\
     "hover_event": {\
       "action":"show_text",\
       "value": {\
         "translate": "sgrave2.config_description.show_grave_info.destroyer",\
-        "fallback": "Whether the player who broke the grave should be shown. §7(DestroyER)"\
+        "fallback": "Whether the player who destroyed the grave should be shown. §7(DestroyER)"\
       }\
     }\
   },\
@@ -1019,7 +1012,7 @@ tellraw @s [\
           "action": "show_text",\
           "value": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.b",\
-            "fallback": "Click to toggle the config's value for broken graves."\
+            "fallback": "Click to toggle the config's value for destroyed graves."\
           }\
         },\
         "click_event": {\
@@ -1039,7 +1032,7 @@ tellraw @s [\
           "action": "show_text",\
           "value": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.bo",\
-            "fallback": "Click to toggle the config's value for broken graves that belong to other players."\
+            "fallback": "Click to toggle the config's value for destroyed graves that belong to other players."\
           }\
         },\
         "click_event": {\
