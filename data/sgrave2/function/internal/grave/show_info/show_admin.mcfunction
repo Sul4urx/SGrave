@@ -1,4 +1,4 @@
-#<! show_admin_grave_info
+#<! admin/show_grave_info
 
 ## Read the input GID and store it
 execute store result storage sgrave2:common temp.args.gid int 1 run scoreboard players get @s sgrave2.show_grave_info

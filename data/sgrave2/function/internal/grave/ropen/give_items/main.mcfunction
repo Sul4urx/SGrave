@@ -1,5 +1,5 @@
 #<< grave/ropen
-#<! remote_open_grave
+#<! grave/admin/remote_open
 
 ## Summon temp item (used for manipulating each item stored in grave)
 ## Call it manipulator item

@@ -1,4 +1,4 @@
-#<! force_generate_grave
+#<! grave/admin/generate
 
 execute store result storage sgrave2:common temp.args.pid int 1 run scoreboard players get @s sgrave2.pid 
 function sgrave2:internal/map/players/lookup with storage sgrave2:common temp.args

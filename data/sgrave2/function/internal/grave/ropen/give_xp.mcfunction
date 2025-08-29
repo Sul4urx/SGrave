@@ -1,5 +1,5 @@
 #<< grave/ropen
-#<! remote_open_grave
+#<! grave/admin/remote_open
 
 ## Add XP
 $xp add @s $(total) points
