@@ -1,8 +1,8 @@
 #<< config/open_page/graves/icd_properties
 
 ## Toggle value
-scoreboard players add (graves/icd/requires_sneaking) sgrave2.config 1
-execute if score (graves/icd/requires_sneaking) sgrave2.config matches 2.. run scoreboard players set (graves/icd/requires_sneaking) sgrave2.config 0
+scoreboard players add (graves/icd/revert_sneaking_behavior) sgrave2.config 1
+execute if score (graves/icd/revert_sneaking_behavior) sgrave2.config matches 2.. run scoreboard players set (graves/icd/revert_sneaking_behavior) sgrave2.config 0
 
 ## Play sound
 playsound minecraft:ui.button.click

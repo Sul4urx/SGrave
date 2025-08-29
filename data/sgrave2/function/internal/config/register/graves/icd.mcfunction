@@ -29,9 +29,9 @@ execute store result storage sgrave2:common configs.value.graves.icd.item_cycle_
 data modify storage sgrave2:common configs.text.graves.icd.item_cycle_cooldown set string storage sgrave2:common configs.value.graves.icd.item_cycle_cooldown
 
 ## Requires Sneaking
-execute unless score (graves/icd/requires_sneaking) sgrave2.config matches 0..1 run scoreboard players set (graves/icd/requires_sneaking) sgrave2.config 1
+execute unless score (graves/icd/revert_sneaking_behavior) sgrave2.config matches 0..1 run scoreboard players set (graves/icd/revert_sneaking_behavior) sgrave2.config 0
 
-execute store result storage sgrave2:common configs.value.graves.icd.requires_sneaking byte 1 run scoreboard players get (graves/icd/requires_sneaking) sgrave2.config
+execute store result storage sgrave2:common configs.value.graves.icd.revert_sneaking_behavior byte 1 run scoreboard players get (graves/icd/revert_sneaking_behavior) sgrave2.config
 
-execute if data storage sgrave2:common configs.value.graves.icd{requires_sneaking:0b} run data modify storage sgrave2:common configs.text.graves.icd.requires_sneaking set value "§c❌"
-execute if data storage sgrave2:common configs.value.graves.icd{requires_sneaking:1b} run data modify storage sgrave2:common configs.text.graves.icd.requires_sneaking set value "§a✔"
+execute if data storage sgrave2:common configs.value.graves.icd{revert_sneaking_behavior:0b} run data modify storage sgrave2:common configs.text.graves.icd.revert_sneaking_behavior set value "§c❌"
+execute if data storage sgrave2:common configs.value.graves.icd{revert_sneaking_behavior:1b} run data modify storage sgrave2:common configs.text.graves.icd.revert_sneaking_behavior set value "§a✔"

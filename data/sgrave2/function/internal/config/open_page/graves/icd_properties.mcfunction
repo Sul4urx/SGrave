@@ -86,16 +86,16 @@ tellraw @s [\
   }\
 ]
 
-## Requires Sneaking
+## Revert Sneaking Behavior
 tellraw @s [\
   {\
-    "translate": "sgrave2.config.icd.requires_sneaking",\
-    "fallback": "   Requires Sneaking: ",\
+    "translate": "sgrave2.config.icd.revert_sneaking_behavior",\
+    "fallback": "   Revert Sneaking Behavior: ",\
     "hover_event": {\
       "action":"show_text",\
       "value": {\
-        "translate": "sgrave2.config_description.icd.requires_sneaking",\
-        "fallback": "§a✔ §7→§r Sneaking is required in order to activate ICD\n§c❌ §7→§r Getting near the grave is enough to activate ICD.\n§8Default: ✔"\
+        "translate": "sgrave2.config_description.icd.revert_sneaking_behavior",\
+        "fallback": "§a✔ §7→§r ICD is only activated if the player is sneaking\n§c❌ §7→§r ICD is only activated if the player is not sneaking.\n§8Default: ✔"\
       }\
     }\
   },\
@@ -103,7 +103,7 @@ tellraw @s [\
     "translate": "§7[%s§7]",\
     "with": [\
       {\
-        "nbt": "configs.text.graves.icd.requires_sneaking",\
+        "nbt": "configs.text.graves.icd.revert_sneaking_behavior",\
         "storage": "sgrave2:common",\
         "color": "aqua"\
       }\
@@ -117,7 +117,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "run_command",\
-      "command": "/function sgrave2:internal/config/toggle/graves/icd/requires_sneaking"\
+      "command": "/function sgrave2:internal/config/toggle/graves/icd/revert_sneaking_behavior"\
     }\
   }\
 ]

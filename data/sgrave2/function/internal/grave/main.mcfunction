@@ -30,11 +30,11 @@ execute unless score (graves/icd/switch_text_display) sgrave2.config matches 0 u
 execute unless score (graves/icd/switch_text_display) sgrave2.config matches 0 if data entity @s item.components.minecraft:custom_data.sgrave2:common{icd_activated:1b} run function sgrave2:internal/grave/update_text_display/icd/prepare
 
 ## Tag the ICD (Item Cycle Display) activator
-execute if score (graves/icd/activate_for) sgrave2.config matches 1 if score (graves/icd/requires_sneaking) sgrave2.config matches 0 run tag @a[distance=..4,tag=sgrave2.temp.grave.owner] add sgrave2.temp.grave.icd_activator
-execute if score (graves/icd/activate_for) sgrave2.config matches 2 if score (graves/icd/requires_sneaking) sgrave2.config matches 0 run tag @a[distance=..4] add sgrave2.temp.grave.icd_activator
+execute if score (graves/icd/activate_for) sgrave2.config matches 1 if score (graves/icd/revert_sneaking_behavior) sgrave2.config matches 0 run tag @a[distance=..4,predicate=sgrave2:is_sneaking,tag=sgrave2.temp.grave.owner] add sgrave2.temp.grave.icd_activator
+execute if score (graves/icd/activate_for) sgrave2.config matches 2 if score (graves/icd/revert_sneaking_behavior) sgrave2.config matches 0 run tag @a[distance=..4,predicate=sgrave2:is_sneaking] add sgrave2.temp.grave.icd_activator
 
-execute if score (graves/icd/activate_for) sgrave2.config matches 1 if score (graves/icd/requires_sneaking) sgrave2.config matches 1 run tag @a[distance=..4,predicate=sgrave2:is_sneaking,tag=sgrave2.temp.grave.owner] add sgrave2.temp.grave.icd_activator
-execute if score (graves/icd/activate_for) sgrave2.config matches 2 if score (graves/icd/requires_sneaking) sgrave2.config matches 1 run tag @a[distance=..4,predicate=sgrave2:is_sneaking] add sgrave2.temp.grave.icd_activator
+execute if score (graves/icd/activate_for) sgrave2.config matches 1 if score (graves/icd/revert_sneaking_behavior) sgrave2.config matches 1 run tag @a[distance=..4,predicate=!sgrave2:is_sneaking,tag=sgrave2.temp.grave.owner] add sgrave2.temp.grave.icd_activator
+execute if score (graves/icd/activate_for) sgrave2.config matches 2 if score (graves/icd/revert_sneaking_behavior) sgrave2.config matches 1 run tag @a[distance=..4,predicate=!sgrave2:is_sneaking] add sgrave2.temp.grave.icd_activator
 
 ## ICD management
 execute as @n[tag=sgrave2.temp.grave.icd_activator] at @s run function sgrave2:internal/grave/icd/check_conditions
