@@ -72,7 +72,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/graves/grave_despawn_time {value:?}"\
+      "command": "/function sgrave2:internal/config/change/graves/grave_despawn_time {value: ?}"\
     }\
   }\
 ]

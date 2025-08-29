@@ -107,7 +107,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/general/mod_compatibility_mode/item_collection_distance {value:?}"\
+      "command": "/function sgrave2:internal/config/change/general/mod_compatibility_mode/item_collection_distance {value: ?}"\
     }\
   }\
 ]

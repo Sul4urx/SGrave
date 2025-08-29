@@ -37,7 +37,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/dropped_contents/item_despawn_time {value:?"\ 
+      "command": "/function sgrave2:internal/config/change/dropped_contents/item_despawn_time {value: ?}"\ 
     }\
   }\
 ]
@@ -73,7 +73,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/dropped_contents/xp_despawn_time {value:?"\ 
+      "command": "/function sgrave2:internal/config/change/dropped_contents/xp_despawn_time {value: ?}"\ 
     }\
   }\
 ]

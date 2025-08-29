@@ -91,12 +91,12 @@ tellraw @s [\
       "action": "show_text",\
       "value": {\
         "translate": "sgrave2.config_change_description.grave_opening_costs.owners.xp",\
-        "fallback": "Click to change the config.\n§7ℹ Format: {value:§olevels§r§7}\nFor example: {value:6}."\
+        "fallback": "Click to change the config.\n§7ℹ Format: {value:§olevels§r§7}\nFor example: {value: 6}."\
       }\
     },\
     "click_event": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/costs/grave_opening_costs/owners/xp {value:}"\
+      "command": "/function sgrave2:internal/config/change/costs/grave_opening_costs/owners/xp {value: ?}"\
     }\
   }\
 ]
@@ -263,7 +263,7 @@ tellraw @s [\
     },\
     "click_event": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/costs/grave_opening_costs/non_owners/xp {value:}"\
+      "command": "/function sgrave2:internal/config/change/costs/grave_opening_costs/non_owners/xp {value: ?}"\
     }\
   }\
 ]
