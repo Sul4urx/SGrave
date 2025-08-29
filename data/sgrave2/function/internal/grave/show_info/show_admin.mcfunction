@@ -3,6 +3,12 @@
 ## Read the input GID and store it
 execute store result storage sgrave2:common temp.args.gid int 1 run scoreboard players get @s sgrave2.show_grave_info
 
+## Check if any graves have been generated yet
+execute unless data storage sgrave2:common graves[0] run return run title @s actionbar {\
+  "translate": "sgrave2.grave_info.fail.grave_none_exist",\
+  "fallback": "§cNo graves have been generated yet."\
+}
+
 ## Check if the grave has ever existed before
 execute store result score .grave_exists sgrave2.temp_var run function sgrave2:internal/grave/show_info/check_if_grave_exists with storage sgrave2:common temp.args
 execute if score .grave_exists sgrave2.temp_var matches 0 run return run title @s actionbar {"translate": "sgrave2.grave_info.fail.gid_no_exist", "fallback": "§cGrave #%s§c does not exist.", "with": [{"nbt": "temp.args.gid", "storage": "sgrave2:common", "color": "red"}]}
