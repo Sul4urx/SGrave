@@ -1,1 +1,0 @@
-$execute store result score .macro_result.forceload_remove sgrave2.temp_var run forceload remove $(x) $(z)

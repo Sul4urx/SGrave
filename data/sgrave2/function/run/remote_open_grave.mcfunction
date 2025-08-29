@@ -37,6 +37,3 @@ data modify storage sgrave2:common players[-1].graves[-1].data.status set from s
 
 ## Remove temp tag
 tag @s remove sgrave2.temp.grave.interactor
-
-## Remove temp forceload
-execute if score .macro_result.forceload_add sgrave2.temp_var matches 1 unless score .macro_result.forceload_query sgrave2.temp_var matches 1 run function sgrave2:internal/macro/forceload_remove with storage sgrave2:common temp.args
