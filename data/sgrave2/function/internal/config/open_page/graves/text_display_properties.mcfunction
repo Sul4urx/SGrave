@@ -376,7 +376,7 @@ tellraw @s [\
           },\
           {\
             "text": "{translate: \"%1$s %2$s\n\", with: [{nbt: \"temp.text_display.icd.item.count\", storage: \"sgrave2:common\", color: \"gold\"}, {nbt: \"temp.text_display.icd.item.slot_name\", storage: \"sgrave2:common\", color: \"green\"}]}",\
-            "color": "gray"\
+            "color": "dark_gray"\
           }\
         ]\
       }\
