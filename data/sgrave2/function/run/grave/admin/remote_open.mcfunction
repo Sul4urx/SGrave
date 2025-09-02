@@ -1,7 +1,7 @@
 
 $execute unless data storage sgrave2:common active_graves[{data:{gid:$(gid)}}] run return run title @s actionbar {\
   "translate": "sgrave2.ropen_grave.fail.grave_destroyed",\
-  "fallback": "§cGrave #$(gid) either does not exist or has been destroyed.",\
+  "fallback": "§cGrave #$(gid) either does not exist or has been destroyed."\
 }
 
 $function sgrave2:internal/map/graves/lookup {gid:$(gid)}

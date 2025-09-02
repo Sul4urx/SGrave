@@ -19,46 +19,46 @@ tellraw @s [\
       {\
         "translate": "sgrave2.config.main_menu.costs",\
         "fallback": " §bCosts ",\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_page_open_description.costs",\
             "fallback": "All configs about requirements and costs to accomplish certain tasks like opening or generating graves\nClick to open page 'Costs'."\
             }\
           },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/open_page/costs"\
+          "value": "/function sgrave2:internal/config/open_page/costs"\
         }\
       },\
       {\
         "translate": "sgrave2.config.main_menu.graves",\
         "fallback": " §bGraves ",\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_page_open_description.graves",\
             "fallback": "All configs about graves in general\nClick to open page 'Graves'."\
             }\
           },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/open_page/graves"\
+          "value": "/function sgrave2:internal/config/open_page/graves"\
         }\
       },\
       {\
         "translate": "sgrave2.config.main_menu.players",\
         "fallback": " §bPlayers ",\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_page_open_description.players",\
             "fallback": "All configs about players\nClick to open page 'Players'."\
             }\
           },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/open_page/players"\
+          "value": "/function sgrave2:internal/config/open_page/players"\
         }\
       }\
     ]\
@@ -73,31 +73,31 @@ tellraw @s [\
       {\
         "translate": "sgrave2.config.main_menu.dropped_contents",\
         "fallback": " §bDropped Contents ",\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_page_open_description.dropped_contents",\
             "fallback": "All configs about dropped items and XP from graves\nClick to open page 'Dropped Contents'."\
             }\
           },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/open_page/dropped_contents"\
+          "value": "/function sgrave2:internal/config/open_page/dropped_contents"\
         }\
       },\
       {\
         "translate": "sgrave2.config.main_menu.general",\
         "fallback": " §bGeneral ",\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_page_open_description.dropped_contents",\
             "fallback": "All unrelated configs"\
             }\
           },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/open_page/general"\
+          "value": "/function sgrave2:internal/config/open_page/general"\
         }\
       }\
     ]\

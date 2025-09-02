@@ -11,9 +11,9 @@ tellraw @s [\
   {\
     "translate": "sgrave2.config.glowing_graves",\
     "fallback": "   Glowing Graves: ",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action":"show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_description.glowing_graves",\
         "fallback": "Whether graves have a glow outline, as if they had the glowing status effect.\n§8Default: ✔"\
       }\
@@ -27,16 +27,16 @@ tellraw @s [\
         "storage": "sgrave2:common" \
       }\
     ],\
-    "hover_event": {\
+    "hoverEvent": {\
       "action": "show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_change_description.toggle",\
         "fallback": "Click to toggle the config's value."\
       }\
     },\
-    "click_event": {\
+    "clickEvent": {\
       "action": "run_command",\
-      "command": "/function sgrave2:internal/config/toggle/graves/glowing_graves"\
+      "value": "/function sgrave2:internal/config/toggle/graves/glowing_graves"\
     }\
   }\
 ]
@@ -46,9 +46,9 @@ tellraw @s [\
   {\
     "translate": "sgrave2.config.despawn_time.grave",\
     "fallback": "   Grave Despawn Time: ",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action":"show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_description.despawn_time.grave",\
         "fallback": "The amount of time (in seconds) that it takes for a grave to despawn.\n§8Default: 5400"\
       }\
@@ -63,16 +63,16 @@ tellraw @s [\
         "color": "aqua"\
       }\
     ],\
-    "hover_event": {\
+    "hoverEvent": {\
       "action": "show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_change_description.replace_value",\
         "fallback": "Click to change the config's value. \nReplace §o?§r with the value you want to change the config to."\
       }\
     },\
-    "click_event": {\
+    "clickEvent": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/graves/grave_despawn_time {value: ?}"\
+      "value": "/function sgrave2:internal/config/change/graves/grave_despawn_time {value: ?}"\
     }\
   }\
 ]
@@ -82,9 +82,9 @@ tellraw @s [\
   {\
     "translate": "sgrave2.config.grave_placement_restrictions",\
     "fallback": "   Grave Placement Restrictions: ",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action":"show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_description.grave_placement_restrictions",\
         "fallback": "The blocks that a grave cannot generate on or generate in.\n§bℹ This config might be a bit confusing. Remember that if a condition is set to false, that would mean that graves will not be restricted to generate in that condition, meaning graves can generate in that condition."\
       }\
@@ -92,16 +92,16 @@ tellraw @s [\
   },\
   {\
     "translate": "§7[§b>§7]",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action": "show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_sub_page_open_description.grave_placement_restrictions",\
         "fallback": "Click to open the \"§lGrave Placement Restrictions§r\" sub-page."\
       }\
     },\
-    "click_event": {\
+    "clickEvent": {\
       "action": "run_command",\
-      "command": "/function sgrave2:internal/config/open_page/graves/grave_placement_restrictions"\
+      "value": "/function sgrave2:internal/config/open_page/graves/grave_placement_restrictions"\
     }\
   }\
 ]
@@ -111,9 +111,9 @@ tellraw @s [\
   {\
     "translate": "sgrave2.config.icd",\
     "fallback": "   ICD Properties: ",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action":"show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_description.icd",\
         "fallback": "The properties of the ICD feature."\
       }\
@@ -121,16 +121,16 @@ tellraw @s [\
   },\
   {\
     "translate": "§7[§b>§7]",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action": "show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_sub_page_open_description.icd",\
         "fallback": "Click to open the \"§lICD Properties§r\" sub-page."\
       }\
     },\
-    "click_event": {\
+    "clickEvent": {\
       "action": "run_command",\
-      "command": "/function sgrave2:internal/config/open_page/graves/icd_properties"\
+      "value": "/function sgrave2:internal/config/open_page/graves/icd_properties"\
     }\
   }\
 ]
@@ -140,9 +140,9 @@ tellraw @s [\
   {\
     "translate": "sgrave2.config.show_grave_info",\
     "fallback": "   Show Grave Info: ",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action":"show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_description.show_grave_info",\
         "fallback": "The contents of a grave that should be shown when a player wants to view the information of a grave. By default, all players can see all information."\
       }\
@@ -150,16 +150,16 @@ tellraw @s [\
   },\
   {\
     "translate": "§7[§b>§7]",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action": "show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_sub_page_open_description.show_grave_info",\
         "fallback": "Click to open the \"§lShow Grave Info§r\" sub-page."\
       }\
     },\
-    "click_event": {\
+    "clickEvent": {\
       "action": "run_command",\
-      "command": "/function sgrave2:internal/config/open_page/graves/show_grave_info"\
+      "value": "/function sgrave2:internal/config/open_page/graves/show_grave_info"\
     }\
   }\
 ]
@@ -169,9 +169,9 @@ tellraw @s [\
   {\
     "translate": "sgrave2.config.text_display_properties",\
     "fallback": "   Text Display Properties: ",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action":"show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_description.text_display_properties",\
         "fallback": "The properties of the text display part of the grave, which normally shows the owner's name, the GID and the despawn time."\
       }\
@@ -179,16 +179,16 @@ tellraw @s [\
   },\
   {\
     "translate": "§7[§b>§7]",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action": "show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_sub_page_open_description.text_display_properties",\
         "fallback": "Click to open the \"§lText Display Properties§r\" sub-page."\
       }\
     },\
-    "click_event": {\
+    "clickEvent": {\
       "action": "run_command",\
-      "command": "/function sgrave2:internal/config/open_page/graves/text_display_properties"\
+      "value": "/function sgrave2:internal/config/open_page/graves/text_display_properties"\
     }\
   }\
 ]
@@ -198,9 +198,9 @@ tellraw @s [\
   {\
     "translate": "sgrave2.config.xp_distribution",\
     "fallback": "   XP Distribution: ",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action":"show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_description.xp_distribution",\
         "fallback": "The amount of XP to remove, keep or take."\
       }\
@@ -208,16 +208,16 @@ tellraw @s [\
   },\
   {\
     "translate": "§7[§b>§7]",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action": "show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_sub_page_open_description.xp_distribution",\
         "fallback": "Click to open the \"§lXP Distribution§r\" sub-page."\
       }\
     },\
-    "click_event": {\
+    "clickEvent": {\
       "action": "run_command",\
-      "command": "/function sgrave2:internal/config/open_page/graves/xp_distribution"\
+      "value": "/function sgrave2:internal/config/open_page/graves/xp_distribution"\
     }\
   }\
 ]
@@ -232,30 +232,30 @@ tellraw @s [\
     "with": [\
       {\
         "text": "§c< Back ",\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_go_back_description.main",\
-            "fallback": "Click to go back to the main page.",\
+            "fallback": "Click to go back to the main page."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/open_page/main"\
+          "value": "/function sgrave2:internal/config/open_page/main"\
         }\
       },\
       {\
         "text": " §b🔃 Refresh",\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_refresh_page_description",\
             "fallback": "Click to refresh this page."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/open_page/graves"\
+          "value": "/function sgrave2:internal/config/open_page/graves"\
         }\
       }\
     ]\

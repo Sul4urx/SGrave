@@ -11,9 +11,9 @@ tellraw @s [\
   {\
     "translate": "sgrave2.config.despawn_time.item",\
     "fallback": "   Item Despawn Time: ",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action":"show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_description.despawn_time.item",\
         "fallback": "The amount of time (in seconds) that it takes for items dropped from graves to despawn.\n§8Default: 2700"\
       }\
@@ -28,16 +28,16 @@ tellraw @s [\
         "color": "aqua"\
       }\
     ],\
-    "hover_event": {\
+    "hoverEvent": {\
       "action": "show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_change_description.replace_value",\
         "fallback": "Click to change the config's value. \nReplace §o?§r with the value you want to change the config to."\
       }\
     },\
-    "click_event": {\
+    "clickEvent": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/dropped_contents/item_despawn_time {value: ?}"\ 
+      "value": "/function sgrave2:internal/config/change/dropped_contents/item_despawn_time {value: ?}"\ 
     }\
   }\
 ]
@@ -47,9 +47,9 @@ tellraw @s [\
   {\
     "translate": "sgrave2.config.despawn_time.xp",\
     "fallback": "   XP Despawn Time: ",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action":"show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_description.despawn_time.xp",\
         "fallback": "The amount of time (in seconds) that it takes for XP orbs dropped from graves to despawn.\n§8Default: 1200"\
       }\
@@ -64,16 +64,16 @@ tellraw @s [\
         "color": "aqua"\
       }\
     ],\
-    "hover_event": {\
+    "hoverEvent": {\
       "action": "show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_change_description.replace_value",\
         "fallback": "Click to change the config's value. \nReplace §o?§r with the value you want to change the config to."\
       }\
     },\
-    "click_event": {\
+    "clickEvent": {\
       "action": "suggest_command",\
-      "command": "/function sgrave2:internal/config/change/dropped_contents/xp_despawn_time {value: ?}"\ 
+      "value": "/function sgrave2:internal/config/change/dropped_contents/xp_despawn_time {value: ?}"\ 
     }\
   }\
 ]
@@ -88,30 +88,30 @@ tellraw @s [\
     "with": [\
       {\
         "text": "§c< Back ",\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_go_back_description.main",\
-            "fallback": "Click to go back to the main page.",\
+            "fallback": "Click to go back to the main page."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/open_page/main"\
+          "value": "/function sgrave2:internal/config/open_page/main"\
         }\
       },\
       {\
         "text": " §b🔃 Refresh",\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_refresh_page_description",\
             "fallback": "Click to refresh this page."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/open_page/dropped_contents"\
+          "value": "/function sgrave2:internal/config/open_page/dropped_contents"\
         }\
       }\
     ]\

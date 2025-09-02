@@ -13,9 +13,9 @@ tellraw @s [\
   "\n\n            ",\
   {\
     "text":"AO§l §r",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action": "show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_description.show_grave_info.n",\
         "fallback": "For active graves that belong to the reader (§lA§rctive §lO§rwner)"\
       }\
@@ -23,9 +23,9 @@ tellraw @s [\
   },\
   {\
     "text":"BO§l §r",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action": "show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_description.show_grave_info.b",\
         "fallback": "For destroyed graves that belong to the reader (§lB§rroken §lO§rwner)"\
       }\
@@ -33,9 +33,9 @@ tellraw @s [\
   },\
   {\
     "text":"AN§l §r",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action": "show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_description.show_grave_info.o",\
         "fallback": "For active graves that belong to other players (§lA§rctive §lN§ron-Owner)"\
       }\
@@ -43,9 +43,9 @@ tellraw @s [\
   },\
   {\
     "text":"BN§l §r",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action": "show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_description.show_grave_info.bo",\
         "fallback": "For destroyed graves that belong to other players (§lB§rroken §lN§ron-Owner)"\
       }\
@@ -59,9 +59,9 @@ tellraw @s [\
   {\
     "translate": "sgrave2.config.show_grave_info.all",\
     "fallback": "   ALL:§l   ",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action":"show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_description.show_grave_info.all",\
         "fallback": "If false, grave info will not be shown at all. §7(ALL grave info)"\
       }\
@@ -78,16 +78,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.n",\
             "fallback": "Click to toggle the config's value for active graves."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/all"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/all"\
         }\
       },\
       {\
@@ -98,16 +98,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.b",\
             "fallback": "Click to toggle the config's value for destroyed graves."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/all"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/all"\
         }\
       },\
       {\
@@ -118,16 +118,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.o",\
             "fallback": "Click to toggle the config's value for graves that belong to other players."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/all"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/all"\
         }\
       },\
       {\
@@ -138,16 +138,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.bo",\
             "fallback": "Click to toggle the config's value for destroyed graves that belong to other players."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/all"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/all"\
         }\
       }\
     ]\
@@ -160,9 +160,9 @@ tellraw @s [\
   {\
     "translate": "sgrave2.config.show_grave_info.owner",\
     "fallback": "   OWN:§l   ",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action":"show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_description.show_grave_info.owner",\
         "fallback": "Whether the owner of the grave should be shown. §7(OWNer)"\
       }\
@@ -179,16 +179,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.n",\
             "fallback": "Click to toggle the config's value for active graves."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/owner"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/owner"\
         }\
       },\
       {\
@@ -199,16 +199,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.b",\
             "fallback": "Click to toggle the config's value for destroyed graves."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/owner"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/owner"\
         }\
       },\
       {\
@@ -219,16 +219,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.o",\
             "fallback": "Click to toggle the config's value for graves that belong to other players."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/owner"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/owner"\
         }\
       },\
       {\
@@ -239,16 +239,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.bo",\
             "fallback": "Click to toggle the config's value for destroyed graves that belong to other players."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/owner"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/owner"\
         }\
       }\
     ]\
@@ -261,9 +261,9 @@ tellraw @s [\
   {\
     "translate": "sgrave2.config.show_grave_info.location_xyz",\
     "fallback": "   LOC:§l   ",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action":"show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_description.show_grave_info.location_xyz",\
         "fallback": "Whether the coordinates of the grave should be shown. §7(LOcation Coordinates)"\
       }\
@@ -280,16 +280,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.n",\
             "fallback": "Click to toggle the config's value for active graves."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/location_xyz"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/location_xyz"\
         }\
       },\
       {\
@@ -300,16 +300,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.b",\
             "fallback": "Click to toggle the config's value for destroyed graves."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/location_xyz"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/location_xyz"\
         }\
       },\
       {\
@@ -320,16 +320,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.o",\
             "fallback": "Click to toggle the config's value for graves that belong to other players."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/location_xyz"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/location_xyz"\
         }\
       },\
       {\
@@ -340,16 +340,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.bo",\
             "fallback": "Click to toggle the config's value for destroyed graves that belong to other players."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/location_xyz"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/location_xyz"\
         }\
       }\
     ]\
@@ -362,9 +362,9 @@ tellraw @s [\
   {\
     "translate": "sgrave2.config.show_grave_info.location_dim",\
     "fallback": "   LOD:§l   ",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action":"show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_description.show_grave_info.location_dim",\
         "fallback": "Whether the dimension the grave was generated in should be shown. §7(LOcation Dimension)"\
       }\
@@ -381,16 +381,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.n",\
             "fallback": "Click to toggle the config's value for active graves."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/location_dim"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/location_dim"\
         }\
       },\
       {\
@@ -401,16 +401,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.b",\
             "fallback": "Click to toggle the config's value for destroyed graves."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/location_dim"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/location_dim"\
         }\
       },\
       {\
@@ -421,16 +421,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.o",\
             "fallback": "Click to toggle the config's value for graves that belong to other players."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/location_dim"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/location_dim"\
         }\
       },\
       {\
@@ -441,16 +441,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.bo",\
             "fallback": "Click to toggle the config's value for destroyed graves that belong to other players."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/location_dim"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/location_dim"\
         }\
       }\
     ]\
@@ -463,9 +463,9 @@ tellraw @s [\
   {\
     "translate": "sgrave2.config.show_grave_info.despawn_time",\
     "fallback": "   DST:§l   ",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action":"show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_description.show_grave_info.despawn_time",\
         "fallback": "Whether the despawn time of the grave should be shown. §7(DeSpawn Time)"\
       }\
@@ -482,16 +482,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.n",\
             "fallback": "Click to toggle the config's value for active graves."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/despawn_time"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/despawn_time"\
         }\
       },\
       {\
@@ -502,16 +502,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.o",\
             "fallback": "Click to toggle the config's value for graves that belong to other players."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/despawn_time"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/despawn_time"\
         }\
       }\
     ]\
@@ -524,9 +524,9 @@ tellraw @s [\
   {\
     "translate": "sgrave2.config.show_grave_info.creation_time",\
     "fallback": "   CRT:§l   ",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action":"show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_description.show_grave_info.creation_time",\
         "fallback": "Whether the in-game time the grave was generated at should be shown. §7(CReation Time)"\
       }\
@@ -543,16 +543,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.n",\
             "fallback": "Click to toggle the config's value for active graves."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/creation_time"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/creation_time"\
         }\
       },\
       {\
@@ -563,16 +563,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.b",\
             "fallback": "Click to toggle the config's value for destroyed graves."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/creation_time"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/creation_time"\
         }\
       },\
       {\
@@ -583,16 +583,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.o",\
             "fallback": "Click to toggle the config's value for graves that belong to other players."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/creation_time"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/creation_time"\
         }\
       },\
       {\
@@ -603,16 +603,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.bo",\
             "fallback": "Click to toggle the config's value for destroyed graves that belong to other players."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/creation_time"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/creation_time"\
         }\
       }\
     ]\
@@ -625,9 +625,9 @@ tellraw @s [\
   {\
     "translate": "sgrave2.config.show_grave_info.items",\
     "fallback": "   ITM:§l §r   ",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action":"show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_description.show_grave_info.items",\
         "fallback": "Whether the items of the grave should be shown. §7(ITeMs)"\
       }\
@@ -644,16 +644,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.n",\
             "fallback": "Click to toggle the config's value for active graves."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/items"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/items"\
         }\
       },\
       {\
@@ -664,16 +664,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.b",\
             "fallback": "Click to toggle the config's value for destroyed graves."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/items"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/items"\
         }\
       },\
       {\
@@ -684,16 +684,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.o",\
             "fallback": "Click to toggle the config's value for graves that belong to other players."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/items"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/items"\
         }\
       },\
       {\
@@ -704,16 +704,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.bo",\
             "fallback": "Click to toggle the config's value for destroyed graves that belong to other players."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/items"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/items"\
         }\
       }\
     ]\
@@ -726,9 +726,9 @@ tellraw @s [\
   {\
     "translate": "sgrave2.config.show_grave_info.xp_before_death",\
     "fallback": "   XPB:§l   ",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action":"show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_description.show_grave_info.xp_before_death",\
         "fallback": "Whether the experience the player had right before they died should be shown. §7(XP Before death)"\
       }\
@@ -745,16 +745,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.n",\
             "fallback": "Click to toggle the config's value for active graves."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/xp_before_death"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/xp_before_death"\
         }\
       },\
       {\
@@ -765,16 +765,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.b",\
             "fallback": "Click to toggle the config's value for destroyed graves."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/xp_before_death"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/xp_before_death"\
         }\
       },\
       {\
@@ -785,16 +785,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.o",\
             "fallback": "Click to toggle the config's value for graves that belong to other players."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/xp_before_death"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/xp_before_death"\
         }\
       },\
       {\
@@ -805,16 +805,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.bo",\
             "fallback": "Click to toggle the config's value for destroyed graves that belong to other players."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/xp_before_death"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/xp_before_death"\
         }\
       }\
     ]\
@@ -827,9 +827,9 @@ tellraw @s [\
   {\
     "translate": "sgrave2.config.show_grave_info.xp_after_death",\
     "fallback": "   XPA:§l   ",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action":"show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_description.show_grave_info.xp_after_death",\
         "fallback": "Whether the experience that is stored in the grave (i.e. the experience the player is going to get after destroying the grave) should be shown. §7(XP After death)"\
       }\
@@ -846,16 +846,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.n",\
             "fallback": "Click to toggle the config's value for active graves."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/xp_after_death"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/ao/xp_after_death"\
         }\
       },\
       {\
@@ -866,16 +866,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.b",\
             "fallback": "Click to toggle the config's value for destroyed graves."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/xp_after_death"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/xp_after_death"\
         }\
       },\
       {\
@@ -886,16 +886,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.o",\
             "fallback": "Click to toggle the config's value for graves that belong to other players."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/xp_after_death"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/an/xp_after_death"\
         }\
       },\
       {\
@@ -906,16 +906,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.bo",\
             "fallback": "Click to toggle the config's value for destroyed graves that belong to other players."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/xp_after_death"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/xp_after_death"\
         }\
       }\
     ]\
@@ -928,9 +928,9 @@ tellraw @s [\
   {\
     "translate": "sgrave2.config.show_grave_info.destruction_type",\
     "fallback": "   DTP:§l   ",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action":"show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_description.show_grave_info.destruction_type",\
         "fallback": "Whether how the grave was destroyed should be shown (e.g. destroyed, opened, despawned). §7(Destruction TyPe)"\
       }\
@@ -947,16 +947,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.b",\
             "fallback": "Click to toggle the config's value for destroyed graves."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/destruction_type"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/destruction_type"\
         }\
       },\
       {\
@@ -967,16 +967,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.bo",\
             "fallback": "Click to toggle the config's value for destroyed graves that belong to other players."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/destruction_type"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/destruction_type"\
         }\
       }\
     ]\
@@ -989,9 +989,9 @@ tellraw @s [\
   {\
     "translate": "sgrave2.config.show_grave_info.destroyer",\
     "fallback": "   DER:§l   ",\
-    "hover_event": {\
+    "hoverEvent": {\
       "action":"show_text",\
-      "value": {\
+      "contents": {\
         "translate": "sgrave2.config_description.show_grave_info.destroyer",\
         "fallback": "Whether the player who destroyed the grave should be shown. §7(DestroyER)"\
       }\
@@ -1008,16 +1008,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.b",\
             "fallback": "Click to toggle the config's value for destroyed graves."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/destroyer"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bo/destroyer"\
         }\
       },\
       {\
@@ -1028,16 +1028,16 @@ tellraw @s [\
             "storage": "sgrave2:common"\
           }\
         ],\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_change_description.toggle.show_grave_info.bo",\
             "fallback": "Click to toggle the config's value for destroyed graves that belong to other players."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/destroyer"\
+          "value": "/function sgrave2:internal/config/toggle/graves/show_grave_info/bn/destroyer"\
         }\
       }\
     ]\
@@ -1054,30 +1054,30 @@ tellraw @s [\
     "with": [\
       {\
         "text": "§c< Back ",\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_go_back_description.graves",\
-            "fallback": "Click to go back to page 'Graves'.",\
+            "fallback": "Click to go back to page 'Graves'."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/open_page/graves"\
+          "value": "/function sgrave2:internal/config/open_page/graves"\
         }\
       },\
       {\
         "text": " §b🔃 Refresh",\
-        "hover_event": {\
+        "hoverEvent": {\
           "action": "show_text",\
-          "value": {\
+          "contents": {\
             "translate": "sgrave2.config_refresh_sub_page_description",\
             "fallback": "Click to refresh this sub-page."\
           }\
         },\
-        "click_event": {\
+        "clickEvent": {\
           "action": "run_command",\
-          "command": "/function sgrave2:internal/config/open_page/graves/show_grave_info"\
+          "value": "/function sgrave2:internal/config/open_page/graves/show_grave_info"\
         }\
       }\
     ]\

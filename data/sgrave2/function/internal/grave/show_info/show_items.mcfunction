@@ -7,50 +7,50 @@ $function sgrave2:internal/map/graves/lookup {gid: $(gid)}
 ## This will be outputted as macro later
 ## Here, we will start with no-items-exist-in-grave approach
 data modify storage sgrave2:common temp.text_to_show.slots set value {\
-  hotbar_0: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.hotbar_0", "fallback": "§7Slot: §aHotbar 1"}}}', \
-  hotbar_1: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.hotbar_1", "fallback": "§7Slot: §aHotbar 2"}}}', \
-  hotbar_2: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.hotbar_2", "fallback": "§7Slot: §aHotbar 3"}}}', \
-  hotbar_3: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.hotbar_3", "fallback": "§7Slot: §aHotbar 4"}}}', \
-  hotbar_4: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.hotbar_4", "fallback": "§7Slot: §aHotbar 5"}}}', \
-  hotbar_5: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.hotbar_5", "fallback": "§7Slot: §aHotbar 6"}}}', \
-  hotbar_6: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.hotbar_6", "fallback": "§7Slot: §aHotbar 7"}}}', \
-  hotbar_7: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.hotbar_7", "fallback": "§7Slot: §aHotbar 8"}}}', \
-  hotbar_8: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.hotbar_8", "fallback": "§7Slot: §aHotbar 9"}}}', \
+  hotbar_0: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.hotbar_0", "fallback": "§7Slot: §aHotbar 1"}}}', \
+  hotbar_1: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.hotbar_1", "fallback": "§7Slot: §aHotbar 2"}}}', \
+  hotbar_2: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.hotbar_2", "fallback": "§7Slot: §aHotbar 3"}}}', \
+  hotbar_3: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.hotbar_3", "fallback": "§7Slot: §aHotbar 4"}}}', \
+  hotbar_4: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.hotbar_4", "fallback": "§7Slot: §aHotbar 5"}}}', \
+  hotbar_5: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.hotbar_5", "fallback": "§7Slot: §aHotbar 6"}}}', \
+  hotbar_6: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.hotbar_6", "fallback": "§7Slot: §aHotbar 7"}}}', \
+  hotbar_7: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.hotbar_7", "fallback": "§7Slot: §aHotbar 8"}}}', \
+  hotbar_8: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.hotbar_8", "fallback": "§7Slot: §aHotbar 9"}}}', \
   \
-  inventory_0: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_0", "fallback": "§7Slot: §aInventory 1"}}}', \
-  inventory_1: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_1", "fallback": "§7Slot: §aInventory 2"}}}', \
-  inventory_2: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_2", "fallback": "§7Slot: §aInventory 3"}}}', \
-  inventory_3: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_3", "fallback": "§7Slot: §aInventory 4"}}}', \
-  inventory_4: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_4", "fallback": "§7Slot: §aInventory 5"}}}', \
-  inventory_5: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_5", "fallback": "§7Slot: §aInventory 6"}}}', \
-  inventory_6: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_6", "fallback": "§7Slot: §aInventory 7"}}}', \
-  inventory_7: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_7", "fallback": "§7Slot: §aInventory 8"}}}', \
-  inventory_8: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_8", "fallback": "§7Slot: §aInventory 9"}}}', \
-  inventory_9: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_9", "fallback": "§7Slot: §aInventory 10"}}}', \
-  inventory_10: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_10", "fallback": "§7Slot: §aInventory 11"}}}', \
-  inventory_11: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_11", "fallback": "§7Slot: §aInventory 12"}}}', \
-  inventory_12: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_12", "fallback": "§7Slot: §aInventory 13"}}}', \
-  inventory_13: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_13", "fallback": "§7Slot: §aInventory 14"}}}', \
-  inventory_14: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_14", "fallback": "§7Slot: §aInventory 15"}}}', \
-  inventory_15: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_15", "fallback": "§7Slot: §aInventory 16"}}}', \
-  inventory_16: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_16", "fallback": "§7Slot: §aInventory 17"}}}', \
-  inventory_17: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_17", "fallback": "§7Slot: §aInventory 18"}}}', \
-  inventory_18: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_18", "fallback": "§7Slot: §aInventory 19"}}}', \
-  inventory_19: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_19", "fallback": "§7Slot: §aInventory 20"}}}', \
-  inventory_20: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_20", "fallback": "§7Slot: §aInventory 21"}}}', \
-  inventory_21: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_21", "fallback": "§7Slot: §aInventory 22"}}}', \
-  inventory_22: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_22", "fallback": "§7Slot: §aInventory 23"}}}', \
-  inventory_23: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_23", "fallback": "§7Slot: §aInventory 24"}}}', \
-  inventory_24: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_24", "fallback": "§7Slot: §aInventory 25"}}}', \
-  inventory_25: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_25", "fallback": "§7Slot: §aInventory 26"}}}', \
-  inventory_26: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.inventory_26", "fallback": "§7Slot: §aInventory 27"}}}', \
+  inventory_0: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_0", "fallback": "§7Slot: §aInventory 1"}}}', \
+  inventory_1: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_1", "fallback": "§7Slot: §aInventory 2"}}}', \
+  inventory_2: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_2", "fallback": "§7Slot: §aInventory 3"}}}', \
+  inventory_3: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_3", "fallback": "§7Slot: §aInventory 4"}}}', \
+  inventory_4: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_4", "fallback": "§7Slot: §aInventory 5"}}}', \
+  inventory_5: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_5", "fallback": "§7Slot: §aInventory 6"}}}', \
+  inventory_6: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_6", "fallback": "§7Slot: §aInventory 7"}}}', \
+  inventory_7: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_7", "fallback": "§7Slot: §aInventory 8"}}}', \
+  inventory_8: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_8", "fallback": "§7Slot: §aInventory 9"}}}', \
+  inventory_9: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_9", "fallback": "§7Slot: §aInventory 10"}}}', \
+  inventory_10: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_10", "fallback": "§7Slot: §aInventory 11"}}}', \
+  inventory_11: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_11", "fallback": "§7Slot: §aInventory 12"}}}', \
+  inventory_12: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_12", "fallback": "§7Slot: §aInventory 13"}}}', \
+  inventory_13: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_13", "fallback": "§7Slot: §aInventory 14"}}}', \
+  inventory_14: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_14", "fallback": "§7Slot: §aInventory 15"}}}', \
+  inventory_15: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_15", "fallback": "§7Slot: §aInventory 16"}}}', \
+  inventory_16: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_16", "fallback": "§7Slot: §aInventory 17"}}}', \
+  inventory_17: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_17", "fallback": "§7Slot: §aInventory 18"}}}', \
+  inventory_18: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_18", "fallback": "§7Slot: §aInventory 19"}}}', \
+  inventory_19: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_19", "fallback": "§7Slot: §aInventory 20"}}}', \
+  inventory_20: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_20", "fallback": "§7Slot: §aInventory 21"}}}', \
+  inventory_21: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_21", "fallback": "§7Slot: §aInventory 22"}}}', \
+  inventory_22: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_22", "fallback": "§7Slot: §aInventory 23"}}}', \
+  inventory_23: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_23", "fallback": "§7Slot: §aInventory 24"}}}', \
+  inventory_24: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_24", "fallback": "§7Slot: §aInventory 25"}}}', \
+  inventory_25: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_25", "fallback": "§7Slot: §aInventory 26"}}}', \
+  inventory_26: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.inventory_26", "fallback": "§7Slot: §aInventory 27"}}}', \
   \
-  armor_head: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.armor_head", "fallback": "§7Slot: §aArmor - Head"}}}', \
-  armor_chest: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.armor_chest", "fallback": "§7Slot: §aArmor - Chest"}}}', \
-  armor_legs: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.armor_legs", "fallback": "§7Slot: §aArmor - Legs"}}}', \
-  armor_feet: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.armor_feet", "fallback": "§7Slot: §aArmor - Boots"}}}', \
+  armor_head: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.armor_head", "fallback": "§7Slot: §aArmor - Head"}}}', \
+  armor_chest: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.armor_chest", "fallback": "§7Slot: §aArmor - Chest"}}}', \
+  armor_legs: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.armor_legs", "fallback": "§7Slot: §aArmor - Legs"}}}', \
+  armor_feet: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.armor_feet", "fallback": "§7Slot: §aArmor - Boots"}}}', \
   \
-  offhand: '{"text": "§7⬜", "hover_event": {"action": "show_text", "value": {"translate": "sgrave2.grave_info.items.slot.offhand", "fallback": "§7Slot: §aOffhand"}}}' \
+  offhand: '{"text": "§7⬜", "hoverEvent": {"action": "show_text", "contents": {"translate": "sgrave2.grave_info.items.slot.offhand", "fallback": "§7Slot: §aOffhand"}}}' \
 }
 
 ## Summon an item manipulator

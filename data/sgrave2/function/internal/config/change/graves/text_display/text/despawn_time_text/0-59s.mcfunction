@@ -1,17 +1,17 @@
 #<< config/open_page/graves/text_display_properties
-$data modify storage sgrave2:common temp.config.value set value $(value)
+$data modify storage sgrave2:common temp.config.value set value '$(value)'
 
 ## Error if value is not valid
-summon minecraft:text_display ~ ~ ~ {Tags: ["sgrave2.temp.config_checker.text_display"], text: {text: "a", color: "green"}}
+summon minecraft:text_display ~ ~ ~ {Tags: ["sgrave2.temp.config_checker.text_display"], text: '"a"'}
 
 data modify entity @n[tag=sgrave2.temp.config_checker.text_display] text set from storage sgrave2:common temp.config.value
 
-execute if data entity @n[tag=sgrave2.temp.config_checker.text_display] text{text: "a", color: "green"} run title @s actionbar {\
+execute if data entity @n[tag=sgrave2.temp.config_checker.text_display] {text: '"a"'} run title @s actionbar {\
   "translate": "sgrave2.change_config_message.text_display.text.despawn_time_text.0-59_seconds.fail",\
   "fallback": "§cThe value is invalid."\
 }
 
-execute if data entity @n[tag=sgrave2.temp.config_checker.text_display] text{text: "a", color: "green"} run return run kill @e[tag=sgrave2.temp.config_checker.text_display]
+execute if data entity @n[tag=sgrave2.temp.config_checker.text_display] {text: '"a"'} run return run kill @e[tag=sgrave2.temp.config_checker.text_display]
 kill @e[tag=sgrave2.temp.config_checker.text_display]
 
 ## Otherwise success

@@ -1,18 +1,5 @@
 #<< grave/generate
 
-## For players, the offhand and armor slots are
-## stored in a compound, not an array
-
-## That also means they don't have a `Slot` tag
-## So we have to add them ourselves
-data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items set value [\
-  {Slot: -106b, id: 0},\
-  {Slot: 103b, id: 0},\
-  {Slot: 102b, id: 0},\
-  {Slot: 101b, id: 0},\
-  {Slot: 100b, id: 0}\
-]
-
 ## Check for each slot if it is blacklisted in configs
 ## and if not, copy the item data from the player
 ## and paste it to the grave
@@ -54,31 +41,12 @@ execute unless data storage sgrave2:common configs.value.players.blacklist_slots
 execute unless data storage sgrave2:common configs.value.players.blacklist_slots[{slot:'ib8'}] run data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items append from entity @s Inventory[{Slot:34b}]
 execute unless data storage sgrave2:common configs.value.players.blacklist_slots[{slot:'ib9'}] run data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items append from entity @s Inventory[{Slot:35b}]
 
-##> Careful! the `equipment` data doesn't have a `Slot` field
-execute unless data storage sgrave2:common configs.value.players.blacklist_slots[{slot:'offhand'}] run data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items[{Slot:-106b}].id set from entity @s equipment.offhand.id
-execute unless data storage sgrave2:common configs.value.players.blacklist_slots[{slot:'offhand'}] run data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items[{Slot:-106b}].count set from entity @s equipment.offhand.count
-execute unless data storage sgrave2:common configs.value.players.blacklist_slots[{slot:'offhand'}] run data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items[{Slot:-106b}].components set from entity @s equipment.offhand.components
+execute unless data storage sgrave2:common configs.value.players.blacklist_slots[{slot:'offhand'}] run data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items append from entity @s Inventory[{Slot:-106b}]
 
-execute unless data storage sgrave2:common configs.value.players.blacklist_slots[{slot:'head'}] run data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items[{Slot:103b}].id set from entity @s equipment.head.id
-execute unless data storage sgrave2:common configs.value.players.blacklist_slots[{slot:'head'}] run data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items[{Slot:103b}].count set from entity @s equipment.head.count
-execute unless data storage sgrave2:common configs.value.players.blacklist_slots[{slot:'head'}] run data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items[{Slot:103b}].components set from entity @s equipment.head.components
-
-
-execute unless data storage sgrave2:common configs.value.players.blacklist_slots[{slot:'chest'}] run data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items[{Slot:102b}].id set from entity @s equipment.chest.id
-execute unless data storage sgrave2:common configs.value.players.blacklist_slots[{slot:'chest'}] run data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items[{Slot:102b}].count set from entity @s equipment.chest.count
-execute unless data storage sgrave2:common configs.value.players.blacklist_slots[{slot:'chest'}] run data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items[{Slot:102b}].components set from entity @s equipment.chest.components
-
-execute unless data storage sgrave2:common configs.value.players.blacklist_slots[{slot:'legs'}] run data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items[{Slot:101b}].id set from entity @s equipment.legs.id
-execute unless data storage sgrave2:common configs.value.players.blacklist_slots[{slot:'legs'}] run data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items[{Slot:101b}].count set from entity @s equipment.legs.count
-execute unless data storage sgrave2:common configs.value.players.blacklist_slots[{slot:'legs'}] run data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items[{Slot:101b}].components set from entity @s equipment.legs.components
-
-execute unless data storage sgrave2:common configs.value.players.blacklist_slots[{slot:'feet'}] run data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items[{Slot:100b}].id set from entity @s equipment.feet.id
-execute unless data storage sgrave2:common configs.value.players.blacklist_slots[{slot:'feet'}] run data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items[{Slot:100b}].count set from entity @s equipment.feet.count
-execute unless data storage sgrave2:common configs.value.players.blacklist_slots[{slot:'feet'}] run data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items[{Slot:100b}].components set from entity @s equipment.feet.components
-
-##> If no item in the offhand or armor slot exists,
-##> Remove the item from the grave
-data remove entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items[{id:0}]
+execute unless data storage sgrave2:common configs.value.players.blacklist_slots[{slot:'head'}] run data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items append from entity @s Inventory[{Slot:103b}]
+execute unless data storage sgrave2:common configs.value.players.blacklist_slots[{slot:'chest'}] run data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items append from entity @s Inventory[{Slot:102b}]
+execute unless data storage sgrave2:common configs.value.players.blacklist_slots[{slot:'legs'}] run data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items append from entity @s Inventory[{Slot:101b}]
+execute unless data storage sgrave2:common configs.value.players.blacklist_slots[{slot:'feet'}] run data modify entity @n[tag=sgrave2.temp.grave.base] item.components.minecraft:custom_data.sgrave2:common.items append from entity @s Inventory[{Slot:100b}]
 
 ## Loop through all items stored in the grave
 ## and if any have been blacklisted in the config,

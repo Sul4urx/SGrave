@@ -88,46 +88,46 @@ $execute unless data storage sgrave2:common graves[-1].data.status{destroyed:1b}
     {\
       "translate": "sgrave2.grave_info.menu.back",\
       "fallback": "§b< ",\
-      "hover_event": {\
+      "hoverEvent": {\
         "action": "show_text",\
-        "value": {\
+        "contents": {\
           "translate": "sgrave2.grave_info.menu_description.back",\
           "fallback": "Click to view info about previous grave."\
         }\
       },\
-      "click_event": {\
+      "clickEvent": {\
         "action": "run_command",\
-        "command": "/function sgrave2:internal/grave/show_info/show_admin/view_previous {gid: $(gid)}"\
+        "value": "/function sgrave2:internal/grave/show_info/show_admin/view_previous {gid: $(gid)}"\
       }\
     },\
     {\
       "translate": "sgrave2.grave_info.menu.open",\
       "fallback": " §bOpen ",\
-      "hover_event": {\
+      "hoverEvent": {\
         "action": "show_text",\
-        "value": {\
+        "contents": {\
           "translate": "sgrave2.grave_info.menu_description.open",\
           "fallback": "Click to remotely open this grave."\
         }\
       },\
-      "click_event": {\
+      "clickEvent": {\
         "action": "suggest_command",\
-        "command": "/function sgrave2:run/remote_open_grave {gid: $(gid)}"\
+        "value": "/function sgrave2:run/remote_open_grave {gid: $(gid)}"\
       }\
     },\
     {\
       "translate": "sgrave2.grave_info.menu.back",\
       "fallback": " §b>",\
-      "hover_event": {\
+      "hoverEvent": {\
         "action": "show_text",\
-        "value": {\
+        "contents": {\
           "translate": "sgrave2.grave_info.menu_description.back",\
           "fallback": "Click to view info about next grave."\
         }\
       },\
-      "click_event": {\
+      "clickEvent": {\
         "action": "run_command",\
-        "command": "/function sgrave2:internal/grave/show_info/show_admin/view_next {gid: $(gid)}"\
+        "value": "/function sgrave2:internal/grave/show_info/show_admin/view_next {gid: $(gid)}"\
       }\
     }\
   ]\
@@ -139,31 +139,31 @@ $execute if data storage sgrave2:common graves[-1].data.status{destroyed:1b} run
     {\
       "translate": "sgrave2.grave_info.menu.back",\
       "fallback": "§b< ",\
-      "hover_event": {\
+      "hoverEvent": {\
         "action": "show_text",\
-        "value": {\
+        "contents": {\
           "translate": "sgrave2.grave_info.menu_description.back",\
           "fallback": "Click to view info about previous grave."\
         }\
       },\
-      "click_event": {\
+      "clickEvent": {\
         "action": "run_command",\
-        "command": "/function sgrave2:internal/grave/show_info/show_admin/view_previous {gid: $(gid)}"\
+        "value": "/function sgrave2:internal/grave/show_info/show_admin/view_previous {gid: $(gid)}"\
       }\
     },\
     {\
       "translate": "sgrave2.grave_info.menu.back",\
       "fallback": " §b>",\
-      "hover_event": {\
+      "hoverEvent": {\
         "action": "show_text",\
-        "value": {\
+        "contents": {\
           "translate": "sgrave2.grave_info.menu_description.back",\
           "fallback": "Click to view info about next grave."\
         }\
       },\
-      "click_event": {\
+      "clickEvent": {\
         "action": "run_command",\
-        "command": "/function sgrave2:internal/grave/show_info/show_admin/view_next {gid: $(gid)}"\
+        "value": "/function sgrave2:internal/grave/show_info/show_admin/view_next {gid: $(gid)}"\
       }\
     }\
   ]\
