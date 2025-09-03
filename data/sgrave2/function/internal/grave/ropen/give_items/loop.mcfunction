@@ -7,7 +7,7 @@ execute store result score .slot sgrave2.temp_var run data get storage sgrave2:c
 data remove storage sgrave2:common temp.items[-1].Slot
 
 ## Make manipulator item manipulate the item
-item replace entity @n[tag=sgrave2.temp.item_manipulator] contents with minecraft:clock[minecraft:item_name="§cBug Item",minecraft:lore=["You're not supposed to have this item. If you do, please report this bug."]]
+item replace entity @n[tag=sgrave2.temp.item_manipulator] contents with minecraft:clock[minecraft:item_name='"§cBug Item"',minecraft:lore=['"You\'re not supposed to have this item. If you do, please report this bug."']]
 data modify entity @n[tag=sgrave2.temp.item_manipulator] Item set from storage sgrave2:common temp.items[-1]
 
 ## Add the slot data back
