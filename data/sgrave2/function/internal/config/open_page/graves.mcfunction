@@ -168,12 +168,12 @@ tellraw @s [\
 tellraw @s [\
   {\
     "translate": "sgrave2.config.text_display_properties",\
-    "fallback": "   Text Display Properties: ",\
+    "fallback": "   §3Text Display Properties: ",\
     "hover_event": {\
       "action":"show_text",\
       "value": {\
         "translate": "sgrave2.config_description.text_display_properties",\
-        "fallback": "The properties of the text display part of the grave, which normally shows the owner's name, the GID and the despawn time."\
+        "fallback": "The properties of the text display part of the grave, which normally shows the owner's name, the GID and the despawn time.\n\n§3ℹ This is an experimental config!"\
       }\
     }\
   },\
